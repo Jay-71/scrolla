@@ -1,0 +1,58 @@
+{
+  "topic": "stack in data structure",
+  "generated_at": "2025-12-22T10:48:19.201743",
+  "concepts": [
+    {
+      "concept": "LIFO",
+      "type": "Principle"
+    },
+    {
+      "concept": "Push",
+      "type": "Operation"
+    },
+    {
+      "concept": "Pop",
+      "type": "Operation"
+    },
+    {
+      "concept": "Peek",
+      "type": "Operation"
+    },
+    {
+      "concept": "Bounded Capacity",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Stack Overflow",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Abstract Data Type",
+      "type": "Definition"
+    },
+    {
+      "concept": "Definition",
+      "type": "Definition"
+    },
+    {
+      "concept": "Peek (Top of Stack)",
+      "type": "Operation"
+    },
+    {
+      "concept": "Underflow",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Stack Empty Check",
+      "type": "Operation"
+    },
+    {
+      "concept": "Stack Size",
+      "type": "Operation"
+    },
+    {
+      "concept": "Implementation (Array, Linked List)",
+      "type": "Application"
+    }
+  ]
+}
