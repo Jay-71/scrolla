@@ -132,6 +132,18 @@ def main():
 
     print(f"[DONE] Generated {len(atoms)} atoms")
 
+    from atoms.atom_curator import curate_atoms
+
+    raw_atom_feed = {
+        "topic": topic,
+        "atoms": atoms
+    }
+
+    curated_atom_feed = curate_atoms(raw_atom_feed)
+
+    save_atoms(topic, curated_atom_feed)
+
+
 
 if __name__ == "__main__":
     main()
