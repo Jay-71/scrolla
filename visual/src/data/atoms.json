@@ -1,0 +1,743 @@
+[
+  {
+    "id": 1,
+    "concept": "Linked List",
+    "atom_type": "explanation",
+    "content": "A Linked List is a series of connected data 'boxes'. Each box holds some information, and it also has a special address label that points to the next box in line.",
+    "difficulty": "easy",
+    "order": 1
+  },
+  {
+    "id": 2,
+    "concept": "Linked List",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a library catalog with books stacked on shelves. Each book represents a node in a linked list. Instead of being next to each other, they are placed at different locations around the room, but they all have a note that says which book comes after it. This helps you find your way through all the books just like navigating a linked list.",
+    "difficulty": "easy",
+    "order": 2
+  },
+  {
+    "id": 3,
+    "concept": "Linked List",
+    "atom_type": "example",
+    "content": "In programming, a singly linked list could be used to keep track of student records in a school. Each node would represent one student, with their name and other details stored inside. The link between nodes tells us which student's record comes next.",
+    "difficulty": "easy",
+    "order": 3
+  },
+  {
+    "id": 4,
+    "concept": "Linked List",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Linked List:\nNodes are not physically adjacent to each other\nEach node contains a link pointing to the next one\nLinked lists can grow or shrink during program execution",
+    "difficulty": "easy",
+    "order": 4
+  },
+  {
+    "id": 5,
+    "concept": "Linked List",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: One common error is forgetting to initialize the starting point (head) of the linked list before adding nodes.",
+    "difficulty": "easy",
+    "order": 5
+  },
+  {
+    "id": 6,
+    "concept": "Linked List",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Linked lists are important because they allow dynamic memory allocation, making them efficient for managing data structures that change size during program execution.",
+    "difficulty": "easy",
+    "order": 6
+  },
+  {
+    "id": 7,
+    "concept": "Linked List",
+    "atom_type": "question",
+    "content": "What should be done when creating a new node in a singly linked list?",
+    "difficulty": "easy",
+    "order": 7,
+    "answer": "Think about Linked List — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 8,
+    "concept": "Node",
+    "atom_type": "explanation",
+    "content": "A Node is a building block of a linked list. It holds data and a reference to the next node in sequence.",
+    "difficulty": "easy",
+    "order": 8
+  },
+  {
+    "id": 9,
+    "concept": "Node",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a chain of interconnected puzzle pieces, where each piece carries a unique piece of information and points towards the next one in line.",
+    "difficulty": "easy",
+    "order": 9
+  },
+  {
+    "id": 10,
+    "concept": "Node",
+    "atom_type": "example",
+    "content": "In a linked list of integers, each node might contain an integer value and a pointer to the next node containing the next integer.",
+    "difficulty": "easy",
+    "order": 10
+  },
+  {
+    "id": 11,
+    "concept": "Node",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Node:\nEach node contains a piece of data (usually an integer or object) and a reference to the next node in the sequence. The last node has a null or empty pointer indicating the end of the list.",
+    "difficulty": "easy",
+    "order": 11
+  },
+  {
+    "id": 12,
+    "concept": "Node",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Beginners often overlook setting the next pointer of the last node correctly, which may lead to an incorrect linked list structure.",
+    "difficulty": "easy",
+    "order": 12
+  },
+  {
+    "id": 13,
+    "concept": "Node",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding nodes is crucial as they enable us to create, manage, and manipulate dynamic data structures like linked lists.",
+    "difficulty": "easy",
+    "order": 13
+  },
+  {
+    "id": 14,
+    "concept": "Node",
+    "atom_type": "question",
+    "content": "Can you draw a simple representation of a linked list using nodes? What kind of data would each node contain?",
+    "difficulty": "easy",
+    "order": 14,
+    "answer": "Think about Node — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 15,
+    "concept": "Next Pointer",
+    "atom_type": "explanation",
+    "content": "A next pointer is a special part of a linked list node that points to the memory location of the next node. It helps us travel through the nodes one by one.",
+    "difficulty": "easy",
+    "order": 15
+  },
+  {
+    "id": 16,
+    "concept": "Next Pointer",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine you are at a party and each person (node) knows who their neighbor (next pointer) is going to be, allowing you to easily move from one person to the next.",
+    "difficulty": "easy",
+    "order": 16
+  },
+  {
+    "id": 17,
+    "concept": "Next Pointer",
+    "atom_type": "example",
+    "content": "In a simple linked list, each node might look like this: data -> next_pointer -> data -> next_pointer, and so on.",
+    "difficulty": "easy",
+    "order": 17
+  },
+  {
+    "id": 18,
+    "concept": "Next Pointer",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Next Pointer:\n[\"Each node contains both data and a pointer to the next node\", \"The last node's next pointer usually points to NULL\", \"Traversing a list means following the pointers from one node to another\"]",
+    "difficulty": "easy",
+    "order": 18
+  },
+  {
+    "id": 19,
+    "concept": "Next Pointer",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Forgetting to set the next pointer when creating new nodes can lead to errors and make traversal impossible.",
+    "difficulty": "easy",
+    "order": 19
+  },
+  {
+    "id": 20,
+    "concept": "Next Pointer",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding next pointers is essential for creating, manipulating, and navigating linked lists, which are a fundamental data structure in computer science.",
+    "difficulty": "easy",
+    "order": 20
+  },
+  {
+    "id": 21,
+    "concept": "Next Pointer",
+    "atom_type": "question",
+    "content": "Can you explain what a next pointer does in a linked list and why it's important?",
+    "difficulty": "easy",
+    "order": 21,
+    "answer": "Think about Next Pointer — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 22,
+    "concept": "Head",
+    "atom_type": "explanation",
+    "content": "The head of a linked list is the starting point. It's like the first book on a shelf, setting the sequence for all the other books.",
+    "difficulty": "easy",
+    "order": 22
+  },
+  {
+    "id": 23,
+    "concept": "Head",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Visualize a row of dominoes standing upright. The first one at the left end is the head. Each subsequent one has a touch on its right side, representing the link to the next node.",
+    "difficulty": "easy",
+    "order": 23
+  },
+  {
+    "id": 24,
+    "concept": "Head",
+    "atom_type": "example",
+    "content": "In a linked list of numbers, the head might store the number 5, and point towards the node containing 7.",
+    "difficulty": "easy",
+    "order": 24
+  },
+  {
+    "id": 25,
+    "concept": "Head",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Head:\nThe head defines where the list begins.\nIt stores both data and a link to the next node.",
+    "difficulty": "easy",
+    "order": 25
+  },
+  {
+    "id": 26,
+    "concept": "Head",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Remember, even though it's the starting point, the head is still a regular node in the linked list.",
+    "difficulty": "easy",
+    "order": 26
+  },
+  {
+    "id": 27,
+    "concept": "Head",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding the head helps you effectively access and manipulate data within a linked list.",
+    "difficulty": "easy",
+    "order": 27
+  },
+  {
+    "id": 28,
+    "concept": "Head",
+    "atom_type": "question",
+    "content": "Can you explain where the linked list starts?",
+    "difficulty": "easy",
+    "order": 28,
+    "answer": "Think about Head — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 29,
+    "concept": "Tail",
+    "atom_type": "explanation",
+    "content": "The tail of a linked list is the final node in the chain. Unlike other nodes, it doesn't have a next pointer as it marks the end of the list.",
+    "difficulty": "easy",
+    "order": 29
+  },
+  {
+    "id": 30,
+    "concept": "Tail",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a row of ducks swimming downstream. The last duck in line (the tail) doesn't have a beak connected to another duck because it's at the end of the stream.",
+    "difficulty": "easy",
+    "order": 30
+  },
+  {
+    "id": 31,
+    "concept": "Tail",
+    "atom_type": "example",
+    "content": "Consider a linked list of numbers: 1 -> 2 -> 3 -> NULL. Here, the last number (3) is the tail.",
+    "difficulty": "easy",
+    "order": 31
+  },
+  {
+    "id": 32,
+    "concept": "Tail",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Tail:\nThe tail doesn't have a next pointer.\nIt's crucial for operations like appending new nodes.",
+    "difficulty": "easy",
+    "order": 32
+  },
+  {
+    "id": 33,
+    "concept": "Tail",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: A common misconception is thinking that the last node has a next pointer pointing to null. In reality, it usually doesn't have any next pointer at all.",
+    "difficulty": "easy",
+    "order": 33
+  },
+  {
+    "id": 34,
+    "concept": "Tail",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding the tail of a linked list helps you navigate through various operations efficiently, especially when adding new nodes to the end of the list.",
+    "difficulty": "easy",
+    "order": 34
+  },
+  {
+    "id": 35,
+    "concept": "Tail",
+    "atom_type": "question",
+    "content": "Can you identify the tail in a given linked list without traversing it?",
+    "difficulty": "easy",
+    "order": 35,
+    "answer": "Think about Tail — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 36,
+    "concept": "Insertion",
+    "atom_type": "explanation",
+    "content": "Inserting a new node into a linked list means adding a new data container with a link to the next node (if any).",
+    "difficulty": "easy",
+    "order": 36
+  },
+  {
+    "id": 37,
+    "concept": "Insertion",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Think of a queue of people in line at a movie theater. When a new person arrives, they join the line by inserting themselves between two existing people.",
+    "difficulty": "easy",
+    "order": 37
+  },
+  {
+    "id": 38,
+    "concept": "Insertion",
+    "atom_type": "example",
+    "content": "Adding a new element 'C' to a linked list containing [A, B, D]: the new list becomes [A, B, C, D].",
+    "difficulty": "easy",
+    "order": 38
+  },
+  {
+    "id": 39,
+    "concept": "Insertion",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Insertion:\nThe position for the new node is specified beforehand.\nA new node contains data and a link to the next node.",
+    "difficulty": "easy",
+    "order": 39
+  },
+  {
+    "id": 40,
+    "concept": "Insertion",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Forgetting to update the links of existing nodes can lead to an incorrectly connected linked list.",
+    "difficulty": "easy",
+    "order": 40
+  },
+  {
+    "id": 41,
+    "concept": "Insertion",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding insertion operations in linked lists is essential for implementing efficient data structures in various programming tasks.",
+    "difficulty": "easy",
+    "order": 41
+  },
+  {
+    "id": 42,
+    "concept": "Insertion",
+    "atom_type": "question",
+    "content": "Given a linked list [1, 2, 3] and the position 0, add node 0 to the front of the list. Result: [0, 1, 2, 3]",
+    "difficulty": "easy",
+    "order": 42,
+    "answer": "Think about Insertion — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 43,
+    "concept": "Deletion",
+    "atom_type": "explanation",
+    "content": "Deleting a node from a linked list involves finding the specific node to be removed and updating the pointers of the surrounding nodes.",
+    "difficulty": "easy",
+    "order": 43
+  },
+  {
+    "id": 44,
+    "concept": "Deletion",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a chain where each link represents a node. To remove a link, you'd find it and cut the links on either side, connecting the two remaining links.",
+    "difficulty": "easy",
+    "order": 44
+  },
+  {
+    "id": 45,
+    "concept": "Deletion",
+    "atom_type": "example",
+    "content": "Suppose we have a linked list with the following nodes: [A, B, C, D, E]. To delete node C, we first traverse to node B (the previous node), then update the pointer of node B pointing to node D (next node after the deleted node).",
+    "difficulty": "easy",
+    "order": 45
+  },
+  {
+    "id": 46,
+    "concept": "Deletion",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Deletion:\n4. If the deleted node was the head node, update the head pointer accordingly.",
+    "difficulty": "easy",
+    "order": 46
+  },
+  {
+    "id": 47,
+    "concept": "Deletion",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Forgetting to handle the case when the node to be deleted is the first node (head) of the list can lead to incorrect results or a broken linked list.",
+    "difficulty": "easy",
+    "order": 47
+  },
+  {
+    "id": 48,
+    "concept": "Deletion",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Being able to delete nodes efficiently and correctly from a linked list is crucial in real-world applications, such as managing dynamic data structures like databases and computer memory management.",
+    "difficulty": "easy",
+    "order": 48
+  },
+  {
+    "id": 49,
+    "concept": "Deletion",
+    "atom_type": "question",
+    "content": "What should you do when trying to delete the head node from a linked list?",
+    "difficulty": "easy",
+    "order": 49,
+    "answer": "Think about Deletion — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 50,
+    "concept": "Singly Linked List",
+    "atom_type": "explanation",
+    "content": "A Singly Linked List is a sequence of data elements, where each element (called 'node') has a piece of data and a single pointer to the next node in line. This structure allows for efficient insertion and deletion operations.",
+    "difficulty": "easy",
+    "order": 50
+  },
+  {
+    "id": 51,
+    "concept": "Singly Linked List",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a string of party hats, where each hat has a note attached and the last hat points to no one (like a ghost). This represents a Singly Linked List, with data on each 'hat' and a single pointer pointing to the next 'hat'.",
+    "difficulty": "easy",
+    "order": 51
+  },
+  {
+    "id": 52,
+    "concept": "Singly Linked List",
+    "atom_type": "example",
+    "content": "Consider a simple address book application that stores contacts in a Singly Linked List. Inserting a new contact at the end is done by creating a new node, adding the contact data, and pointing the last node's next pointer to the new node.",
+    "difficulty": "easy",
+    "order": 52
+  },
+  {
+    "id": 53,
+    "concept": "Singly Linked List",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Singly Linked List:\n1. Each node has only one next pointer.<br>2. The last node points to NULL or NEXT as its next pointer.<br>3. Efficient for insertion and deletion at any position.",
+    "difficulty": "easy",
+    "order": 53
+  },
+  {
+    "id": 54,
+    "concept": "Singly Linked List",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: One common mistake is forgetting to set the next pointer of a new node when adding it to the end of the list, which can cause issues in traversing or manipulating the data structure.",
+    "difficulty": "easy",
+    "order": 54
+  },
+  {
+    "id": 55,
+    "concept": "Singly Linked List",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding Singly Linked Lists is crucial for solving problems involving dynamic lists, such as implementing efficient sorting algorithms or building data structures for real-world applications.",
+    "difficulty": "easy",
+    "order": 55
+  },
+  {
+    "id": 56,
+    "concept": "Singly Linked List",
+    "atom_type": "question",
+    "content": "Given a Singly Linked List with nodes containing integers (1, 2, 3, 4, NULL), which integer would be accessed by traversing the list starting from the first node?",
+    "difficulty": "easy",
+    "order": 56,
+    "answer": "Think about Singly Linked List — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 57,
+    "concept": "Doubly Linked List",
+    "atom_type": "explanation",
+    "content": "A doubly linked list is a collection of data nodes that are connected in pairs, with each node pointing to both its successor and its predecessor. This structure allows traversal not only forward but also backward.",
+    "difficulty": "easy",
+    "order": 57
+  },
+  {
+    "id": 58,
+    "concept": "Doubly Linked List",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a line of dancers holding hands. Each dancer represents a node in the doubly linked list. The hand they hold with the dancer on their left is like the 'previous' pointer, and the hand held with the dancer on their right is the 'next' pointer.",
+    "difficulty": "easy",
+    "order": 58
+  },
+  {
+    "id": 59,
+    "concept": "Doubly Linked List",
+    "atom_type": "example",
+    "content": "Consider a simple doubly linked list of integers: 1 <-- 2 <-- 3 <-- 4. Here, each node contains an integer (data), and points to the next and previous nodes.",
+    "difficulty": "easy",
+    "order": 59
+  },
+  {
+    "id": 60,
+    "concept": "Doubly Linked List",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Doubly Linked List:\nEach node in a doubly linked list has three parts: data, a reference to the next node, and a reference to the previous node. This structure enables fast insertion and deletion operations at any position.",
+    "difficulty": "easy",
+    "order": 60
+  },
+  {
+    "id": 61,
+    "concept": "Doubly Linked List",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: When adding a new node at the beginning of a doubly linked list, it's essential not to forget updating the 'previous pointer' of the second node.",
+    "difficulty": "easy",
+    "order": 61
+  },
+  {
+    "id": 62,
+    "concept": "Doubly Linked List",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Doubly linked lists are useful in various real-world applications, such as managing lists that require frequent additions or deletions, like browser history or undo/redo operations.",
+    "difficulty": "easy",
+    "order": 62
+  },
+  {
+    "id": 63,
+    "concept": "Doubly Linked List",
+    "atom_type": "question",
+    "content": "Can you identify the 'previous' and 'next' pointers in this doubly linked list: 5 <-- A <-- B <-- C <-- D?",
+    "difficulty": "easy",
+    "order": 63,
+    "answer": "Think about Doubly Linked List — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 64,
+    "concept": "Linked List Definition",
+    "atom_type": "explanation",
+    "content": "A linked list is a collection of data elements, where each element is connected to the next one using a special reference called a pointer.",
+    "difficulty": "easy",
+    "order": 64
+  },
+  {
+    "id": 65,
+    "concept": "Linked List Definition",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a chain of interconnected paperclips. Each paperclip represents a node in a linked list, and the way they're connected by their ends resembles how data nodes are linked together.",
+    "difficulty": "easy",
+    "order": 65
+  },
+  {
+    "id": 66,
+    "concept": "Linked List Definition",
+    "atom_type": "example",
+    "content": "For example, if we have a linked list with nodes containing numbers: 5, 10, 15, and 20, the pointers would point from one node to the next in this order: 5 -> 10 -> 15 -> 20",
+    "difficulty": "easy",
+    "order": 66
+  },
+  {
+    "id": 67,
+    "concept": "Linked List Definition",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Linked List Definition:\nEach node contains both data and a reference to the next node.\nThe last node has no successor (its pointer is NULL or NIL).",
+    "difficulty": "easy",
+    "order": 67
+  },
+  {
+    "id": 68,
+    "concept": "Linked List Definition",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: A common pitfall is forgetting that the last node does not have a successor, leading to errors when attempting to access or traverse the list.",
+    "difficulty": "easy",
+    "order": 68
+  },
+  {
+    "id": 69,
+    "concept": "Linked List Definition",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding linked lists is important because they can grow and shrink dynamically during runtime, making them suitable for many real-world applications like managing memory and implementing data structures such as stacks and queues.",
+    "difficulty": "easy",
+    "order": 69
+  },
+  {
+    "id": 70,
+    "concept": "Linked List Definition",
+    "atom_type": "question",
+    "content": "Can you identify the last node in a linked list when given its nodes?",
+    "difficulty": "easy",
+    "order": 70,
+    "answer": "Think about Linked List Definition — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 71,
+    "concept": "Node Operation",
+    "atom_type": "explanation",
+    "content": "A Node in a Linked List is a data structure that contains data and a reference (pointer) to the next Node. Performing operations on Nodes allows us to manipulate the sequence of data within the list.",
+    "difficulty": "easy",
+    "order": 71
+  },
+  {
+    "id": 72,
+    "concept": "Node Operation",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a line of numbered mailboxes in a row, where each mailbox can hold a letter and has an address tag showing the address of the next mailbox. This represents the data and pointers in a Linked List.",
+    "difficulty": "easy",
+    "order": 72
+  },
+  {
+    "id": 73,
+    "concept": "Node Operation",
+    "atom_type": "example",
+    "content": "To access the third Node's data, we start from the first Node and follow the 'next' pointer twice, similar to moving to the third mailbox from the first one.",
+    "difficulty": "easy",
+    "order": 73
+  },
+  {
+    "id": 74,
+    "concept": "Node Operation",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Node Operation:\nAccessing or modifying a Node involves following the pointers, Insertion requires creating a new Node and adjusting the pointers, Deletion entails removing a Node and rearranging the pointers.",
+    "difficulty": "easy",
+    "order": 74
+  },
+  {
+    "id": 75,
+    "concept": "Node Operation",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Incorrect implementation of Node operations can lead to issues such as memory leaks or cycles in the Linked List.",
+    "difficulty": "easy",
+    "order": 75
+  },
+  {
+    "id": 76,
+    "concept": "Node Operation",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding Node operations is crucial for building, manipulating, and troubleshooting Linked Lists, which are essential data structures used in algorithms and data management systems.",
+    "difficulty": "easy",
+    "order": 76
+  },
+  {
+    "id": 77,
+    "concept": "Node Operation",
+    "atom_type": "question",
+    "content": "Describe the steps involved in inserting a new Node before an existing one in a Linked List.",
+    "difficulty": "easy",
+    "order": 77,
+    "answer": "Think about Node Operation — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 78,
+    "concept": "Head Pointer",
+    "atom_type": "explanation",
+    "content": "The head pointer is a variable in a linked list that saves the address of the very first node. Think of it as a guide (like a tour leader) leading you through a maze, always pointing to the next room you'll visit.",
+    "difficulty": "easy",
+    "order": 78
+  },
+  {
+    "id": 79,
+    "concept": "Head Pointer",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine an underground tunnel system connected by doors. The head pointer is like a torch that moves from door to door (node to node), lighting up the way for you as you explore the tunnels.",
+    "difficulty": "easy",
+    "order": 79
+  },
+  {
+    "id": 80,
+    "concept": "Head Pointer",
+    "atom_type": "example",
+    "content": "In C programming, creating a linked list might look like this: Node* head = NULL; // initializing head pointer. Later, new nodes are added and the head is updated to point to the first node.",
+    "difficulty": "easy",
+    "order": 80
+  },
+  {
+    "id": 81,
+    "concept": "Head Pointer",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Head Pointer:\n1. The head pointer holds the address of the first node. \n2. It updates as you traverse through the list. \n3. In C and Java, it's often called 'head' or 'first'.",
+    "difficulty": "easy",
+    "order": 81
+  },
+  {
+    "id": 82,
+    "concept": "Head Pointer",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Forgetting to initialize the head pointer can lead to null pointer errors, so remember to set it before using it!",
+    "difficulty": "easy",
+    "order": 82
+  },
+  {
+    "id": 83,
+    "concept": "Head Pointer",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: The head pointer is essential for navigating through a linked list, allowing you to easily access and manipulate the data stored within.",
+    "difficulty": "easy",
+    "order": 83
+  },
+  {
+    "id": 84,
+    "concept": "Head Pointer",
+    "atom_type": "question",
+    "content": "What happens if you forget to initialize the head pointer in a linked list? Correct",
+    "difficulty": "easy",
+    "order": 84,
+    "answer": "Think about Head Pointer — the answer relates to the core definition and properties we covered."
+  },
+  {
+    "id": 85,
+    "concept": "Linked List Complexity",
+    "atom_type": "explanation",
+    "content": "In a linked list, data is stored in nodes connected together. Basic operations like adding or removing nodes from the end take constant time O(1) because we only need to adjust one link.",
+    "difficulty": "easy",
+    "order": 85
+  },
+  {
+    "id": 86,
+    "concept": "Linked List Complexity",
+    "atom_type": "explanation",
+    "content": "💡 Mental Model: Imagine a string of beads on a flexible wire. Adding or removing beads from either end is as simple as moving the wire (O(1)). However, finding the middle bead requires counting all the other beads first (O(n)).",
+    "difficulty": "easy",
+    "order": 86
+  },
+  {
+    "id": 87,
+    "concept": "Linked List Complexity",
+    "atom_type": "example",
+    "content": "Adding a new student to the end of a class roster (linked list) is like writing their name at the bottom of the list, which takes only one action. But finding the student with the highest grade requires going through all students, taking longer.",
+    "difficulty": "easy",
+    "order": 87
+  },
+  {
+    "id": 88,
+    "concept": "Linked List Complexity",
+    "atom_type": "explanation",
+    "content": "📌 Key Points for Linked List Complexity:\nAdding or removing nodes from the end of a linked list is quick\nBut accessing elements or finding the middle takes longer",
+    "difficulty": "easy",
+    "order": 88
+  },
+  {
+    "id": 89,
+    "concept": "Linked List Complexity",
+    "atom_type": "explanation",
+    "content": "⚠️ Common Pitfall: Assuming all linked list operations have O(1) complexity can lead to inefficient code when dealing with non-end operations",
+    "difficulty": "easy",
+    "order": 89
+  },
+  {
+    "id": 90,
+    "concept": "Linked List Complexity",
+    "atom_type": "explanation",
+    "content": "🎯 Why It Matters: Understanding the time complexity of linked list operations helps optimize your code and ensure efficient performance in algorithms.",
+    "difficulty": "easy",
+    "order": 90
+  },
+  {
+    "id": 91,
+    "concept": "Linked List Complexity",
+    "atom_type": "question",
+    "content": "Which operation in a linked list is faster: adding a new node at the end or finding the middle element?",
+    "difficulty": "easy",
+    "order": 91,
+    "answer": "Think about Linked List Complexity — the answer relates to the core definition and properties we covered."
+  }
+]

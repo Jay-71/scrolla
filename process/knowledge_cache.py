@@ -1,7 +1,7 @@
 import json
 import os
 
-CACHE_DIR = "storage/concept_cache"
+CACHE_DIR = "output/concept_cache"
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 

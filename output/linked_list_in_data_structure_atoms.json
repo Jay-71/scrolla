@@ -1,0 +1,824 @@
+{
+  "topic": "linked list in data structure",
+  "atoms": [
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List",
+      "atom_type": "explanation",
+      "content": "A Linked List is a series of connected data 'boxes'. Each box holds some information, and it also has a special address label that points to the next box in line.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 1
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List",
+      "atom_type": "mental_model",
+      "content": "Imagine a library catalog with books stacked on shelves. Each book represents a node in a linked list. Instead of being next to each other, they are placed at different locations around the room, but they all have a note that says which book comes after it. This helps you find your way through all the books just like navigating a linked list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List",
+      "atom_type": "example",
+      "content": "In programming, a singly linked list could be used to keep track of student records in a school. Each node would represent one student, with their name and other details stored inside. The link between nodes tells us which student's record comes next.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 3
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List",
+      "atom_type": "key_points",
+      "content": "Nodes are not physically adjacent to each other\nEach node contains a link pointing to the next one\nLinked lists can grow or shrink during program execution",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 4
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List",
+      "atom_type": "pitfall",
+      "content": "One common error is forgetting to initialize the starting point (head) of the linked list before adding nodes.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 5
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List",
+      "atom_type": "why_it_matters",
+      "content": "Linked lists are important because they allow dynamic memory allocation, making them efficient for managing data structures that change size during program execution.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 6
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List",
+      "atom_type": "quick_check",
+      "content": "What should be done when creating a new node in a singly linked list?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 7
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node",
+      "atom_type": "explanation",
+      "content": "A Node is a building block of a linked list. It holds data and a reference to the next node in sequence.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 8
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node",
+      "atom_type": "mental_model",
+      "content": "Imagine a chain of interconnected puzzle pieces, where each piece carries a unique piece of information and points towards the next one in line.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 9
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node",
+      "atom_type": "example",
+      "content": "In a linked list of integers, each node might contain an integer value and a pointer to the next node containing the next integer.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 10
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node",
+      "atom_type": "key_points",
+      "content": "Each node contains a piece of data (usually an integer or object) and a reference to the next node in the sequence. The last node has a null or empty pointer indicating the end of the list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 11
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node",
+      "atom_type": "pitfall",
+      "content": "Beginners often overlook setting the next pointer of the last node correctly, which may lead to an incorrect linked list structure.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 12
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node",
+      "atom_type": "why_it_matters",
+      "content": "Understanding nodes is crucial as they enable us to create, manage, and manipulate dynamic data structures like linked lists.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 13
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node",
+      "atom_type": "quick_check",
+      "content": "Can you draw a simple representation of a linked list using nodes? What kind of data would each node contain?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 14
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Next Pointer",
+      "atom_type": "explanation",
+      "content": "A next pointer is a special part of a linked list node that points to the memory location of the next node. It helps us travel through the nodes one by one.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 15
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Next Pointer",
+      "atom_type": "mental_model",
+      "content": "Imagine you are at a party and each person (node) knows who their neighbor (next pointer) is going to be, allowing you to easily move from one person to the next.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 16
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Next Pointer",
+      "atom_type": "example",
+      "content": "In a simple linked list, each node might look like this: data -> next_pointer -> data -> next_pointer, and so on.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 17
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Next Pointer",
+      "atom_type": "key_points",
+      "content": "[\"Each node contains both data and a pointer to the next node\", \"The last node's next pointer usually points to NULL\", \"Traversing a list means following the pointers from one node to another\"]",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 18
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Next Pointer",
+      "atom_type": "pitfall",
+      "content": "Forgetting to set the next pointer when creating new nodes can lead to errors and make traversal impossible.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 19
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Next Pointer",
+      "atom_type": "why_it_matters",
+      "content": "Understanding next pointers is essential for creating, manipulating, and navigating linked lists, which are a fundamental data structure in computer science.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 20
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Next Pointer",
+      "atom_type": "quick_check",
+      "content": "Can you explain what a next pointer does in a linked list and why it's important?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 21
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head",
+      "atom_type": "explanation",
+      "content": "The head of a linked list is the starting point. It's like the first book on a shelf, setting the sequence for all the other books.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 22
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head",
+      "atom_type": "mental_model",
+      "content": "Visualize a row of dominoes standing upright. The first one at the left end is the head. Each subsequent one has a touch on its right side, representing the link to the next node.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 23
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head",
+      "atom_type": "example",
+      "content": "In a linked list of numbers, the head might store the number 5, and point towards the node containing 7.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 24
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head",
+      "atom_type": "key_points",
+      "content": "The head defines where the list begins.\nIt stores both data and a link to the next node.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 25
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head",
+      "atom_type": "pitfall",
+      "content": "Remember, even though it's the starting point, the head is still a regular node in the linked list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 26
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head",
+      "atom_type": "why_it_matters",
+      "content": "Understanding the head helps you effectively access and manipulate data within a linked list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 27
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head",
+      "atom_type": "quick_check",
+      "content": "Can you explain where the linked list starts?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 28
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Tail",
+      "atom_type": "explanation",
+      "content": "The tail of a linked list is the final node in the chain. Unlike other nodes, it doesn't have a next pointer as it marks the end of the list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 29
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Tail",
+      "atom_type": "mental_model",
+      "content": "Imagine a row of ducks swimming downstream. The last duck in line (the tail) doesn't have a beak connected to another duck because it's at the end of the stream.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 30
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Tail",
+      "atom_type": "example",
+      "content": "Consider a linked list of numbers: 1 -> 2 -> 3 -> NULL. Here, the last number (3) is the tail.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 31
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Tail",
+      "atom_type": "key_points",
+      "content": "The tail doesn't have a next pointer.\nIt's crucial for operations like appending new nodes.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 32
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Tail",
+      "atom_type": "pitfall",
+      "content": "A common misconception is thinking that the last node has a next pointer pointing to null. In reality, it usually doesn't have any next pointer at all.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 33
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Tail",
+      "atom_type": "why_it_matters",
+      "content": "Understanding the tail of a linked list helps you navigate through various operations efficiently, especially when adding new nodes to the end of the list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 34
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Tail",
+      "atom_type": "quick_check",
+      "content": "Can you identify the tail in a given linked list without traversing it?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 35
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Insertion",
+      "atom_type": "explanation",
+      "content": "Inserting a new node into a linked list means adding a new data container with a link to the next node (if any).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 36
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Insertion",
+      "atom_type": "mental_model",
+      "content": "Think of a queue of people in line at a movie theater. When a new person arrives, they join the line by inserting themselves between two existing people.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 37
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Insertion",
+      "atom_type": "example",
+      "content": "Adding a new element 'C' to a linked list containing [A, B, D]: the new list becomes [A, B, C, D].",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 38
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Insertion",
+      "atom_type": "key_points",
+      "content": "The position for the new node is specified beforehand.\nA new node contains data and a link to the next node.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 39
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Insertion",
+      "atom_type": "pitfall",
+      "content": "Forgetting to update the links of existing nodes can lead to an incorrectly connected linked list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 40
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Insertion",
+      "atom_type": "why_it_matters",
+      "content": "Understanding insertion operations in linked lists is essential for implementing efficient data structures in various programming tasks.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 41
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Insertion",
+      "atom_type": "quick_check",
+      "content": "Given a linked list [1, 2, 3] and the position 0, add node 0 to the front of the list. Result: [0, 1, 2, 3]",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 42
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Deletion",
+      "atom_type": "explanation",
+      "content": "Deleting a node from a linked list involves finding the specific node to be removed and updating the pointers of the surrounding nodes.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 43
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Deletion",
+      "atom_type": "mental_model",
+      "content": "Imagine a chain where each link represents a node. To remove a link, you'd find it and cut the links on either side, connecting the two remaining links.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 44
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Deletion",
+      "atom_type": "example",
+      "content": "Suppose we have a linked list with the following nodes: [A, B, C, D, E]. To delete node C, we first traverse to node B (the previous node), then update the pointer of node B pointing to node D (next node after the deleted node).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 45
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Deletion",
+      "atom_type": "key_points",
+      "content": "4. If the deleted node was the head node, update the head pointer accordingly.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 46
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Deletion",
+      "atom_type": "pitfall",
+      "content": "Forgetting to handle the case when the node to be deleted is the first node (head) of the list can lead to incorrect results or a broken linked list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 47
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Deletion",
+      "atom_type": "why_it_matters",
+      "content": "Being able to delete nodes efficiently and correctly from a linked list is crucial in real-world applications, such as managing dynamic data structures like databases and computer memory management.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 48
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Deletion",
+      "atom_type": "quick_check",
+      "content": "What should you do when trying to delete the head node from a linked list?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 49
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Singly Linked List",
+      "atom_type": "explanation",
+      "content": "A Singly Linked List is a sequence of data elements, where each element (called 'node') has a piece of data and a single pointer to the next node in line. This structure allows for efficient insertion and deletion operations.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 50
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Singly Linked List",
+      "atom_type": "mental_model",
+      "content": "Imagine a string of party hats, where each hat has a note attached and the last hat points to no one (like a ghost). This represents a Singly Linked List, with data on each 'hat' and a single pointer pointing to the next 'hat'.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 51
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Singly Linked List",
+      "atom_type": "example",
+      "content": "Consider a simple address book application that stores contacts in a Singly Linked List. Inserting a new contact at the end is done by creating a new node, adding the contact data, and pointing the last node's next pointer to the new node.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 52
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Singly Linked List",
+      "atom_type": "key_points",
+      "content": "1. Each node has only one next pointer.<br>2. The last node points to NULL or NEXT as its next pointer.<br>3. Efficient for insertion and deletion at any position.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 53
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Singly Linked List",
+      "atom_type": "pitfall",
+      "content": "One common mistake is forgetting to set the next pointer of a new node when adding it to the end of the list, which can cause issues in traversing or manipulating the data structure.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 54
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Singly Linked List",
+      "atom_type": "why_it_matters",
+      "content": "Understanding Singly Linked Lists is crucial for solving problems involving dynamic lists, such as implementing efficient sorting algorithms or building data structures for real-world applications.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 55
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Singly Linked List",
+      "atom_type": "quick_check",
+      "content": "Given a Singly Linked List with nodes containing integers (1, 2, 3, 4, NULL), which integer would be accessed by traversing the list starting from the first node?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 56
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Doubly Linked List",
+      "atom_type": "explanation",
+      "content": "A doubly linked list is a collection of data nodes that are connected in pairs, with each node pointing to both its successor and its predecessor. This structure allows traversal not only forward but also backward.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 57
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Doubly Linked List",
+      "atom_type": "mental_model",
+      "content": "Imagine a line of dancers holding hands. Each dancer represents a node in the doubly linked list. The hand they hold with the dancer on their left is like the 'previous' pointer, and the hand held with the dancer on their right is the 'next' pointer.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 58
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Doubly Linked List",
+      "atom_type": "example",
+      "content": "Consider a simple doubly linked list of integers: 1 <-- 2 <-- 3 <-- 4. Here, each node contains an integer (data), and points to the next and previous nodes.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 59
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Doubly Linked List",
+      "atom_type": "key_points",
+      "content": "Each node in a doubly linked list has three parts: data, a reference to the next node, and a reference to the previous node. This structure enables fast insertion and deletion operations at any position.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 60
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Doubly Linked List",
+      "atom_type": "pitfall",
+      "content": "When adding a new node at the beginning of a doubly linked list, it's essential not to forget updating the 'previous pointer' of the second node.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 61
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Doubly Linked List",
+      "atom_type": "why_it_matters",
+      "content": "Doubly linked lists are useful in various real-world applications, such as managing lists that require frequent additions or deletions, like browser history or undo/redo operations.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 62
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Doubly Linked List",
+      "atom_type": "quick_check",
+      "content": "Can you identify the 'previous' and 'next' pointers in this doubly linked list: 5 <-- A <-- B <-- C <-- D?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 63
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Definition",
+      "atom_type": "explanation",
+      "content": "A linked list is a collection of data elements, where each element is connected to the next one using a special reference called a pointer.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 64
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Definition",
+      "atom_type": "mental_model",
+      "content": "Imagine a chain of interconnected paperclips. Each paperclip represents a node in a linked list, and the way they're connected by their ends resembles how data nodes are linked together.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 65
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Definition",
+      "atom_type": "example",
+      "content": "For example, if we have a linked list with nodes containing numbers: 5, 10, 15, and 20, the pointers would point from one node to the next in this order: 5 -> 10 -> 15 -> 20",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 66
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Definition",
+      "atom_type": "key_points",
+      "content": "Each node contains both data and a reference to the next node.\nThe last node has no successor (its pointer is NULL or NIL).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 67
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Definition",
+      "atom_type": "pitfall",
+      "content": "A common pitfall is forgetting that the last node does not have a successor, leading to errors when attempting to access or traverse the list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 68
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Definition",
+      "atom_type": "why_it_matters",
+      "content": "Understanding linked lists is important because they can grow and shrink dynamically during runtime, making them suitable for many real-world applications like managing memory and implementing data structures such as stacks and queues.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 69
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Definition",
+      "atom_type": "quick_check",
+      "content": "Can you identify the last node in a linked list when given its nodes?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 70
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node Operation",
+      "atom_type": "explanation",
+      "content": "A Node in a Linked List is a data structure that contains data and a reference (pointer) to the next Node. Performing operations on Nodes allows us to manipulate the sequence of data within the list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 71
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node Operation",
+      "atom_type": "mental_model",
+      "content": "Imagine a line of numbered mailboxes in a row, where each mailbox can hold a letter and has an address tag showing the address of the next mailbox. This represents the data and pointers in a Linked List.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 72
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node Operation",
+      "atom_type": "example",
+      "content": "To access the third Node's data, we start from the first Node and follow the 'next' pointer twice, similar to moving to the third mailbox from the first one.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 73
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node Operation",
+      "atom_type": "key_points",
+      "content": "Accessing or modifying a Node involves following the pointers, Insertion requires creating a new Node and adjusting the pointers, Deletion entails removing a Node and rearranging the pointers.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 74
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node Operation",
+      "atom_type": "pitfall",
+      "content": "Incorrect implementation of Node operations can lead to issues such as memory leaks or cycles in the Linked List.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 75
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node Operation",
+      "atom_type": "why_it_matters",
+      "content": "Understanding Node operations is crucial for building, manipulating, and troubleshooting Linked Lists, which are essential data structures used in algorithms and data management systems.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 76
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Node Operation",
+      "atom_type": "quick_check",
+      "content": "Describe the steps involved in inserting a new Node before an existing one in a Linked List.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 77
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head Pointer",
+      "atom_type": "explanation",
+      "content": "The head pointer is a variable in a linked list that saves the address of the very first node. Think of it as a guide (like a tour leader) leading you through a maze, always pointing to the next room you'll visit.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 78
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head Pointer",
+      "atom_type": "mental_model",
+      "content": "Imagine an underground tunnel system connected by doors. The head pointer is like a torch that moves from door to door (node to node), lighting up the way for you as you explore the tunnels.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 79
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head Pointer",
+      "atom_type": "example",
+      "content": "In C programming, creating a linked list might look like this: Node* head = NULL; // initializing head pointer. Later, new nodes are added and the head is updated to point to the first node.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 80
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head Pointer",
+      "atom_type": "key_points",
+      "content": "1. The head pointer holds the address of the first node. \n2. It updates as you traverse through the list. \n3. In C and Java, it's often called 'head' or 'first'.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 81
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head Pointer",
+      "atom_type": "pitfall",
+      "content": "Forgetting to initialize the head pointer can lead to null pointer errors, so remember to set it before using it!",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 82
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head Pointer",
+      "atom_type": "why_it_matters",
+      "content": "The head pointer is essential for navigating through a linked list, allowing you to easily access and manipulate the data stored within.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 83
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Head Pointer",
+      "atom_type": "quick_check",
+      "content": "What happens if you forget to initialize the head pointer in a linked list? Correct",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 84
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Complexity",
+      "atom_type": "explanation",
+      "content": "In a linked list, data is stored in nodes connected together. Basic operations like adding or removing nodes from the end take constant time O(1) because we only need to adjust one link.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 85
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Complexity",
+      "atom_type": "mental_model",
+      "content": "Imagine a string of beads on a flexible wire. Adding or removing beads from either end is as simple as moving the wire (O(1)). However, finding the middle bead requires counting all the other beads first (O(n)).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 86
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Complexity",
+      "atom_type": "example",
+      "content": "Adding a new student to the end of a class roster (linked list) is like writing their name at the bottom of the list, which takes only one action. But finding the student with the highest grade requires going through all students, taking longer.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 87
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Complexity",
+      "atom_type": "key_points",
+      "content": "Adding or removing nodes from the end of a linked list is quick\nBut accessing elements or finding the middle takes longer",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 88
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Complexity",
+      "atom_type": "pitfall",
+      "content": "Assuming all linked list operations have O(1) complexity can lead to inefficient code when dealing with non-end operations",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 89
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Complexity",
+      "atom_type": "why_it_matters",
+      "content": "Understanding the time complexity of linked list operations helps optimize your code and ensure efficient performance in algorithms.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 90
+    },
+    {
+      "topic": "linked list in data structure",
+      "concept": "Linked List Complexity",
+      "atom_type": "quick_check",
+      "content": "Which operation in a linked list is faster: adding a new node at the end or finding the middle element?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 91
+    }
+  ]
+}

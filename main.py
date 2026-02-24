@@ -109,6 +109,7 @@ def main():
 
     # --------------------------------------------------
     # 5. Generate atoms (ONE CALL PER CONCEPT)
+    # ORDER IS PRESERVED: atoms follow concept_knowledge_list order
     # --------------------------------------------------
     print("[5] Generating atoms (1 call per concept)...")
 

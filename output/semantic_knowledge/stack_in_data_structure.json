@@ -1,0 +1,78 @@
+{
+  "topic": "stack in data structure",
+  "generated_at": "2026-02-18T06:32:35.615198",
+  "concepts": [
+    {
+      "concept": "LIFO Principle",
+      "type": "Principle"
+    },
+    {
+      "concept": "Push Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Pop Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Peek Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Stack Overflow",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Singly Linked List Implementation",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Bounded Capacity",
+      "type": "Property"
+    },
+    {
+      "concept": "Definition",
+      "type": "Definition"
+    },
+    {
+      "concept": "Spring-loaded plates analogy",
+      "type": "Principle"
+    },
+    {
+      "concept": "Top of stack (peek) operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Underflow condition",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Empty stack checking",
+      "type": "Operation"
+    },
+    {
+      "concept": "Stack size determination",
+      "type": "Operation"
+    },
+    {
+      "concept": "Array implementation of stack",
+      "type": "Application"
+    },
+    {
+      "concept": "Linked list implementation of stack",
+      "type": "Application"
+    },
+    {
+      "concept": "Data Structure",
+      "type": "Definition"
+    },
+    {
+      "concept": "Last-In-First-Out (LIFO)",
+      "type": "Principle"
+    },
+    {
+      "concept": "Stack Top",
+      "type": "Complexity"
+    }
+  ]
+}

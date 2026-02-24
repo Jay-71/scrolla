@@ -24,10 +24,11 @@ Plain language only.
 Concept: {concept}
 
 Task:
-Give ONE simple analogy.
+Give ONE simple, UNIQUE analogy.
+Avoid these overused metaphors: chain, links, boxes, train, arrows, list.
+Be creative and specific to THIS concept.
 ONE sentence only.
-No explanation.
-Max 20 words.
+Max 25 words.
 """,
 
     "example": """You are generating a learning atom.

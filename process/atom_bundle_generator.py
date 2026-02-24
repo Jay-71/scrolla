@@ -16,7 +16,7 @@ Generate 6–10 learning atoms in JSON.
 
 Allowed atom types:
 - explanation
-- mental_model
+- mental_model (IMPORTANT: Use UNIQUE, creative analogies. Avoid: chain, links, boxes, train, arrows)
 - example
 - key_points
 - pitfall

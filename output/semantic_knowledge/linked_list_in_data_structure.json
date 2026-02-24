@@ -1,0 +1,58 @@
+{
+  "topic": "linked list in data structure",
+  "generated_at": "2026-02-15T10:18:07.079060",
+  "concepts": [
+    {
+      "concept": "Linked List",
+      "type": "Definition"
+    },
+    {
+      "concept": "Node",
+      "type": "Principle"
+    },
+    {
+      "concept": "Next Pointer",
+      "type": "Operation"
+    },
+    {
+      "concept": "Head",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Tail",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Insertion",
+      "type": "Operation"
+    },
+    {
+      "concept": "Deletion",
+      "type": "Operation"
+    },
+    {
+      "concept": "Singly Linked List",
+      "type": "One of ['Operation', 'Complexity']"
+    },
+    {
+      "concept": "Doubly Linked List",
+      "type": "One of ['Operation', 'Complexity']"
+    },
+    {
+      "concept": "Linked List Definition",
+      "type": "Definition"
+    },
+    {
+      "concept": "Node Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Head Pointer",
+      "type": "Principle"
+    },
+    {
+      "concept": "Linked List Complexity",
+      "type": "Complexity"
+    }
+  ]
+}

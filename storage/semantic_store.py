@@ -1,7 +1,7 @@
 import json, os
 from datetime import datetime
 
-SEM_DIR = "semantic_knowledge"
+SEM_DIR = "output/semantic_knowledge"
 
 def save_semantic(topic: str, concepts: list):
     os.makedirs(SEM_DIR, exist_ok=True)

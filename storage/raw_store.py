@@ -1,7 +1,7 @@
 import json, os
 from datetime import datetime
 
-RAW_DIR = "raw_knowledge"
+RAW_DIR = "output/raw_knowledge"
 
 def save_raw(topic: str, text: str):
     os.makedirs(RAW_DIR, exist_ok=True)
