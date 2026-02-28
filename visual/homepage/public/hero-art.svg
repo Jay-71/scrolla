@@ -1,0 +1,51 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="600" fill="transparent"/>
+<!-- Outer Dashed Ring -->
+<circle cx="300" cy="300" r="220" stroke="#c2c4c0" stroke-width="1.5" stroke-dasharray="8 8"/>
+<circle cx="300" cy="300" r="220" stroke="#8b8e85" stroke-width="2" stroke-dasharray="1 30" stroke-linecap="round"/>
+
+<!-- Solid Intermediate Ring -->
+<circle cx="300" cy="300" r="160" stroke="#575c56" stroke-width="0.5"/>
+<circle cx="300" cy="300" r="160" stroke="#8b8e85" stroke-width="4" stroke-dasharray="2 100" stroke-dashoffset="50"/>
+
+<!-- Inner Complex Geometric Structure -->
+<!-- Hexagon Base 1 -->
+<path d="M300 180 L403.923 240 L403.923 360 L300 420 L196.077 360 L196.077 240 Z" stroke="#262b2a" stroke-width="1.5"/>
+<!-- Hexagon Base 2 (Rotated) -->
+<path d="M420 300 L360 403.923 L240 403.923 L180 300 L240 196.077 L360 196.077 Z" stroke="#575c56" stroke-width="1" stroke-dasharray="4 4"/>
+
+<!-- Central Nodes & Connections -->
+<!-- Central Node -->
+<circle cx="300" cy="300" r="30" fill="#f8f9f7" stroke="#121515" stroke-width="4"/>
+<circle cx="300" cy="300" r="12" fill="#262b2a"/>
+
+<!-- Radiating Lines -->
+<path d="M300 180 L300 270" stroke="#575c56" stroke-width="2"/>
+<path d="M300 420 L300 330" stroke="#575c56" stroke-width="2"/>
+<path d="M196.077 240 L274.019 285" stroke="#575c56" stroke-width="2"/>
+<path d="M403.923 360 L325.981 315" stroke="#575c56" stroke-width="2"/>
+<path d="M196.077 360 L274.019 315" stroke="#575c56" stroke-width="2"/>
+<path d="M403.923 240 L325.981 285" stroke="#575c56" stroke-width="2"/>
+
+<!-- Outer Connection Nodes -->
+<!-- Top -->
+<circle cx="300" cy="80" r="8" fill="#121515"/>
+<path d="M300 88 L300 180" stroke="#8b8e85" stroke-width="1" stroke-dasharray="4 4"/>
+<!-- Bottom Right -->
+<circle cx="490.525" cy="410" r="8" fill="#121515"/>
+<path d="M486.525 403.072 L403.923 360" stroke="#8b8e85" stroke-width="1" stroke-dasharray="4 4"/>
+<!-- Bottom Left -->
+<circle cx="109.475" cy="410" r="8" fill="#121515"/>
+<path d="M113.475 403.072 L196.077 360" stroke="#8b8e85" stroke-width="1" stroke-dasharray="4 4"/>
+
+<!-- Floating Elements -->
+<rect x="150" y="150" width="8" height="8" fill="#575c56" transform="rotate(45 154 154)"/>
+<rect x="442" y="150" width="8" height="8" fill="#575c56" transform="rotate(45 446 154)"/>
+<circle cx="154" cy="446" r="4" fill="#a6a8a3"/>
+<circle cx="446" cy="446" r="4" fill="#a6a8a3"/>
+
+<!-- Concentric Rings around central node -->
+<circle cx="300" cy="300" r="60" stroke="#121515" stroke-width="0.5"/>
+<circle cx="300" cy="300" r="80" stroke="#8b8e85" stroke-width="0.5" stroke-dasharray="1 6"/>
+
+</svg>

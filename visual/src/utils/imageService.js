@@ -20,8 +20,8 @@ const KEYWORDS = [
  */
 export function getBackgroundType(concept) {
     const rand = Math.random() * 100;
-    if (rand < 50) return 'image';
-    if (rand < 75) return 'lottie';
+    if (rand < 60) return 'image';
+    if (rand < 80) return 'lottie';
     return 'procedural';
 }
 
@@ -37,9 +37,9 @@ export async function getBackgroundImage(concept) {
     try {
         const keyword = KEYWORDS[Math.floor(Math.random() * KEYWORDS.length)];
         const query = encodeURIComponent(keyword);
-        const page = Math.floor(Math.random() * 50) + 1;
+        const page = Math.floor(Math.random() * 5) + 1;  // keep low — deep pages often return 0 hits
 
-        const url = `${PIXABAY_URL}?key=${PIXABAY_API_KEY}&q=${query}&image_type=illustration&orientation=vertical&per_page=3&page=${page}&safesearch=true`;
+        const url = `${PIXABAY_URL}?key=${PIXABAY_API_KEY}&q=${query}&image_type=photo&orientation=vertical&per_page=10&page=${page}&safesearch=true`;
 
         const response = await fetch(url);
 
@@ -52,7 +52,8 @@ export async function getBackgroundImage(concept) {
 
         if (data.hits && data.hits.length > 0) {
             const hit = data.hits[Math.floor(Math.random() * data.hits.length)];
-            return { url: hit.largeImageURL || hit.webformatURL, error: null };
+            // largeImageURL is hotlink-restricted by Pixabay — webformatURL is allowed
+            return { url: hit.webformatURL, error: null };
         }
 
         return { url: null, error: 'No hits found' };
