@@ -78,6 +78,122 @@
         ],
         "common_confusion": "A common beginner mistake is forgetting to update the 'next' pointer in a newly added node when inserting at a certain position."
       }
+    },
+    {
+      "concept": "LIFO",
+      "type": "Principle",
+      "knowledge": {
+        "summary": "Last In, First Out (LIFO) is a principle that refers to the order in which elements are added and removed from a stack. Elements added last will be the first ones to be removed.",
+        "key_points": [
+          "Stack structure follows the LIFO principle, meaning the last element added is the first one to be removed.",
+          "Pushing and popping operations take place only at the top of the stack.",
+          "A stack can have a bounded capacity, leading to a potential 'stack overflow' state."
+        ],
+        "common_confusion": "Beginners may confuse stacks with queues, which follow the First In, First Out (FIFO) principle."
+      }
+    },
+    {
+      "concept": "Push",
+      "type": "Operation",
+      "knowledge": {
+        "summary": "The Push operation in a stack adds an element to the collection. It operates on the top of the stack, placing the new element at the top, making it the most recently added item.",
+        "key_points": [
+          "Adds an element to the stack",
+          "Places the new element at the top",
+          "Makes the added item the most recent"
+        ],
+        "common_confusion": "Remember that a stack follows LIFO (Last In, First Out) order, so the last item pushed is the first one popped."
+      }
+    },
+    {
+      "concept": "Pop",
+      "type": "Operation",
+      "knowledge": {
+        "summary": "Removes the most recently added element from a stack. If the stack is not empty, pop operation returns the topmost element.",
+        "key_points": [
+          "1. Pop removes the last item added to the stack.",
+          "2. It makes the second-last item the new top.",
+          "3. If the stack is empty, an error occurs as nothing can be removed."
+        ],
+        "common_confusion": "Beginners might confuse pop with peek operation which returns the top element without removing it."
+      }
+    },
+    {
+      "concept": "Peek",
+      "type": "Operation",
+      "knowledge": {
+        "summary": "The Peek operation in a stack returns the top element without removing it.",
+        "key_points": [
+          "It allows to view the most recently added element without modifying the stack.",
+          "This operation is useful for checking the top item before performing a pop operation."
+        ],
+        "common_confusion": "One common beginner mistake is to assume that peek automatically removes the top element, which it does not."
+      }
+    },
+    {
+      "concept": "Operationskeller",
+      "type": "Origin",
+      "knowledge": {
+        "summary": "The Operationskeller is a concept of a stack in computer science, first proposed by Klaus Samelson and Friedrich L. Bauer in 1955 at Technical University Munich. It served as the basis for the implementation of a two-level stack in various computing machines.",
+        "key_points": [
+          "Proposed in 1955",
+          "First described by Samelson and Bauer",
+          "Formed the basis for a two-level stack"
+        ],
+        "common_confusion": "It's important to remember that Operationskeller is the original name of the stack concept, not a specific type or implementation of the data structure."
+      }
+    },
+    {
+      "concept": "Definition",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "Stack is an abstract data type that functions like a collection where elements are added (Push) and removed (Pop) following the Last In, First Out (LIFO) principle. It's named after a physical stack of items.",
+        "key_points": [
+          "Elements are added and removed from only one end (top).",
+          "Stack may be implemented as a singly linked list or array.",
+          "If the stack reaches its maximum capacity, it cannot accept more elements until some are removed."
+        ],
+        "common_confusion": "Mistakenly assuming stack is First In, First Out (FIFO) rather than Last In, First Out (LIFO)."
+      }
+    },
+    {
+      "concept": "Underflow",
+      "type": "Pitfall",
+      "knowledge": {
+        "summary": "Underflow occurs when a stack operation is performed on an empty stack.",
+        "key_points": [
+          "Upon execution of 'stack top' or 'pop' operations, underflow leads to undefined behavior.",
+          "Checking if the stack is empty before performing operations helps prevent this issue.",
+          "An empty stack can be detected by checking if the top variable (indicating the number of items pushed) equals zero."
+        ],
+        "common_confusion": "Neglecting to check for an empty stack before executing 'stack top' or 'pop' operations can cause unexpected errors."
+      }
+    },
+    {
+      "concept": "Implementation (Array)",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A stack can be implemented using an array, where the top of the stack corresponds to the last index of the array.",
+        "key_points": [
+          "The push operation adds an element to the end of the array.",
+          "The pop operation removes and discards the last element from the array.",
+          "The peek operation returns the value at the last index without removing it."
+        ],
+        "common_confusion": "It's important to keep track of the number of elements in the stack as arrays have a fixed size, so if the stack overflows or underflows, an error occurs."
+      }
+    },
+    {
+      "concept": "Last-In-First-Out",
+      "type": "Principle",
+      "knowledge": {
+        "summary": "A Last-In-First-Out (LIFO) principle is a sequence where the last element added to a data structure (like a stack) is the first one to be removed.",
+        "key_points": [
+          "In a LIFO structure, elements are added and removed from only one end called the top.",
+          "The order of elements in a LIFO structure follows the principle: last in, first out.",
+          "LIFO is useful for tasks such as undo functions in software programs."
+        ],
+        "common_confusion": "It's important to remember that once an element is popped from a stack, it can't be retrieved again until more recent elements are removed."
+      }
     }
   ]
 }

@@ -1,0 +1,86 @@
+{
+  "topic": "array data structure",
+  "generated_at": "2026-03-13T08:17:31.853763",
+  "concepts": [
+    {
+      "concept": "Array Index",
+      "type": "Operation"
+    },
+    {
+      "concept": "Same Data Type",
+      "type": "Principle"
+    },
+    {
+      "concept": "Linear Collection",
+      "type": "Definition"
+    },
+    {
+      "concept": "Memory Address Calculation",
+      "type": "Operation"
+    },
+    {
+      "concept": "One-Dimensional Array",
+      "type": "Definition"
+    },
+    {
+      "concept": "Base Address",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Two-Dimensional Array (Matrix)",
+      "type": "Application"
+    },
+    {
+      "concept": "Vector Processor Optimization",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Array Implementation of Other Data Structures",
+      "type": "Application"
+    },
+    {
+      "concept": "Array Data Structure",
+      "type": "Definition"
+    },
+    {
+      "concept": "Same Size Elements",
+      "type": "Principle"
+    },
+    {
+      "concept": "Data Representation",
+      "type": "Principle"
+    },
+    {
+      "concept": "Index Tuples",
+      "type": "Operation"
+    },
+    {
+      "concept": "Element Addressing Formula",
+      "type": "Operation"
+    },
+    {
+      "concept": "Array Type",
+      "type": "One of ['Data Type', 'Collection']"
+    },
+    {
+      "concept": "Run-time Indexing",
+      "type": "Operation"
+    },
+    {
+      "concept": "Multi-dimensional Array",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Array Sorting",
+      "type": "Operation"
+    },
+    {
+      "concept": "Index-bounds Checking",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Data Element",
+      "type": "Definition"
+    }
+  ]
+}

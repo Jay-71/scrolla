@@ -1,0 +1,86 @@
+{
+  "topic": "hash map in data structure",
+  "generated_at": "2026-03-14T18:42:33.192688",
+  "concepts": [
+    {
+      "concept": "Associative Array",
+      "type": "Definition"
+    },
+    {
+      "concept": "Key-Value Store",
+      "type": "Alternative Name"
+    },
+    {
+      "concept": "Map",
+      "type": "Alternative Name"
+    },
+    {
+      "concept": "Symbol Table",
+      "type": "Alternative Name"
+    },
+    {
+      "concept": "Dictionary Problem",
+      "type": "Problem"
+    },
+    {
+      "concept": "Hash Table",
+      "type": "Solution to Dictionary Problem"
+    },
+    {
+      "concept": "Search Tree",
+      "type": "Solution to Dictionary Problem"
+    },
+    {
+      "concept": "Insert Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Remove Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Lookup Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Mapping",
+      "type": "Concept"
+    },
+    {
+      "concept": "Key-Value Pair",
+      "type": "Operation"
+    },
+    {
+      "concept": "Delete Operation",
+      "type": "Operation"
+    },
+    {
+      "concept": "Multimap",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Bidirectional Map",
+      "type": "Type"
+    },
+    {
+      "concept": "Associative Array (Data Structure)",
+      "type": "Definition"
+    },
+    {
+      "concept": "Library Loans Data Representation",
+      "type": "Application"
+    },
+    {
+      "concept": "HashMap Definition",
+      "type": "Definition"
+    },
+    {
+      "concept": "Hash Function",
+      "type": "Operation"
+    },
+    {
+      "concept": "Load Factor",
+      "type": "Complexity"
+    }
+  ]
+}

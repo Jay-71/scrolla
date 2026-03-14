@@ -1,0 +1,887 @@
+{
+  "topic": "queue",
+  "atoms": [
+    {
+      "topic": "queue",
+      "concept": "Administrative Seat",
+      "atom_type": "explanation",
+      "content": "An administrative seat is a place where important decisions are made and affairs managed. In the case of New France, Quebec City was chosen for this role.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 1
+    },
+    {
+      "topic": "queue",
+      "concept": "Administrative Seat",
+      "atom_type": "mental_model",
+      "content": "Think of an administrative seat like the control room of a spaceship. Just as the spaceship needs a central command to guide its journey, colonies like New France needed a central place to govern their affairs.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 2
+    },
+    {
+      "topic": "queue",
+      "concept": "Administrative Seat",
+      "atom_type": "example",
+      "content": "New York City was the administrative seat for British colonies in North America. Washington D.C., in modern times, serves as the administrative seat of the United States.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 3
+    },
+    {
+      "topic": "queue",
+      "concept": "Administrative Seat",
+      "atom_type": "key_points",
+      "content": "Quebec City was chosen by French explorer Samuel de Champlain in 1608 as the administrative seat for New France.\nThe name 'Québec' means 'narrow passage', reflecting the narrowing of the Saint Lawrence River at this location.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 4
+    },
+    {
+      "topic": "queue",
+      "concept": "Administrative Seat",
+      "atom_type": "pitfall",
+      "content": "One common pitfall is to assume that Quebec City was just a random place. However, it was purposefully chosen due to its strategic location and geographical features.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 5
+    },
+    {
+      "topic": "queue",
+      "concept": "Administrative Seat",
+      "atom_type": "why_it_matters",
+      "content": "Understanding the concept of an administrative seat helps us appreciate how colonies were organized and governed during their early stages.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 6
+    },
+    {
+      "topic": "queue",
+      "concept": "Administrative Seat",
+      "atom_type": "quick_check",
+      "content": "Name three historical administrative seats and describe why they might have been chosen.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 7
+    },
+    {
+      "topic": "queue",
+      "concept": "Applications",
+      "atom_type": "explanation",
+      "content": "Queue theory is a mathematical model that describes the behavior of waiting lines, such as people in line at a grocery store or cars at a traffic light. This model helps to understand and predict how long people will wait, how many servers are needed, and how to organize the system for maximum efficiency.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 8
+    },
+    {
+      "topic": "queue",
+      "concept": "Applications",
+      "atom_type": "mental_model",
+      "content": "Think of queue theory as managing a bakery line. As customers arrive, they join the back of the line. When a server is free, the next customer moves forward to be served. Queue theory helps us figure out how many servers are needed for an efficient bakery and predict when customers will have to wait.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 9
+    },
+    {
+      "topic": "queue",
+      "concept": "Applications",
+      "atom_type": "example",
+      "content": "In Quebec, queue theory is used in traffic management systems to optimize the flow of cars on highways. By analyzing historical data and real-time traffic patterns, traffic lights can be synchronized to minimize congestion.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 10
+    },
+    {
+      "topic": "queue",
+      "concept": "Applications",
+      "atom_type": "key_points",
+      "content": "Queue theory was used in managing populations during colonial times, such as during the French and British colonization periods.\nToday, queue theory is applied in various domains like transportation, manufacturing, and computer science within Quebec province.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 11
+    },
+    {
+      "topic": "queue",
+      "concept": "Applications",
+      "atom_type": "pitfall",
+      "content": "It's essential to remember that queue theory does not refer to any specific software or technology but rather a mathematical model of waiting lines.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 12
+    },
+    {
+      "topic": "queue",
+      "concept": "Applications",
+      "atom_type": "why_it_matters",
+      "content": "Understanding and applying queue theory can help businesses, governments, and transportation systems operate more efficiently and provide better services for their customers.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 13
+    },
+    {
+      "topic": "queue",
+      "concept": "Applications",
+      "atom_type": "quick_check",
+      "content": "Can you think of a situation where queue theory might be useful in your daily life? How about at a popular restaurant or theme park?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 14
+    },
+    {
+      "topic": "queue",
+      "concept": "Colonial Outpost",
+      "atom_type": "explanation",
+      "content": "Samuel de Champlain established a colonial outpost in Quebec City in the year 1608. This outpost served as the administrative seat for New France.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 15
+    },
+    {
+      "topic": "queue",
+      "concept": "Colonial Outpost",
+      "atom_type": "mental_model",
+      "content": "Imagine a bustling marketplace, with Champlain as the town mayor overseeing trade and governance. The market stalls represent various aspects of life in Quebec City, such as housing, government, and commerce.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 16
+    },
+    {
+      "topic": "queue",
+      "concept": "Colonial Outpost",
+      "atom_type": "example",
+      "content": "The creation of Quebec City can be compared to building a new city from scratch. Just like Champlain, you would need to establish infrastructure, governance, and relationships with local communities to ensure the city's success.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 17
+    },
+    {
+      "topic": "queue",
+      "concept": "Colonial Outpost",
+      "atom_type": "key_points",
+      "content": "Champlain named the outpost 'Québec', meaning 'narrow passage' or 'strait'.\nThe area was inhabited by various Indigenous peoples before European arrival.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 18
+    },
+    {
+      "topic": "queue",
+      "concept": "Colonial Outpost",
+      "atom_type": "pitfall",
+      "content": "It is important to note that the colonial outpost was not the first human settlement in Quebec. Indigenous communities had been living there for centuries prior.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 19
+    },
+    {
+      "topic": "queue",
+      "concept": "Colonial Outpost",
+      "atom_type": "why_it_matters",
+      "content": "Understanding the establishment of Quebec City provides insight into the history and development of Canada, as it was a key milestone in the European colonization of North America.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 20
+    },
+    {
+      "topic": "queue",
+      "concept": "Colonial Outpost",
+      "atom_type": "quick_check",
+      "content": "Can you name the administrative seat for New France that was established in Quebec City in 1608?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 21
+    },
+    {
+      "topic": "queue",
+      "concept": "Definition",
+      "atom_type": "explanation",
+      "content": "A queue is like a line of people waiting for their turn, where the first person in line is the first one to be served. In computer science, this means that the element added first is the first one processed.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 22
+    },
+    {
+      "topic": "queue",
+      "concept": "Definition",
+      "atom_type": "mental_model",
+      "content": "Think of a conveyor belt with numbered items moving from left to right. New items join at the end (right) and move off at the beginning (left), just like in a queue.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 23
+    },
+    {
+      "topic": "queue",
+      "concept": "Definition",
+      "atom_type": "example",
+      "content": "In a printer, documents waiting for printing form a queue. They enter the queue one by one and are printed in the order they arrived.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 24
+    },
+    {
+      "topic": "queue",
+      "concept": "Definition",
+      "atom_type": "key_points",
+      "content": "Queues follow the FIFO principle, add elements at the rear, remove from the front, and are used for tasks like waiting lines, print spooling, event-driven programming.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 25
+    },
+    {
+      "topic": "queue",
+      "concept": "Definition",
+      "atom_type": "pitfall",
+      "content": "A common mistake is confusing a stack with a queue. Stacks follow LIFO (Last In, First Out) whereas queues follow FIFO.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 26
+    },
+    {
+      "topic": "queue",
+      "concept": "Definition",
+      "atom_type": "why_it_matters",
+      "content": "Understanding queues helps in efficient management of tasks and resources in programming, allowing for the creation of well-functioning systems.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 27
+    },
+    {
+      "topic": "queue",
+      "concept": "Definition",
+      "atom_type": "quick_check",
+      "content": "Which data structure uses FIFO (First In, First Out) principle? A. Stack B. Queue C. Tree",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 28
+    },
+    {
+      "topic": "queue",
+      "concept": "Dequeue",
+      "atom_type": "explanation",
+      "content": "A queue is like a line of people waiting for their turn. The dequeue operation is like removing the first person in line.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 29
+    },
+    {
+      "topic": "queue",
+      "concept": "Dequeue",
+      "atom_type": "mental_model",
+      "content": "Imagine a basket filled with apples. Dequeue is taking the apple from the top of the basket (the first one that was put there).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 30
+    },
+    {
+      "topic": "queue",
+      "concept": "Dequeue",
+      "atom_type": "example",
+      "content": "If we have a queue with elements [3, 4, 5, 6], dequeue will remove the first element 3.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 31
+    },
+    {
+      "topic": "queue",
+      "concept": "Dequeue",
+      "atom_type": "key_points",
+      "content": "The size of the queue decreases by one.\nThe removed element is typically the oldest in the queue.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 32
+    },
+    {
+      "topic": "queue",
+      "concept": "Dequeue",
+      "atom_type": "pitfall",
+      "content": "Remember not to confuse dequeue with enqueue or pop from stack, as they are different operations.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 33
+    },
+    {
+      "topic": "queue",
+      "concept": "Dequeue",
+      "atom_type": "why_it_matters",
+      "content": "Understanding the dequeue operation is essential for working with queue data structures and solving problems that require FIFO ordering.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 34
+    },
+    {
+      "topic": "queue",
+      "concept": "Dequeue",
+      "atom_type": "quick_check",
+      "content": "Given a queue [1, 2, 3, 4], what is the result of dequeue operation?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 35
+    },
+    {
+      "topic": "queue",
+      "concept": "Enqueue",
+      "atom_type": "explanation",
+      "content": "Enqueue is an operation used to add an element at the end of a queue. This means that elements are placed in a line from oldest (first) to newest (last).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 36
+    },
+    {
+      "topic": "queue",
+      "concept": "Enqueue",
+      "atom_type": "mental_model",
+      "content": "Think of a buffet line where people join at the back and food is served from the front. When someone new joins, they stand behind everyone else in line.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 37
+    },
+    {
+      "topic": "queue",
+      "concept": "Enqueue",
+      "atom_type": "example",
+      "content": "In a library system, when someone returns a book, the book is enqueued (added to the end) of the returned books list.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 38
+    },
+    {
+      "topic": "queue",
+      "concept": "Enqueue",
+      "atom_type": "key_points",
+      "content": "The new element goes at the rear of the line.\nThis order allows for efficient removal of elements from the front.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 39
+    },
+    {
+      "topic": "queue",
+      "concept": "Enqueue",
+      "atom_type": "pitfall",
+      "content": "It's a common mistake to think you can add an element at the front of the queue instead of the end. This operation is called 'Dequeue' or 'Insert at Front'.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 40
+    },
+    {
+      "topic": "queue",
+      "concept": "Enqueue",
+      "atom_type": "why_it_matters",
+      "content": "Understanding enqueue helps manage tasks, data, or messages efficiently in a variety of situations, such as scheduling tasks or data processing.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 41
+    },
+    {
+      "topic": "queue",
+      "concept": "Enqueue",
+      "atom_type": "quick_check",
+      "content": "Which operation would you use if you wanted to add a new item to the end of a queue? (Enqueue)",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 42
+    },
+    {
+      "topic": "queue",
+      "concept": "First-In-First-Out (FIFO)",
+      "atom_type": "explanation",
+      "content": "A First-In-First-Out (FIFO) system is like a line of people waiting for a roller coaster ride. People join the line one by one, and everyone rides the ride in the order they joined.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 43
+    },
+    {
+      "topic": "queue",
+      "concept": "First-In-First-Out (FIFO)",
+      "atom_type": "mental_model",
+      "content": "Think of a cafeteria serving customers with numbered tickets. The first customer to get their number called is the one who got their ticket first, not the one who arrived last.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 44
+    },
+    {
+      "topic": "queue",
+      "concept": "First-In-First-Out (FIFO)",
+      "atom_type": "example",
+      "content": "In a library book return system, books are processed in FIFO order. The books that were checked out first will be returned first.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 45
+    },
+    {
+      "topic": "queue",
+      "concept": "First-In-First-Out (FIFO)",
+      "atom_type": "key_points",
+      "content": "Newest additions are last to be processed\nIdeal for maintaining historical records or resource allocation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 46
+    },
+    {
+      "topic": "queue",
+      "concept": "First-In-First-Out (FIFO)",
+      "atom_type": "pitfall",
+      "content": "It's easy to mistake a FIFO queue as a Last-In-First-Out (LIFO) stack, but in reality, they operate differently.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 47
+    },
+    {
+      "topic": "queue",
+      "concept": "First-In-First-Out (FIFO)",
+      "atom_type": "why_it_matters",
+      "content": "Understanding FIFO helps when dealing with situations where items should be processed based on their arrival order, such as managing waiting lists or tracking events over time.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 48
+    },
+    {
+      "topic": "queue",
+      "concept": "First-In-First-Out (FIFO)",
+      "atom_type": "quick_check",
+      "content": "Imagine a bakery delivering orders. Which would be the first order they deliver if they operate in FIFO?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 49
+    },
+    {
+      "topic": "queue",
+      "concept": "Government Structure",
+      "atom_type": "explanation",
+      "content": "Quebec, Canada's largest province, has a unique history. It started as a French colony in the 16th century and evolved over time, becoming a British colony in the 18th century before joining Canada in 1867.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 50
+    },
+    {
+      "topic": "queue",
+      "concept": "Government Structure",
+      "atom_type": "mental_model",
+      "content": "Imagine Quebec as a colorful tapestry. Each thread represents an era - French, British, and Canadian. The threads are tightly woven together, symbolizing the continuous transformation of Quebec's government structure over centuries.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 51
+    },
+    {
+      "topic": "queue",
+      "concept": "Government Structure",
+      "atom_type": "example",
+      "content": "Just as a family tree reveals generations of a family, studying Quebec's government structure shows how it has evolved over centuries.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 52
+    },
+    {
+      "topic": "queue",
+      "concept": "Government Structure",
+      "atom_type": "key_points",
+      "content": "[{\"point\": \"Quebec started as a French colony in 1534\"}, {\"point\": \"Became a British colony in 1763\"}, {\"point\": \"Joined Canada in 1867\"}]",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 53
+    },
+    {
+      "topic": "queue",
+      "concept": "Government Structure",
+      "atom_type": "pitfall",
+      "content": "It's common to think Quebec has always been part of Canada, but its history goes back centuries before that.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 54
+    },
+    {
+      "topic": "queue",
+      "concept": "Government Structure",
+      "atom_type": "why_it_matters",
+      "content": "Understanding Quebec's government structure helps us appreciate its rich history and cultural diversity. It also aids in understanding contemporary political issues within the province.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 55
+    },
+    {
+      "topic": "queue",
+      "concept": "Government Structure",
+      "atom_type": "quick_check",
+      "content": "Which countries was Quebec part of before joining Canada in 1867?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 56
+    },
+    {
+      "topic": "queue",
+      "concept": "Legal System",
+      "atom_type": "explanation",
+      "content": "Quebec's legal system is a mix of French, British, and Canadian laws. The history of Quebec as a French colony (1534-1763), then a British province (1763-1867), and eventually a province of Canada (1867) has shaped its current legal framework.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 57
+    },
+    {
+      "topic": "queue",
+      "concept": "Legal System",
+      "atom_type": "mental_model",
+      "content": "Imagine a tree with three roots: French, British, and Canadian. Each root represents an influence on Quebec's legal system. The trunk and branches represent the evolution of these influences over time, forming the current legal structure.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 58
+    },
+    {
+      "topic": "queue",
+      "concept": "Legal System",
+      "atom_type": "example",
+      "content": "For instance, the French influence can be seen in Quebec's civil law system, while the British influence is evident in some aspects of criminal law.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 59
+    },
+    {
+      "topic": "queue",
+      "concept": "Legal System",
+      "atom_type": "key_points",
+      "content": "Quebec was a French colony (1534-1763).\nIt became a British province after the Seven Years' War (1763-1867).\nQuebec joined Canada as a province in 1867.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 60
+    },
+    {
+      "topic": "queue",
+      "concept": "Legal System",
+      "atom_type": "pitfall",
+      "content": "A common misunderstanding is that Quebec's current legal system is solely based on French laws. However, its legal framework has been significantly impacted by British and Canadian influences over the centuries.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 61
+    },
+    {
+      "topic": "queue",
+      "concept": "Legal System",
+      "atom_type": "why_it_matters",
+      "content": "Understanding the influences on Quebec's legal system helps us appreciate its diversity and complexity, fostering empathy and mutual understanding among citizens.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 62
+    },
+    {
+      "topic": "queue",
+      "concept": "Legal System",
+      "atom_type": "quick_check",
+      "content": "Can you name two key periods in Quebec's history that have significantly shaped its legal system?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 63
+    },
+    {
+      "topic": "queue",
+      "concept": "Narrow Passage",
+      "atom_type": "explanation",
+      "content": "The term 'queue' is commonly known as a line of people or things waiting in an orderly fashion. It originates from the French word 'en queue', meaning 'in tail'.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 64
+    },
+    {
+      "topic": "queue",
+      "concept": "Narrow Passage",
+      "atom_type": "mental_model",
+      "content": "Imagine a group of animals at a watering hole - they line up patiently, each in its own place, as the 'queue'. Just like these animals, we join a queue when we're waiting for our turn.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 65
+    },
+    {
+      "topic": "queue",
+      "concept": "Narrow Passage",
+      "atom_type": "example",
+      "content": "Standing in line at a grocery store is an example of being in a queue. Each person takes their turn to purchase items until everyone has been served.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 66
+    },
+    {
+      "topic": "queue",
+      "concept": "Narrow Passage",
+      "atom_type": "key_points",
+      "content": "Queues help manage wait times by organizing people or things in order.\nLeaving enough space between each person ensures social distancing and safety.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 67
+    },
+    {
+      "topic": "queue",
+      "concept": "Narrow Passage",
+      "atom_type": "pitfall",
+      "content": "Confusing a queue with the term 'narrow passage' can lead to misunderstandings. A narrow passage refers to a small opening, such as the area around Quebec City.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 68
+    },
+    {
+      "topic": "queue",
+      "concept": "Narrow Passage",
+      "atom_type": "why_it_matters",
+      "content": "Understanding queues is essential in various settings like grocery stores, movie theaters, and amusement parks. It ensures fairness and efficiency while waiting for services or products.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 69
+    },
+    {
+      "topic": "queue",
+      "concept": "Narrow Passage",
+      "atom_type": "quick_check",
+      "content": "Can you name a place that uses a queue to manage wait times? (",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 70
+    },
+    {
+      "topic": "queue",
+      "concept": "New France",
+      "atom_type": "explanation",
+      "content": "New France was a colonial territory owned by France in North America, mainly including modern-day Quebec and parts of the Maritime provinces. It existed from 1534 to 1763.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 71
+    },
+    {
+      "topic": "queue",
+      "concept": "New France",
+      "atom_type": "mental_model",
+      "content": "Picture a giant puzzle piece representing New France. This piece changes hands over time, moving through various owners like pieces in a game of chess. Finally, it merges with other pieces to form the larger puzzle we know today as Canada.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 72
+    },
+    {
+      "topic": "queue",
+      "concept": "New France",
+      "atom_type": "example",
+      "content": "For example, French explorer Jacques Cartier claimed parts of New France in the 16th century. These lands would eventually become important areas like Montreal and Quebec City.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 73
+    },
+    {
+      "topic": "queue",
+      "concept": "New France",
+      "atom_type": "key_points",
+      "content": "New France went through administrative changes following the Seven Years' War, becoming part of Canada post-Confederation in 1867. The Catholic Church had a significant impact on Quebec society until the Quiet Revolution (1960s to 1980s).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 74
+    },
+    {
+      "topic": "queue",
+      "concept": "New France",
+      "atom_type": "pitfall",
+      "content": "It's crucial to remember that New France is different from modern-day Quebec in terms of territories and time period. Mistaking one for the other may lead to confusion.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 75
+    },
+    {
+      "topic": "queue",
+      "concept": "New France",
+      "atom_type": "why_it_matters",
+      "content": "Understanding New France helps us appreciate the rich history behind present-day Quebec and Canada, offering insights into their cultural development and political transformations over centuries.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 76
+    },
+    {
+      "topic": "queue",
+      "concept": "New France",
+      "atom_type": "quick_check",
+      "content": "Test your understanding by identifying which historical figures were associated with New France, such as Samuel de Champlain or Louis-Joseph de Montcalm.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 77
+    },
+    {
+      "topic": "queue",
+      "concept": "Quebec City",
+      "atom_type": "explanation",
+      "content": "Quebec City is a French colonial city founded by Samuel de Champlain in 1608. It serves as the administrative seat for Quebec Province.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 78
+    },
+    {
+      "topic": "queue",
+      "concept": "Quebec City",
+      "atom_type": "mental_model",
+      "content": "Imagine a bustling artistic village nestled between hills and a narrow river passage, that's Quebec City.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 79
+    },
+    {
+      "topic": "queue",
+      "concept": "Quebec City",
+      "atom_type": "example",
+      "content": "The famous 'Juste pour rire' comedy festival takes place in Quebec City every winter.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 80
+    },
+    {
+      "topic": "queue",
+      "concept": "Quebec City",
+      "atom_type": "key_points",
+      "content": "Quebec City was established by French explorer Samuel de Champlain\nIt is famous for its cultural contributions like literature, music, films, TV shows, and festivals\nThe city's nickname 'narrow passage' comes from its location where the Saint Lawrence River narrows",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 81
+    },
+    {
+      "topic": "queue",
+      "concept": "Quebec City",
+      "atom_type": "pitfall",
+      "content": "Quebec City is a specific city within Quebec Province, not a general term for the province.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 82
+    },
+    {
+      "topic": "queue",
+      "concept": "Quebec City",
+      "atom_type": "why_it_matters",
+      "content": "Understanding Quebec City's history and culture helps us appreciate its significant contributions to arts, literature, and festivals on a global scale.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 83
+    },
+    {
+      "topic": "queue",
+      "concept": "Quebec City",
+      "atom_type": "quick_check",
+      "content": "Where was Quebec City founded? By whom?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 84
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue Size",
+      "atom_type": "explanation",
+      "content": "A queue is like a line at the movie theater. Each person in line represents an element in the queue, and their order remains constant - the first person to join the line (head) will be the first one to enter the theater (dequeue).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 85
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue Size",
+      "atom_type": "mental_model",
+      "content": "Imagine a table filled with plates. Each plate holds one item, and new items are always added to an empty plate at the end of the table (tail), while the first full plate (head) is where we check for items to use.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 86
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue Size",
+      "atom_type": "example",
+      "content": "In Python, you can find the size of a queue using the 'qsize()' method.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 87
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue Size",
+      "atom_type": "key_points",
+      "content": "The head represents the first element that entered the queue.\nNew elements are added to the end (tail).\nYou can check the size of a queue in most programming languages.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 7,
+      "order": 88
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue Size",
+      "atom_type": "pitfall",
+      "content": "It's common for beginners to confuse queue size with the maximum limit set on its size (capacity).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 89
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue Size",
+      "atom_type": "why_it_matters",
+      "content": "Managing queue size is important to ensure efficient use of memory and avoid overflows.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 90
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue Size",
+      "atom_type": "quick_check",
+      "content": "What does the head of a queue represent? (",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 91
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue System",
+      "atom_type": "explanation",
+      "content": "A queue system is like a library checkout desk. Books (items) line up on a table, and the one that arrived first gets checked out first.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 92
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue System",
+      "atom_type": "mental_model",
+      "content": "Think of a line of people waiting for roller coaster rides at an amusement park. Each person (task) enters the line at the back and waits their turn to get on the ride (processed) from the front.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 9,
+      "order": 93
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue System",
+      "atom_type": "example",
+      "content": "When you order food at a busy restaurant, your order gets added to the kitchen queue, ensuring that older orders are prepared before newer ones.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 94
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue System",
+      "atom_type": "key_points",
+      "content": "1. Items join at the back, leaving from the front\n2. Ensures orderly handling of requests or tasks\n3. Commonly used in computer algorithms for process scheduling",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 95
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue System",
+      "atom_type": "pitfall",
+      "content": "Assuming items can exit from any point within the queue, but they actually leave only from the front.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 96
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue System",
+      "atom_type": "why_it_matters",
+      "content": "Queue systems help maintain organization and efficiency in handling multiple requests or tasks.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 97
+    },
+    {
+      "topic": "queue",
+      "concept": "Queue System",
+      "atom_type": "quick_check",
+      "content": "Can you describe how queue systems work using a grocery store checkout example?",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 4,
+      "order": 98
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "topic": "two pointer in data structure",
+  "generated_at": "2026-03-14T18:19:22.166866",
+  "concepts": [
+    {
+      "concept": "Pointer",
+      "type": "Definition"
+    },
+    {
+      "concept": "Memory Address",
+      "type": "Principle"
+    },
+    {
+      "concept": "Dereferencing",
+      "type": "Operation"
+    },
+    {
+      "concept": "Pointers in Data Structures",
+      "type": "Application"
+    },
+    {
+      "concept": "Performance Improvement",
+      "type": "Complexity"
+    },
+    {
+      "concept": "Linked List",
+      "type": "Application"
+    },
+    {
+      "concept": "Tree Structures",
+      "type": "Application"
+    },
+    {
+      "concept": "Two Pointer",
+      "type": "Definition"
+    },
+    {
+      "concept": "Pointer (Data Structure)",
+      "type": "One of ['Definition', 'Pitfall']"
+    },
+    {
+      "concept": "Indirect Addressing",
+      "type": "Principle"
+    },
+    {
+      "concept": "Memory Address",
+      "type": "One of ['Operation', 'Pitfall']"
+    },
+    {
+      "concept": "Two Pointer",
+      "type": "Operation"
+    },
+    {
+      "concept": "Data Structure",
+      "type": "Complexity"
+    }
+  ]
+}

@@ -1,21 +1,21 @@
 {
   "topic": "stack in data structure",
-  "generated_at": "2026-02-18T06:32:35.615198",
+  "generated_at": "2026-03-13T07:48:32.884190",
   "concepts": [
     {
-      "concept": "LIFO Principle",
+      "concept": "LIFO",
       "type": "Principle"
     },
     {
-      "concept": "Push Operation",
+      "concept": "Push",
       "type": "Operation"
     },
     {
-      "concept": "Pop Operation",
+      "concept": "Pop",
       "type": "Operation"
     },
     {
-      "concept": "Peek Operation",
+      "concept": "Peek",
       "type": "Operation"
     },
     {
@@ -24,55 +24,27 @@
     },
     {
       "concept": "Singly Linked List Implementation",
-      "type": "Complexity"
+      "type": "Application"
     },
     {
-      "concept": "Bounded Capacity",
-      "type": "Property"
+      "concept": "Operationskeller",
+      "type": "Origin"
     },
     {
       "concept": "Definition",
       "type": "Definition"
     },
     {
-      "concept": "Spring-loaded plates analogy",
-      "type": "Principle"
-    },
-    {
-      "concept": "Top of stack (peek) operation",
-      "type": "Operation"
-    },
-    {
-      "concept": "Underflow condition",
+      "concept": "Underflow",
       "type": "Pitfall"
     },
     {
-      "concept": "Empty stack checking",
-      "type": "Operation"
-    },
-    {
-      "concept": "Stack size determination",
-      "type": "Operation"
-    },
-    {
-      "concept": "Array implementation of stack",
+      "concept": "Implementation (Array)",
       "type": "Application"
     },
     {
-      "concept": "Linked list implementation of stack",
-      "type": "Application"
-    },
-    {
-      "concept": "Data Structure",
-      "type": "Definition"
-    },
-    {
-      "concept": "Last-In-First-Out (LIFO)",
+      "concept": "Last-In-First-Out",
       "type": "Principle"
-    },
-    {
-      "concept": "Stack Top",
-      "type": "Complexity"
     }
   ]
 }
