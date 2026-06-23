@@ -1,0 +1,59 @@
+{
+  "topic": "Principal Component Analysis (PCA)",
+  "atoms": [
+    {
+      "concept": "PCA",
+      "atom_type": "explanation",
+      "content": "PCA is an unsupervised dimensionality reduction technique. It compresses data with hundreds of columns down to a few columns while retaining as much original information as possible.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 1,
+      "topic": "Principal Component Analysis (PCA)"
+    },
+    {
+      "concept": "PCA",
+      "atom_type": "mental_model",
+      "content": "PCA is like taking a 2D photograph of a 3D object. You lose a dimension (depth), but if you pick the perfect camera angle, you still recognize exactly what the object is.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 2,
+      "topic": "Principal Component Analysis (PCA)"
+    },
+    {
+      "concept": "Principal Components",
+      "atom_type": "explanation",
+      "content": "PCA creates new, artificial columns called 'Principal Components'. The 1st component captures the maximum possible variance (information) in the data.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Principal Component Analysis (PCA)"
+    },
+    {
+      "concept": "Use Cases",
+      "atom_type": "explanation",
+      "content": "PCA is used to speed up machine learning algorithms (by giving them less data to process) and to visualize high-dimensional data on a 2D screen.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Principal Component Analysis (PCA)"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Dimensionality reduction.\n2. Maximizes variance.\n3. Makes data uninterpretable to humans.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Principal Component Analysis (PCA)"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If you use PCA to reduce 500 features to 10, will those 10 features still have names like 'Age' or 'Salary'? (Answer: No, they become blended Principal Components).",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 6,
+      "topic": "Principal Component Analysis (PCA)"
+    }
+  ]
+}

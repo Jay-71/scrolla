@@ -1,0 +1,77 @@
+{
+  "topic": "Basics of Probability",
+  "atoms": [
+    {
+      "concept": "Probability",
+      "atom_type": "explanation",
+      "content": "Probability is the mathematical measure of how likely an event is to occur, represented as a number between 0 (impossible) and 1 (certain).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Basics of Probability"
+    },
+    {
+      "concept": "Independent Events",
+      "atom_type": "explanation",
+      "content": "Two events are independent if the outcome of the first does not affect the outcome of the second, like flipping a coin twice.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2,
+      "topic": "Basics of Probability"
+    },
+    {
+      "concept": "Conditional Probability",
+      "atom_type": "explanation",
+      "content": "Conditional probability is the likelihood of an event occurring given that another specific event has ALREADY occurred.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Basics of Probability"
+    },
+    {
+      "concept": "Probability",
+      "atom_type": "mental_model",
+      "content": "Independent probability is drawing a card, putting it back, and drawing again. Conditional probability is drawing a card, keeping it, and drawing from the remaining deck.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 4,
+      "topic": "Basics of Probability"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If there is a 100% chance of rain tomorrow, what is the probability represented as a number? (Answer: 1.0)",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Basics of Probability"
+    },
+    {
+      "topic": "Basics of Probability",
+      "concept": "Joint Probability",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 6,
+      "content": "Joint probability P(A and B) is the likelihood of two events both occurring. For independent events, P(A and B) = P(A) x P(B)."
+    },
+    {
+      "topic": "Basics of Probability",
+      "concept": "Probability Rules",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 7,
+      "content": "Addition Rule: P(A or B) = P(A) + P(B) - P(A and B). Multiplication Rule: P(A and B) = P(A) x P(B|A)."
+    },
+    {
+      "topic": "Basics of Probability",
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 8,
+      "content": "1. Probability ranges from 0 to 1.\n2. Independent events don't affect each other.\n3. Conditional probability requires prior knowledge."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "topic": "Derivatives, Partial Derivatives",
+  "atoms": [
+    {
+      "topic": "Derivatives, Partial Derivatives",
+      "concept": "Derivatives",
+      "atom_type": "explanation",
+      "content": "A derivative measures the rate at which a function's output changes as its input changes. In ML, it helps us know how to adjust parameters to reduce errors.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 1
+    },
+    {
+      "topic": "Derivatives, Partial Derivatives",
+      "concept": "Derivatives",
+      "atom_type": "mental_model",
+      "content": "Imagine driving a car. Your position is the function. The derivative of your position is your speed (how fast your position is changing at any exact moment).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2
+    },
+    {
+      "topic": "Derivatives, Partial Derivatives",
+      "concept": "Derivatives",
+      "atom_type": "key_points",
+      "content": "1. Slope of the tangent line at a point.\n2. Denoted as dy/dx or f'(x).\n3. Zero derivative means a peak or valley (minimum error!).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 3
+    },
+    {
+      "topic": "Derivatives, Partial Derivatives",
+      "concept": "Partial Derivatives",
+      "atom_type": "explanation",
+      "content": "A partial derivative measures how a function with multiple variables changes when we adjust just ONE variable, keeping all other variables completely frozen.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 4
+    },
+    {
+      "topic": "Derivatives, Partial Derivatives",
+      "concept": "Partial Derivatives",
+      "atom_type": "mental_model",
+      "content": "Imagine baking a cake. How does changing the amount of sugar affect sweetness, assuming flour and eggs stay exactly the same? That's a partial derivative.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 5
+    },
+    {
+      "topic": "Derivatives, Partial Derivatives",
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If you are finding the minimum of a curve, what should the derivative be at that lowest point? (Answer: Zero)",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 6,
+      "order": 6
+    }
+  ]
+}

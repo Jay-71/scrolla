@@ -1,0 +1,86 @@
+{
+  "topic": "Descriptive Statistics",
+  "generated_at": "2026-06-20T11:57:23.683545",
+  "concepts": [
+    {
+      "concept": "Measures of Central Tendency",
+      "type": "Metric"
+    },
+    {
+      "concept": "Measures of Variability",
+      "type": "Metric"
+    },
+    {
+      "concept": "Standard Deviation",
+      "type": "Metric"
+    },
+    {
+      "concept": "Minimum and Maximum Values",
+      "type": "Metric"
+    },
+    {
+      "concept": "Kurtosis and Skewness",
+      "type": "Metric"
+    },
+    {
+      "concept": "Descriptive Statistics in Data Analysis",
+      "type": "Application"
+    },
+    {
+      "concept": "Shot Percentage",
+      "type": "Metric"
+    },
+    {
+      "concept": "Grade Point Average",
+      "type": "Metric"
+    },
+    {
+      "concept": "Tabulation",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Exploratory Data Analysis",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Box Plot",
+      "type": "Metric"
+    },
+    {
+      "concept": "Investment Analysis",
+      "type": "Application"
+    },
+    {
+      "concept": "Univariate Analysis",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Mean, Median, Mode",
+      "type": "Metric"
+    },
+    {
+      "concept": "Variance, Standard Deviation",
+      "type": "Metric"
+    },
+    {
+      "concept": "Skewness, Kurtosis",
+      "type": "Metric"
+    },
+    {
+      "concept": "Histogram, Stem-and-Leaf Display",
+      "type": "Graphical Representation"
+    },
+    {
+      "concept": "Cross-tabulation, Contingency Table",
+      "type": "Metric"
+    },
+    {
+      "concept": "Scatterplot",
+      "type": "Graphical Representation"
+    },
+    {
+      "concept": "Quantitative Measures of Dependence",
+      "type": "Metric"
+    }
+  ]
+}

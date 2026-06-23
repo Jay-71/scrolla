@@ -1,0 +1,42 @@
+{
+  "topic": "Loops",
+  "generated_at": "2026-06-20T12:11:31.758924",
+  "concepts": [
+    {
+      "concept": "Mobile Network Operator",
+      "type": "Application"
+    },
+    {
+      "concept": "Loop Mobile",
+      "type": "Definition"
+    },
+    {
+      "concept": "BPL Mobile Communications",
+      "type": "Definition"
+    },
+    {
+      "concept": "Acquisition",
+      "type": "Event"
+    },
+    {
+      "concept": "Spectrum",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Loops (Mobile Company)",
+      "type": "Application"
+    },
+    {
+      "concept": "License Expiration",
+      "type": "Event"
+    },
+    {
+      "concept": "2G Spectrum Case",
+      "type": "Investigation"
+    },
+    {
+      "concept": "Mobile Number Portability",
+      "type": "Regulation"
+    }
+  ]
+}

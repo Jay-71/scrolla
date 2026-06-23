@@ -1,0 +1,41 @@
+{
+  "topic": "What is Machine Learning?",
+  "atoms": [
+    {
+      "concept": "Definition",
+      "atom_type": "explanation",
+      "content": "Machine Learning is a subset of Artificial Intelligence where computers learn to recognize patterns from data without being explicitly programmed with rules.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "What is Machine Learning?"
+    },
+    {
+      "concept": "Definition",
+      "atom_type": "mental_model",
+      "content": "Traditional programming is giving a computer a recipe. Machine Learning is giving a computer a finished cake and asking it to figure out the recipe.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "What is Machine Learning?"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Learns from data.\n2. Identifies hidden patterns.\n3. Improves automatically with experience.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 3,
+      "topic": "What is Machine Learning?"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "In traditional programming, humans write the rules. In ML, who (or what) determines the rules? (Answer: The algorithm learns them from the data).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 4,
+      "topic": "What is Machine Learning?"
+    }
+  ]
+}

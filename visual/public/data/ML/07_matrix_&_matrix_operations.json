@@ -1,0 +1,77 @@
+{
+  "topic": "Matrix & Matrix Operations",
+  "atoms": [
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Matrix",
+      "atom_type": "explanation",
+      "content": "A matrix is a 2D grid of numbers arranged in rows and columns. In machine learning, matrices are the primary way we store and process datasets and model weights.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Matrix",
+      "atom_type": "mental_model",
+      "content": "Think of a matrix as an Excel spreadsheet. Each row represents a single data point (like a user), and each column represents a feature (like their age or height).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Addition & Scalar Multiplication",
+      "atom_type": "explanation",
+      "content": "You add two same-sized matrices by adding their corresponding elements. Multiplying every element by a single number is called scalar multiplication.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 3
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Dot Product (Matrix Multiplication)",
+      "atom_type": "explanation",
+      "content": "Matrix multiplication (dot product) combines rows of the first matrix with columns of the second. The number of columns in the first MUST equal the number of rows in the second.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 4
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Dot Product",
+      "atom_type": "mental_model",
+      "content": "Each entry in the result is the dot product of one row from A and one column from B \u2014 like matching quiz answers to an answer key and summing scores.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 5
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If you multiply a (3x2) matrix by a (2x4) matrix, what is the size of the resulting matrix? (Answer: 3x4)",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 6,
+      "order": 6
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Transpose",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 7,
+      "content": "The transpose of a matrix flips it over its diagonal \u2014 rows become columns and columns become rows. Denoted A^T, it appears constantly in ML formulas."
+    },
+    {
+      "topic": "Matrix & Matrix Operations",
+      "concept": "Element-wise Operations",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 8,
+      "content": "Element-wise (Hadamard) operations multiply corresponding entries of two same-sized matrices. Used heavily in neural networks for masking and gating."
+    }
+  ]
+}

@@ -163,7 +163,7 @@ def main():
     save_atoms(topic, {
         "topic": topic,
         "atoms": atoms
-    })
+    }, domain=domain)
 
     print(f"[DONE] Generated {len(atoms)} atoms")
 
@@ -176,7 +176,7 @@ def main():
 
     curated_atom_feed = curate_atoms(raw_atom_feed)
 
-    save_atoms(topic, curated_atom_feed)
+    save_atoms(topic, curated_atom_feed, domain=domain)
 
 
 

@@ -1,0 +1,71 @@
+{
+  "topic": "Gradient, Jacobian, Hessian",
+  "generated_at": "2026-06-20T12:37:14.902728",
+  "concepts": [
+    {
+      "concept": "Jacobian Matrix",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "The Jacobian matrix is a matrix of all the first-order partial derivatives of a multivariable vector function. It's named after Carl Gustav Jacobi.",
+        "key_points": [
+          "Generalization of derivative for vector-valued functions",
+          "Used in changes of variables in multiple integrals",
+          "Non-nullity of the Jacobian determinant is a replacement for non-nullity of the derivative"
+        ],
+        "common_confusion": "Forgetting that it's named after Carl Gustav Jacobi"
+      }
+    },
+    {
+      "concept": "Jacobian Determinant",
+      "type": "Metric",
+      "knowledge": {
+        "summary": "The Jacobian determinant is the determinant of a square Jacobian matrix, which contains the first-order partial derivatives of a multivariable function. It measures how the function transforms volume in n-dimensional space.",
+        "key_points": [
+          "Jacobian determinant is calculated from the Jacobian matrix, a collection of all the first-order partial derivatives of a multivariable function.",
+          "A non-zero Jacobian determinant signifies that the multivariable function has an inverse function locally.",
+          "It's significant in calculating changes of variables within multiple integrals."
+        ],
+        "common_confusion": "Mistaking the Jacobian matrix for a regular derivative or forgetting its role in changes of variables within multiple integrals."
+      }
+    },
+    {
+      "concept": "Partial Derivative",
+      "type": "Prerequisite",
+      "knowledge": {
+        "summary": "The rate of change of a multivariable function with respect to one variable, while keeping all other variables constant.",
+        "key_points": [
+          "It measures how the value of the function varies as only one input changes.",
+          "Can be found by differentiating the function with respect to that specific variable.",
+          "Notation: \u2202f/\u2202x, where f is the function and x is the variable."
+        ],
+        "common_confusion": "Forgetting to keep other variables constant while finding the derivative."
+      }
+    },
+    {
+      "concept": "Gradient Vector",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "The gradient vector is the multi-dimensional generalization of a derivative for functions defined in multiple variables. It gives the direction of the steepest ascent (or descent) at any given point.",
+        "key_points": [
+          "It represents a row vector with respect to the number of function variables.",
+          "Each element of the gradient vector is the partial derivative of the function with respect to each variable.",
+          "The gradient vector points towards the direction of maximum rate of increase (or decrease) of the function."
+        ],
+        "common_confusion": "Confusing the gradient vector and Jacobian matrix, as they are related but different concepts."
+      }
+    },
+    {
+      "concept": "Hessian Matrix",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "The Hessian matrix is a square matrix of second-order partial derivatives of a scalar-valued function or a matrix-valued function. It measures the local curvature of the function.",
+        "key_points": [
+          "It's used to analyze the local behavior of functions of several variables",
+          "The Hessian matrix can be calculated by finding all the second-order partial derivatives and organizing them in a square matrix.",
+          "A positive definite Hessian indicates a local minimum, while a negative definite one suggests a local maximum."
+        ],
+        "common_confusion": "Remember, the Hessian is for scalar or matrix-valued functions, not vector-valued ones. The Jacobian handles that case."
+      }
+    }
+  ]
+}

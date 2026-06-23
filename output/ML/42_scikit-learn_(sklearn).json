@@ -1,0 +1,68 @@
+{
+  "topic": "Scikit-Learn (Sklearn)",
+  "atoms": [
+    {
+      "concept": "Sklearn",
+      "atom_type": "explanation",
+      "content": "Scikit-Learn is the industry standard Python library for traditional machine learning algorithms, providing a consistent interface for hundreds of different models.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Scikit-Learn (Sklearn)"
+    },
+    {
+      "concept": "Sklearn",
+      "atom_type": "mental_model",
+      "content": "Sklearn is like a universal remote control. Once you learn how to use it for one TV (algorithm), you know how to use it for all of them.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Scikit-Learn (Sklearn)"
+    },
+    {
+      "concept": "API Design",
+      "atom_type": "explanation",
+      "content": "The core API follows a pattern: fit() to train, predict() for making predictions, and transform() for preprocessing. Many objects support fit_transform() for convenience.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Scikit-Learn (Sklearn)"
+    },
+    {
+      "concept": "Estimators",
+      "atom_type": "explanation",
+      "content": "Any object in Sklearn that can learn from data is called an Estimator. Both a Random Forest model and a MinMax Scaler are estimators.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Scikit-Learn (Sklearn)"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Consistent interface.\n2. Excellent documentation.\n3. Built on NumPy and SciPy.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Scikit-Learn (Sklearn)"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What specific method is called in Sklearn to actively train a model on a dataset? (Answer: The fit() method).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 6,
+      "topic": "Scikit-Learn (Sklearn)"
+    },
+    {
+      "topic": "Scikit-Learn (Sklearn)",
+      "concept": "Pipelines",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 7,
+      "content": "Sklearn Pipelines chain preprocessing steps and models together into a single object. This prevents data leakage and makes code reproducible and deployment-ready."
+    }
+  ]
+}

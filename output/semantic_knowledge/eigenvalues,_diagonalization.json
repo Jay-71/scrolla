@@ -1,0 +1,58 @@
+{
+  "topic": "Eigenvalues, Diagonalization",
+  "generated_at": "2026-06-20T13:46:08.977530",
+  "concepts": [
+    {
+      "concept": "Eigenvalue",
+      "type": "Definition"
+    },
+    {
+      "concept": "Eigenvector",
+      "type": "Definition"
+    },
+    {
+      "concept": "Eigendecomposition",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Diagonal Matrix",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Orthogonal Matrix",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Eigenvalue Problem",
+      "type": "Problem"
+    },
+    {
+      "concept": "Characteristic Equation",
+      "type": "Metric"
+    },
+    {
+      "concept": "Characteristic Polynomial",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Spectrum",
+      "type": "Application"
+    },
+    {
+      "concept": "Algebraic Multiplicity",
+      "type": "Definition"
+    },
+    {
+      "concept": "Geometric Multiplicity",
+      "type": "Definition"
+    },
+    {
+      "concept": "Characteristic Equation",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Diagonalization",
+      "type": "Algorithm"
+    }
+  ]
+}

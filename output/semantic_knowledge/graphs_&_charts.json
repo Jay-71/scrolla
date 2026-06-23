@@ -1,0 +1,38 @@
+{
+  "topic": "Graphs & Charts",
+  "generated_at": "2026-06-20T13:58:35.326599",
+  "concepts": [
+    {
+      "concept": "Bar Chart",
+      "type": "Definition"
+    },
+    {
+      "concept": "Column Chart",
+      "type": "Application"
+    },
+    {
+      "concept": "Pareto Chart",
+      "type": "Application"
+    },
+    {
+      "concept": "Categorical Data",
+      "type": "Definition"
+    },
+    {
+      "concept": "Bar Graph",
+      "type": "Application"
+    },
+    {
+      "concept": "Grouped (Clustered) Bar Chart",
+      "type": "Application"
+    },
+    {
+      "concept": "Stacked Bar Chart",
+      "type": "Application"
+    },
+    {
+      "concept": "Variable-width Bar Chart",
+      "type": "Application"
+    }
+  ]
+}

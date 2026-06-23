@@ -1,0 +1,50 @@
+{
+  "topic": "ML Engineer vs AI Engineer",
+  "atoms": [
+    {
+      "topic": "ML Engineer vs AI Engineer",
+      "concept": "Role Comparison",
+      "atom_type": "explanation",
+      "content": "An ML Engineer focuses on building and scaling predictive models using traditional machine learning algorithms, while an AI Engineer often works with Large Language Models and generative AI APIs.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1
+    },
+    {
+      "topic": "ML Engineer vs AI Engineer",
+      "concept": "Role Comparison",
+      "atom_type": "mental_model",
+      "content": "Think of an ML Engineer as a mechanic who builds custom engines from scratch, while an AI Engineer is someone who takes powerful, pre-built engines (like ChatGPT) and integrates them into cars.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2
+    },
+    {
+      "topic": "ML Engineer vs AI Engineer",
+      "concept": "Role Comparison",
+      "atom_type": "key_points",
+      "content": "1. ML Engineers train models from scratch on tabular or image data.\n2. AI Engineers integrate existing foundation models (like GPT-4).\n3. Both require strong software engineering skills.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 3
+    },
+    {
+      "topic": "ML Engineer vs AI Engineer",
+      "concept": "Overlap",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "content": "In practice, these roles overlap significantly and vary by company. Many organizations merge them into a single 'ML/AI Engineer' position."
+    },
+    {
+      "topic": "ML Engineer vs AI Engineer",
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 5,
+      "content": "True or False: An ML Engineer and AI Engineer are completely separate roles with zero overlap. (Answer: False \u2014 they overlap significantly and many companies merge them)."
+    }
+  ]
+}

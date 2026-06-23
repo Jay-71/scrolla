@@ -1,0 +1,34 @@
+{
+  "topic": "Chain rule of derivation",
+  "generated_at": "2026-06-20T12:34:17.897626",
+  "concepts": [
+    {
+      "concept": "Chain Rule",
+      "type": "Definition"
+    },
+    {
+      "concept": "Composition of Functions",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Derivative of Composite Function",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Instantaneous Rate of Change",
+      "type": "Application"
+    },
+    {
+      "concept": "Composite Function",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Differentiable Function",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Derivative",
+      "type": "Algorithm"
+    }
+  ]
+}

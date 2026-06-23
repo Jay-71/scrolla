@@ -1,0 +1,59 @@
+{
+  "topic": "Missing values and Outliers",
+  "atoms": [
+    {
+      "concept": "Missing Values",
+      "atom_type": "explanation",
+      "content": "Real-world data is messy and often has blank entries (NaN). ML models crash if fed missing values, so they must be handled during preprocessing.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Missing values and Outliers"
+    },
+    {
+      "concept": "Imputation",
+      "atom_type": "explanation",
+      "content": "You can handle missing values by deleting the row entirely, or by 'imputing' (filling in) the blank with the column's mean, median, or mode.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Missing values and Outliers"
+    },
+    {
+      "concept": "Outliers",
+      "atom_type": "explanation",
+      "content": "Outliers are extreme data points that differ significantly from the rest of the dataset. They can severely skew a model's understanding of the data.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Missing values and Outliers"
+    },
+    {
+      "concept": "Data Anomalies",
+      "atom_type": "mental_model",
+      "content": "Missing values are blank pages in a book. Outliers are pages written in a different language. Both confuse the reader (the ML model).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Missing values and Outliers"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Drop or Impute missing data.\n2. Detect outliers using Box Plots or Z-scores.\n3. Clean data = better models.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Missing values and Outliers"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If a column is missing 95% of its data, what is usually the best approach? (Answer: Drop the entire column).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 6,
+      "topic": "Missing values and Outliers"
+    }
+  ]
+}

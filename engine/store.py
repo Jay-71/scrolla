@@ -1,5 +1,6 @@
 import os
 import json
+import re
 from datetime import datetime
 from engine.normalize import normalize_concept_name
 
@@ -7,10 +8,14 @@ RAW_DIR = "output/raw_knowledge"
 SEM_DIR = "output/semantic_knowledge"
 CK_DIR = "output/concept_knowledge"
 
+def _safe_filename(topic: str) -> str:
+    safe = topic.lower().replace(" ", "_")
+    return re.sub(r'[\\/*?:"<>|]', "", safe)
+
 # --- Raw Store ---
 def save_raw(topic: str, text: str):
     os.makedirs(RAW_DIR, exist_ok=True)
-    path = os.path.join(RAW_DIR, topic.replace(" ", "_").lower() + ".json")
+    path = os.path.join(RAW_DIR, _safe_filename(topic) + ".json")
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump({
@@ -24,7 +29,7 @@ def save_raw(topic: str, text: str):
 # --- Semantic Store ---
 def save_semantic(topic: str, concepts: list):
     os.makedirs(SEM_DIR, exist_ok=True)
-    path = os.path.join(SEM_DIR, topic.replace(" ", "_").lower() + ".json")
+    path = os.path.join(SEM_DIR, _safe_filename(topic) + ".json")
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump({
@@ -36,8 +41,7 @@ def save_semantic(topic: str, concepts: list):
 
 # --- Concept Knowledge Store ---
 def _topic_path(topic: str) -> str:
-    safe = topic.lower().replace(" ", "_")
-    return os.path.join(CK_DIR, f"{safe}.json")
+    return os.path.join(CK_DIR, f"{_safe_filename(topic)}.json")
 
 def load_concept_knowledge(topic: str, concept: str):
     path = _topic_path(topic)
@@ -89,11 +93,13 @@ def save_concept_knowledge(topic: str, concept_knowledge: dict):
 
 
 # --- Atom Store ---
-def save_atoms(topic: str, atom_feed: dict):
-    safe_topic = topic.replace(" ", "_").lower()
-    os.makedirs("output", exist_ok=True)
+def save_atoms(topic: str, atom_feed: dict, domain: str = ""):
+    safe_topic = _safe_filename(topic)
+    
+    output_dir = os.path.join("output", domain.upper() if domain else "")
+    os.makedirs(output_dir, exist_ok=True)
 
-    path = f"output/{safe_topic}_atoms.json"
+    path = os.path.join(output_dir, f"{safe_topic}_atoms.json")
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(atom_feed, f, indent=2, ensure_ascii=False)

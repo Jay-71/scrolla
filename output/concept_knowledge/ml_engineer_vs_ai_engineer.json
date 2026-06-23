@@ -1,0 +1,136 @@
+{
+  "topic": "ML Engineer vs AI Engineer",
+  "generated_at": "2026-06-20T12:21:28.768276",
+  "concepts": [
+    {
+      "concept": "DVC",
+      "type": "Application",
+      "knowledge": {
+        "summary": "DVC is a platform-agnostic version system for data, ML models, and experiments that makes ML workflows reproducible, shareable, and versioned. It extends Git by incorporating cloud storage for datasets and ML models.",
+        "key_points": [
+          "DVC codifies datasets and models, storing pointers to data files in cloud storages.",
+          "It allows for the reproduction of experiments and automation of dataset construction, model training, evaluation, and deployment.",
+          "Large files and datasets are stored separately from Git, which can be on the user's computer or hosted."
+        ],
+        "common_confusion": "Confusing DVC with a traditional version control system like Git; however, DVC builds upon Git by managing data and ML models in addition to code."
+      }
+    },
+    {
+      "concept": "Data Versioning",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "Data versioning through DVC allows for tracking and managing various versions of datasets, ML artifacts, and metrics within a project. It uses metafiles to point to original data, ensuring efficient storage and version control.",
+        "key_points": [
+          "DVC replaces large files with small metafiles that describe what data to track.",
+          "Data is stored separately, allowing for easy sharing or transfer of datasets/models.",
+          "DVC captures versions of data and models, creates and restores snapshots, records evolving metrics, and allows switching between versions."
+        ],
+        "common_confusion": "Overlooking the importance of keeping multiple versions of data and models for experimentation and future reference"
+      }
+    },
+    {
+      "concept": "Cloud Storage Integration",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "DVC integrates cloud storage with Git repositories for managing datasets and machine learning models, providing codified and reproducible ML workflows.",
+        "key_points": [
+          "DVC stores pointers to data files in cloud storages for versioning and sharing.",
+          "It allows users to reproduce experiments and automate dataset construction, model training, evaluation, and deployment.",
+          "Large files and datasets are stored separately outside of Git repositories."
+        ],
+        "common_confusion": "Mistakenly storing large data within Git repositories, leading to inefficiency and slower workflow."
+      }
+    },
+    {
+      "concept": "Codification of Datasets and Models",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "Codification refers to the process of storing pointers to data files in cloud storage, ensuring datasets and models are version-controlled within Machine Learning workflows.",
+        "key_points": [
+          "DVC stores pointers instead of actual data files, reducing Git repository size",
+          "These pointers allow for easy reproducibility and automation of experiment construction",
+          "The codification process also enables efficient management of large datasets by storing them in separate cloud storage"
+        ],
+        "common_confusion": "Mistakenly treating ML models as regular software files, instead of managing them as complex datasets requiring specific tools"
+      }
+    },
+    {
+      "concept": "Reproducibility",
+      "type": "Metric",
+      "knowledge": {
+        "summary": "Reproducibility in ML workflows refers to the ability to recreate and validate experiments, datasets, and model training processes. This ensures consistency and reliability of results.",
+        "key_points": [
+          "DVC allows for reproducible experiments by storing pointers to data files in cloud storages, enabling users to easily reproduce experiments.",
+          "It also automates the construction of datasets, the training, evaluation, and deployment of ML models, further enhancing reproducibility.",
+          "By separating large files and datasets from Git storage, DVC ensures a scalable approach to handling large data sets."
+        ],
+        "common_confusion": "A common beginner mistake is not properly documenting and versioning their code and data, leading to difficulty in replicating results."
+      }
+    },
+    {
+      "concept": "Data Management",
+      "type": "Application",
+      "knowledge": {
+        "summary": "DVC is a data version control system for machine learning projects, allowing users to manage large datasets and models in remote storage providers while maintaining a standard Git workflow.",
+        "key_points": [
+          "It replaces large files with small metafiles that point to the original data, keeping data separate and easy to transfer or share.",
+          "DVC enables versioning of data and models through codification, allowing users to capture, restore, and switch between different versions.",
+          "Unique versions are cached in a systematic way to prevent file duplication."
+        ],
+        "common_confusion": "It's important to note that DVC doesn't store large files directly in the Git repository, only small metafiles are stored."
+      }
+    },
+    {
+      "concept": "Pipelines",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "Pipelines refer to the sequence of steps in a workflow for data processing, model training, evaluation, and deployment within Machine Learning (ML) projects. They are designed to make ML processes reproducible and scalable.",
+        "key_points": [
+          "Pipelines consist of multiple stages, including data preparation, model training, validation, and deployment.",
+          "DVC is a system that extends Git for managing ML pipelines, allowing users to store large datasets and models in cloud storage services like Amazon S3 or Google Cloud Storage.",
+          "By using pipelines, ML engineers can automate the construction of datasets, training, evaluation, and deployment of ML models."
+        ],
+        "common_confusion": "A common misconception is that pipelines are limited to data processing. However, they encompass the entire life cycle of an ML project, from raw data collection to deployed model."
+      }
+    },
+    {
+      "concept": "Experiment Tracking",
+      "type": "Application",
+      "knowledge": {
+        "summary": "DVC is a tool that helps in tracking experiments, data versioning, and pipeline execution for ML projects. It allows capturing versions of data, models, and other artifacts, creating and restoring from snapshots, recording evolving metrics, and switching between versions.",
+        "key_points": [
+          "DVC replaces large files with small metafiles that point to the original data, allowing for efficient data storage and sharing.",
+          "It provides a mechanism to define and execute pipelines representing the process of building ML datasets and models.",
+          "The tool automatically handles file links and caches unique versions of data files and directories systematically."
+        ],
+        "common_confusion": "A common beginner mistake is not understanding that DVC does not store the large files or datasets in the Git repository, but instead replaces them with metafiles pointing to the actual data."
+      }
+    },
+    {
+      "concept": "Codification",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "DVC is a tool for data versioning through codifying ML workflows, including datasets, artifacts, and pipelines. It enables capturing versions of data and models, creating snapshots, tracking evolving metrics, and reproducing workflows.",
+        "key_points": [
+          "DVC uses metafiles to point to original data instead of storing large files or directories in the repository.",
+          "Data versioning is facilitated through tracking changes, capturing snapshots, and switching between versions.",
+          "Pipelines are defined as yaml configuration files and represent the process of building ML datasets and models."
+        ],
+        "common_confusion": "It's important to remember that DVC doesn't run machine learning models directly; instead, it manages their lifecycle."
+      }
+    },
+    {
+      "concept": "Artifact Registration",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Artifact Registration is the practice of tracking and managing datasets, models, and experiment artifacts in a Machine Learning (ML) workflow. It allows for codification, reproducibility, and versioning of these assets.",
+        "key_points": [
+          "DVC, a platform-agnostic version system, stores pointers to data files in cloud storages, making datasets and models more manageable.",
+          "Artifact Registration allows for the reproduction of experiments and automated construction of datasets, training, evaluation, and deployment of ML models.",
+          "Large files and datasets are stored separately from Git, which can be on a user's computer or hosted on cloud storage."
+        ],
+        "common_confusion": "A common mistake for beginners is not understanding the importance of versioning and tracking artifacts in an ML workflow, leading to difficulties in reproducing experiments and managing data."
+      }
+    }
+  ]
+}

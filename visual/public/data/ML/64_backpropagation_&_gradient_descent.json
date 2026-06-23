@@ -1,0 +1,59 @@
+{
+  "topic": "Backpropagation & Gradient Descent",
+  "atoms": [
+    {
+      "concept": "Forward Pass",
+      "atom_type": "explanation",
+      "content": "During the forward pass, data flows from the input layer to the output layer, making a prediction. The model then compares this prediction to the true answer to calculate the error.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 1,
+      "topic": "Backpropagation & Gradient Descent"
+    },
+    {
+      "concept": "Backpropagation",
+      "atom_type": "explanation",
+      "content": "Backpropagation is the algorithm that calculates exactly how much every single weight and bias in the network contributed to that final error, flowing backwards from output to input.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 2,
+      "topic": "Backpropagation & Gradient Descent"
+    },
+    {
+      "concept": "Gradient Descent",
+      "atom_type": "explanation",
+      "content": "Once backpropagation identifies who is to blame for the error, Gradient Descent actually updates the weights to minimize that error for the next time.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Backpropagation & Gradient Descent"
+    },
+    {
+      "concept": "Learning Cycle",
+      "atom_type": "mental_model",
+      "content": "Forward pass is taking a practice test. Backprop is the teacher circling what you got wrong and why. Gradient Descent is you studying those specific mistakes to do better next time.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 4,
+      "topic": "Backpropagation & Gradient Descent"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Forward Pass: Predict.\n2. Backprop: Calculate blame.\n3. Gradient Descent: Update weights.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Backpropagation & Gradient Descent"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Which algorithm calculates the gradients (the 'blame') for the error at each layer of the neural network? (Answer: Backpropagation).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "Backpropagation & Gradient Descent"
+    }
+  ]
+}

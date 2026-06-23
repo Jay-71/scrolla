@@ -1,0 +1,50 @@
+{
+  "topic": "Reinforcement Learning Basics",
+  "atoms": [
+    {
+      "concept": "Reinforcement Learning",
+      "atom_type": "explanation",
+      "content": "Reinforcement Learning is an area of ML where an 'Agent' learns to make decisions by performing actions in an 'Environment' to maximize a numerical 'Reward'.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 1,
+      "topic": "Reinforcement Learning Basics"
+    },
+    {
+      "concept": "Reinforcement Learning",
+      "atom_type": "mental_model",
+      "content": "It is exactly like training a dog. The dog (agent) sits (action). You (environment) give it a treat (reward). Over time, it learns the optimal policy for getting treats.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 2,
+      "topic": "Reinforcement Learning Basics"
+    },
+    {
+      "concept": "Exploration vs Exploitation",
+      "atom_type": "explanation",
+      "content": "The agent must balance Exploitation (doing what it already knows works to get points) with Exploration (trying random new things to see if a better strategy exists).",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "Reinforcement Learning Basics"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Learns via trial and error.\n2. Driven by rewards/punishments.\n3. Used for Robotics, Chess, and Self-Driving cars.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Reinforcement Learning Basics"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "In Reinforcement Learning, what do we call the entity that observes the environment and takes actions? (Answer: The Agent).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Reinforcement Learning Basics"
+    }
+  ]
+}

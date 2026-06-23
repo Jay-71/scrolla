@@ -1,0 +1,86 @@
+{
+  "topic": "Skills and Responsibilities",
+  "generated_at": "2026-06-20T12:24:10.082908",
+  "concepts": [
+    {
+      "concept": "Skills",
+      "type": "Definition"
+    },
+    {
+      "concept": "Domain-general skills",
+      "type": "Definition"
+    },
+    {
+      "concept": "Domain-specific skills",
+      "type": "Definition"
+    },
+    {
+      "concept": "Time management",
+      "type": "Application"
+    },
+    {
+      "concept": "Teamwork",
+      "type": "Application"
+    },
+    {
+      "concept": "Leadership",
+      "type": "Application"
+    },
+    {
+      "concept": "Self-motivation",
+      "type": "Application"
+    },
+    {
+      "concept": "Operating a sand blaster",
+      "type": "Application"
+    },
+    {
+      "concept": "Technical skills",
+      "type": "Definition"
+    },
+    {
+      "concept": "Hard skills",
+      "type": "Alternative"
+    },
+    {
+      "concept": "Soft skills",
+      "type": "Alternative"
+    },
+    {
+      "concept": "Holistic competencies",
+      "type": "Definition"
+    },
+    {
+      "concept": "Critical thinking",
+      "type": "Application"
+    },
+    {
+      "concept": "Problem-solving skills",
+      "type": "Application"
+    },
+    {
+      "concept": "Resilience",
+      "type": "Application"
+    },
+    {
+      "concept": "Appreciation for others",
+      "type": "Application"
+    },
+    {
+      "concept": "Skilled Worker",
+      "type": "Definition"
+    },
+    {
+      "concept": "Craft Guild",
+      "type": "Architecture"
+    },
+    {
+      "concept": "People Skills",
+      "type": "Definition"
+    },
+    {
+      "concept": "Psychological Skills",
+      "type": "Type of Skill"
+    }
+  ]
+}

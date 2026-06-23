@@ -1,0 +1,86 @@
+{
+  "topic": "Pandas",
+  "atoms": [
+    {
+      "concept": "Pandas",
+      "atom_type": "explanation",
+      "content": "Pandas is a data analysis library built on top of NumPy. It provides DataFrames, which are powerful 2D tables with labeled axes for easy data manipulation.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Pandas"
+    },
+    {
+      "concept": "Pandas",
+      "atom_type": "mental_model",
+      "content": "Pandas is like Microsoft Excel for Python, but it can handle millions of rows instantly and is controlled entirely by code instead of a mouse.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Pandas"
+    },
+    {
+      "concept": "DataFrames",
+      "atom_type": "explanation",
+      "content": "A DataFrame represents a tabular, spreadsheet-like data structure containing an ordered collection of columns, each of which can be a different value type.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Pandas"
+    },
+    {
+      "concept": "Series",
+      "atom_type": "explanation",
+      "content": "A Series is a single column extracted from a DataFrame. It is essentially a 1D NumPy array with an index attached to it.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Pandas"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. DataFrame: 2D table.\n2. Series: 1D column.\n3. Built for cleaning, grouping, and filtering tabular data.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Pandas"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What is the primary 2D data structure used in Pandas called? (Answer: DataFrame).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 6,
+      "topic": "Pandas"
+    },
+    {
+      "topic": "Pandas",
+      "concept": "Data I/O",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 15,
+      "order": 7,
+      "content": "pd.read_csv() loads a CSV file into a DataFrame \u2014 the first thing you do in any ML project. Use df.to_csv() to save results back to disk."
+    },
+    {
+      "topic": "Pandas",
+      "concept": "Exploration",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 15,
+      "order": 8,
+      "content": "Use .head() to preview the first 5 rows, .info() to see column types and missing values, .describe() for summary statistics, and .shape for dimensions."
+    },
+    {
+      "topic": "Pandas",
+      "concept": "Filtering",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 9,
+      "content": "Filter rows with boolean indexing: df[df['age'] > 30]. Use .groupby() to aggregate data by categories \u2014 essential for feature engineering."
+    }
+  ]
+}

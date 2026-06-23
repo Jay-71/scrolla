@@ -1,0 +1,66 @@
+{
+  "topic": "Variables and Data Types",
+  "generated_at": "2026-06-20T12:07:43.155700",
+  "concepts": [
+    {
+      "concept": "Data Type",
+      "type": "'Definition'"
+    },
+    {
+      "concept": "Integer Number",
+      "type": "'Data Type'"
+    },
+    {
+      "concept": "Floating-point Number",
+      "type": "'Data Type'"
+    },
+    {
+      "concept": "Character",
+      "type": "'Data Type'"
+    },
+    {
+      "concept": "Boolean",
+      "type": "'Data Type'"
+    },
+    {
+      "concept": "Variable",
+      "type": "'Architecture'"
+    },
+    {
+      "concept": "Data Type Declaration",
+      "type": "'Application'"
+    },
+    {
+      "concept": "Machine Representation",
+      "type": "'Architecture'"
+    },
+    {
+      "concept": "Integer (Python)",
+      "type": "'Data Type'"
+    },
+    {
+      "concept": "Integer (Java)",
+      "type": "'Data Type'"
+    },
+    {
+      "concept": "i32 (Rust)",
+      "type": "'Data Type'"
+    },
+    {
+      "concept": "Variable",
+      "type": "'Definition'"
+    },
+    {
+      "concept": "Type System",
+      "type": "'Application'"
+    },
+    {
+      "concept": "Representation",
+      "type": "'Architecture'"
+    },
+    {
+      "concept": "Value Space",
+      "type": "'Definition'"
+    }
+  ]
+}

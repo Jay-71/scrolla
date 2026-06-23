@@ -1,0 +1,110 @@
+{
+  "topic": "Graphs & Charts",
+  "generated_at": "2026-06-20T13:59:06.049879",
+  "concepts": [
+    {
+      "concept": "Bar Chart",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "A bar chart is a graph that compares categories using rectangular bars with heights or lengths proportional to the values they represent. Bar graphs can be plotted vertically (column charts) or horizontally, and show comparisons among discrete categories.",
+        "key_points": [
+          "Rectangular bars represent categorical data",
+          "Bars are proportionate to the values they represent",
+          "Used for comparing discrete categories"
+        ],
+        "common_confusion": "Vertical bar charts are also known as column charts"
+      }
+    },
+    {
+      "concept": "Column Chart",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A column chart (or vertical bar chart) is a graph that uses vertical rectangular bars to compare values within categories. It is often used when comparing data sets with distinct, qualitative categories.",
+        "key_points": [
+          "Categories are placed on the x-axis, and values on the y-axis",
+          "Each category is represented by a separate vertical bar whose length corresponds to its associated value",
+          "Can be used for simple comparison of different categories"
+        ],
+        "common_confusion": "It's important to ensure that the bars are not overly cluttered or overlapping, as it can make the data difficult to interpret."
+      }
+    },
+    {
+      "concept": "Pareto Chart",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A Pareto chart is a bar chart that ranks categories from highest to lowest frequency or importance, named after the Pareto Principle (80/20 rule). It helps identify the top contributors and prioritize issues.",
+        "key_points": [
+          "Categories are displayed along the horizontal axis, sorted by decreasing order of their values on the vertical axis.",
+          "Used to visualize the 'vital few' versus the 'trivial many', focusing on the most impactful factors in a given situation.",
+          "Zero is often assigned at the end of each bar for better comparison, but this may not always be feasible or appropriate."
+        ],
+        "common_confusion": "It is not a typical bar chart, as it is sorted and used specifically to apply the Pareto Principle."
+      }
+    },
+    {
+      "concept": "Categorical Data",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "Categorical data represents non-numerical values that can be divided into distinct categories. Examples include gender, color, or country.",
+        "key_points": [
+          "It is a type of qualitative data instead of quantitative.",
+          "Categories are not measured with numbers, but grouped according to their attributes.",
+          "Bar graphs and charts are commonly used for visualizing categorical data."
+        ],
+        "common_confusion": "A common mistake is considering categorical data as continuous or numerical."
+      }
+    },
+    {
+      "concept": "Bar Graph",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A bar graph is a chart that compares categorical data using rectangular bars. Each bar's height or length represents a value. Vertical bars are often called column charts. Bar graphs can display multiple variables by clustering or stacking bars.",
+        "key_points": [
+          "Bar graphs use rectangles to show comparisons between categories.",
+          "Each bar's height or length corresponds to the data value.",
+          "Vertical and horizontal orientation is possible."
+        ],
+        "common_confusion": "It's important to remember that bar graphs are for categorical, not continuous data."
+      }
+    },
+    {
+      "concept": "Grouped (Clustered) Bar Chart",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A graph used to compare multiple categories within groups, where each group has two or more bars color-coded for different variables. Horizontal axis represents the categories and vertical axis shows values.",
+        "key_points": [
+          "Each bar in a grouped bar chart represents a category within a group.",
+          "Bars are color-coded to show different variables in each category.",
+          "Grouped bar charts help visualize complex data comparisons within groups."
+        ],
+        "common_confusion": "Stacked bar charts and grouped bar charts should not be confused. Stacked bar charts display multiple data points stacked in a single row or column, whereas grouped bar charts display each factor in separate bars."
+      }
+    },
+    {
+      "concept": "Stacked Bar Chart",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A Stacked Bar Chart displays multiple data sets stacked in a single column or row, showing the combined result of each set. Unlike grouped bar charts where each factor is displayed next to another, each with their own bar, the stacked bar chart displays all data points in one location.",
+        "key_points": [
+          "Data is presented as stacked bars rather than separate bars",
+          "Shows the combined result of multiple data sets within a single column or row",
+          "Not suitable for data sets having both positive and negative values"
+        ],
+        "common_confusion": "Beginners may confuse it with grouped bar charts, but they are distinct in how the data is presented"
+      }
+    },
+    {
+      "concept": "Variable-width Bar Chart",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A type of bar chart where the widths of the bars vary, often used for representing quantities with proportions. Each bar's area is directly proportional to the quantity it represents.",
+        "key_points": [
+          "Bars with non-uniform widths represent different quantities",
+          "The area of each bar (width x height) reflects the value it represents",
+          "They are useful for displaying data with proportions, such as time series or comparative data"
+        ],
+        "common_confusion": "Variable-width bar charts should not be confused with stacked bar charts, which use overlapping bars to show parts of a whole"
+      }
+    }
+  ]
+}

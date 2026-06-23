@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-luminous {
+  --bg-color: #0B0B1A;
+  --surface-color: #1A1A2E;
+  --primary-color: #4e4feb;
+  --secondary-color: #00d1ff;
+  --text-color: #e8e8ed;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 
 /* ═══════════════════════════════════════════
    CSS Reset & Base
@@ -834,4 +848,153 @@ body {
     right: 0;
     transform-origin: center left;
   }
+}
+/* ═══════════════════════════════════════════
+   Homescreen Theme (Steel / Light)
+   ═══════════════════════════════════════════ */
+
+.theme-steel {
+  --bg-color-steel: #f5ebe0;
+  --text-primary-steel: #121515;
+  --text-secondary-steel: #575c56;
+  background-color: var(--bg-color-steel);
+  color: var(--text-primary-steel);
+  /* Soft radial warmth from the top */
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(210, 210, 200, 0.35) 0%, rgba(243, 242, 238, 0) 65%);
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Blurred grid overlay — separate layer so content stays sharp */
+.theme-steel::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b0b2ac' fill-opacity='0.18'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  filter: blur(1.5px);
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(194, 196, 192, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(194, 196, 192, 0.2);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #262b2a 0%, #575c56 50%, #8b8e85 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-dark {
+  background: linear-gradient(135deg, #121515 0%, #3b3f3b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Orbs & Visuals */
+.glow-orb-1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(166, 168, 163, 0.25) 0%, rgba(248, 249, 247, 0) 65%);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+  top: -10%;
+  left: -10%;
+}
+
+.glow-orb-2 {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(194, 196, 192, 0.3) 0%, rgba(248, 249, 247, 0) 70%);
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: 0;
+  pointer-events: none;
+  bottom: -15%;
+  right: -5%;
+}
+
+/* Fancy Border Gradient for hero button */
+.btn-premium {
+  position: relative;
+  background: #f8f9f7;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.btn-premium::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 0.55rem;
+  background: linear-gradient(135deg, #c2c4c0, #f8f9f7, #a6a8a3);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.btn-premium:hover::before {
+  background: linear-gradient(135deg, #8b8e85, #d7d9d6, #575c56);
+  box-shadow: 0 0 20px rgba(166, 168, 163, 0.4);
+}
+
+/* Bento box hover */
+.bento-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 0 30px rgba(194, 196, 192, 0.2);
+  border-color: rgba(166, 168, 163, 0.5);
+}
+
+/* Abstract visual elements inside bento */
+.abstract-shape-1 {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9f7 100%);
+  border: 1px solid #e8e9e7;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.02);
+}
+
+.abstract-shape-2 {
+  background: repeating-linear-gradient(45deg,
+      #ffffff,
+      #ffffff 10px,
+      #f8f9f7 10px,
+      #f8f9f7 20px);
+}
+
+/* Data viz bars */
+.data-bar {
+  background: #e8e9e7;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.data-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #8b8e85, #575c56);
 }

@@ -1,0 +1,77 @@
+{
+  "topic": "Bayes Theorem",
+  "atoms": [
+    {
+      "concept": "Bayes Theorem",
+      "atom_type": "explanation",
+      "content": "Bayes Theorem is a mathematical formula used to update the probability of a hypothesis as more evidence or information becomes available.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Bayes Theorem"
+    },
+    {
+      "concept": "Priors and Posteriors",
+      "atom_type": "explanation",
+      "content": "The 'prior' is your initial belief before seeing evidence. The 'posterior' is your updated belief after incorporating the new data.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Bayes Theorem"
+    },
+    {
+      "concept": "Bayes",
+      "atom_type": "mental_model",
+      "content": "Imagine you think your friend is ignoring you (prior). Then you see their phone is broken (new evidence). You update your belief to 'not ignoring me' (posterior).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "Bayes Theorem"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Foundation of Bayesian Machine Learning.\n2. Reverses conditional probabilities.\n3. Crucial for spam filtering algorithms.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Bayes Theorem"
+    },
+    {
+      "concept": "Example",
+      "atom_type": "example",
+      "content": "Naive Bayes classifiers use Bayes Theorem to predict if an email is spam based on the probability of certain words (like 'Free', 'Viagra') appearing.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 5,
+      "topic": "Bayes Theorem"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Does Bayes Theorem give you a fixed, unchanging probability? (Answer: No, it constantly updates as new evidence arrives)",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "Bayes Theorem"
+    },
+    {
+      "topic": "Bayes Theorem",
+      "concept": "The Formula",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 7,
+      "content": "The formula: P(A|B) = [P(B|A) x P(A)] / P(B). P(A) is the prior, P(B|A) is the likelihood, and P(A|B) is the posterior."
+    },
+    {
+      "topic": "Bayes Theorem",
+      "concept": "Likelihood",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 8,
+      "content": "The likelihood P(B|A) measures how probable the observed evidence is, assuming the hypothesis is true. It connects prior belief to new data."
+    }
+  ]
+}

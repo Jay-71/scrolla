@@ -1,0 +1,68 @@
+{
+  "topic": "Databases (SQL, No-SQL)",
+  "atoms": [
+    {
+      "concept": "Databases",
+      "atom_type": "explanation",
+      "content": "Databases are structured systems designed to store, manage, and retrieve large amounts of data efficiently for machine learning pipelines.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Databases (SQL, No-SQL)"
+    },
+    {
+      "concept": "SQL",
+      "atom_type": "explanation",
+      "content": "SQL (Relational) databases store data in strict, highly-structured tables with rows and columns, like Excel. Examples include PostgreSQL and MySQL.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Databases (SQL, No-SQL)"
+    },
+    {
+      "concept": "NoSQL",
+      "atom_type": "explanation",
+      "content": "NoSQL (Non-relational) databases store data in flexible, document-like formats (like JSON) without a fixed schema, allowing for rapid scaling. Examples include MongoDB.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Databases (SQL, No-SQL)"
+    },
+    {
+      "concept": "Databases",
+      "atom_type": "mental_model",
+      "content": "SQL is a filing cabinet where every folder must look identical. NoSQL is a flexible folder system where each folder can have its own unique structure.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Databases (SQL, No-SQL)"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. SQL: Strict schema, tables, JOINs.\n2. NoSQL: Flexible documents.\n3. Basic SQL: SELECT, FROM, WHERE, JOIN.\n4. Python: sqlite3, SQLAlchemy, pymongo.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Databases (SQL, No-SQL)"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If you need to store millions of user profiles where every profile might have completely different fields, which database type is better? (Answer: NoSQL).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "Databases (SQL, No-SQL)"
+    },
+    {
+      "topic": "Databases (SQL, No-SQL)",
+      "concept": "Python Connectivity",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 7,
+      "content": "Connect to databases from Python using sqlite3 (built-in), SQLAlchemy (universal ORM), or pymongo (MongoDB). These bridge your ML code to stored data."
+    }
+  ]
+}

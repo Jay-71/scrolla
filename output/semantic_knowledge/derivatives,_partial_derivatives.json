@@ -1,0 +1,86 @@
+{
+  "topic": "Derivatives, Partial Derivatives",
+  "generated_at": "2026-06-20T12:29:01.011465",
+  "concepts": [
+    {
+      "concept": "Derivative",
+      "type": "Definition"
+    },
+    {
+      "concept": "Underlier",
+      "type": "Definition"
+    },
+    {
+      "concept": "Future Act",
+      "type": "Definition"
+    },
+    {
+      "concept": "Price",
+      "type": "Definition"
+    },
+    {
+      "concept": "Date",
+      "type": "Definition"
+    },
+    {
+      "concept": "Financial Instrument",
+      "type": "Application"
+    },
+    {
+      "concept": "Hedging",
+      "type": "Application"
+    },
+    {
+      "concept": "Speculation",
+      "type": "Application"
+    },
+    {
+      "concept": "Commodity",
+      "type": "Application"
+    },
+    {
+      "concept": "Stock",
+      "type": "Application"
+    },
+    {
+      "concept": "Bond",
+      "type": "Application"
+    },
+    {
+      "concept": "Mortgage",
+      "type": "Application"
+    },
+    {
+      "concept": "Forwards",
+      "type": "Application"
+    },
+    {
+      "concept": "Futures",
+      "type": "Application"
+    },
+    {
+      "concept": "Options",
+      "type": "Application"
+    },
+    {
+      "concept": "Swaps",
+      "type": "Application"
+    },
+    {
+      "concept": "Synthetic Collateralized Debt Obligation",
+      "type": "Application"
+    },
+    {
+      "concept": "Credit Default Swap",
+      "type": "Application"
+    },
+    {
+      "concept": "Over-the-counter trade",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Exchange",
+      "type": "Architecture"
+    }
+  ]
+}

@@ -25,40 +25,12 @@ export function getBackgroundType(concept) {
     return 'procedural';
 }
 
-/**
- * Fetches a UNIQUE image URL from Pixabay every time.
- * Returns { url: string|null, error: string|null }
- */
 export async function getBackgroundImage(concept) {
-    if (!PIXABAY_API_KEY) {
-        return { url: null, error: 'Missing VITE_PIXABAY_API_KEY' };
-    }
-
     try {
-        const keyword = KEYWORDS[Math.floor(Math.random() * KEYWORDS.length)];
-        const query = encodeURIComponent(keyword);
-        const page = Math.floor(Math.random() * 5) + 1;  // keep low — deep pages often return 0 hits
-
-        const url = `${PIXABAY_URL}?key=${PIXABAY_API_KEY}&q=${query}&image_type=photo&orientation=vertical&per_page=10&page=${page}&safesearch=true`;
-
-        const response = await fetch(url);
-
-        if (!response.ok) {
-            const text = await response.text();
-            return { url: null, error: `HTTP ${response.status}: ${text.slice(0, 100)}` };
-        }
-
-        const data = await response.json();
-
-        if (data.hits && data.hits.length > 0) {
-            const hit = data.hits[Math.floor(Math.random() * data.hits.length)];
-            // largeImageURL is hotlink-restricted by Pixabay — webformatURL is allowed
-            return { url: hit.webformatURL, error: null };
-        }
-
-        return { url: null, error: 'No hits found' };
-
+        const randomSeed = Math.floor(Math.random() * 1000000);
+        const url = `https://picsum.photos/seed/${randomSeed}/800/1200`;
+        return { url, error: null };
     } catch (error) {
-        return { url: null, error: `Network: ${error.message}` };
+        return { url: null, error: `Error: ${error.message}` };
     }
 }

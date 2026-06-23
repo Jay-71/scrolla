@@ -1,0 +1,59 @@
+{
+  "topic": "Exceptions",
+  "atoms": [
+    {
+      "concept": "Exceptions",
+      "atom_type": "explanation",
+      "content": "Exceptions are runtime errors that disrupt normal program flow. Using try/except blocks allows your code to catch these errors and handle them gracefully without stopping execution.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Exceptions"
+    },
+    {
+      "concept": "Exceptions",
+      "atom_type": "mental_model",
+      "content": "Exceptions are like car airbags. The try/except block detects a crash (error) and deploys the airbag (fallback code) so the driver (program) survives.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 2,
+      "topic": "Exceptions"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Wrap risky code in 'try'.\n2. Handle errors in 'except'.\n3. Use 'finally' for code that must run regardless of errors.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 3,
+      "topic": "Exceptions"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What happens if code inside a 'try' block throws an error, but there is no matching 'except' block? (Answer: The program crashes).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 4,
+      "topic": "Exceptions"
+    },
+    {
+      "topic": "Exceptions",
+      "concept": "Common Types",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 5,
+      "content": "Common exceptions: ValueError (wrong value type), TypeError (wrong data type operation), KeyError (missing dictionary key), IndexError (list index out of range)."
+    },
+    {
+      "topic": "Exceptions",
+      "concept": "Raise",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 6,
+      "content": "The 'raise' keyword lets you manually trigger exceptions. Use it to enforce rules in your code, like raising ValueError if a user passes negative input."
+    }
+  ]
+}

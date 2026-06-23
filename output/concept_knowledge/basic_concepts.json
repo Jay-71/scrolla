@@ -1,0 +1,161 @@
+{
+  "topic": "Basic concepts",
+  "generated_at": "2026-06-20T13:56:01.635094",
+  "concepts": [
+    {
+      "concept": "Rule of Inference",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "Ways to derive conclusions from premises in formal logic. Examples include modus ponens, modus tollens, disjunctive syllogism, constructive dilemma, and existential generalization.",
+        "key_points": [
+          "Operate as the logical structure of valid arguments",
+          "If argument premises are true, conclusion cannot be false",
+          "Logicians use them to precisely capture and codify valid patterns of reasoning"
+        ],
+        "common_confusion": "Rule of inference is not a fallacy; it is a correct pattern of reasoning"
+      }
+    },
+    {
+      "concept": "Modus Ponens",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Rule of inference connecting 'if P then Q' and 'P' to conclude 'Q'. Example: If it rains, then the ground is wet. It rains. Therefore, the ground is wet.",
+        "key_points": [
+          "Connects two premises to a conclusion",
+          "First premise is an implication (if-then statement)",
+          "Second premise asserts the hypothesis"
+        ],
+        "common_confusion": "Mistaking the order of premises or the order of statement components"
+      }
+    },
+    {
+      "concept": "Rule of Implication",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "The Rule of Implication is a rule of inference that allows a logical conclusion to be drawn from an 'if-then' statement and a given fact, if the fact matches the 'if' part. It forms the basis for many other rules of inference.",
+        "key_points": [
+          "It operates only in one direction from premises to conclusions",
+          "Connects an 'if-then' statement with a given fact to derive a conclusion",
+          "Forms the basis for many other rules of inference"
+        ],
+        "common_confusion": "Mistaking Rule of Implication for a complete argument, as it requires additional premises to ensure validity"
+      }
+    },
+    {
+      "concept": "Rule of Replacement",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "The Rule of Replacement states that equivalent expressions can be freely swapped within a logical argument without changing the truth value. This helps in simplifying complex statements.",
+        "key_points": [
+          "This rule is used to substitute one expression with an equivalent one in a given context",
+          "It does not change the validity of the argument, as both expressions have the same truth value",
+          "The Rule of Replacement is crucial for simplifying and manipulating complex logical statements"
+        ],
+        "common_confusion": "Confusing this rule with formal fallacies, such as equivocation or amphiboly, where incorrect substitutions lead to invalid arguments"
+      }
+    },
+    {
+      "concept": "Propositional Logic",
+      "type": "Application",
+      "knowledge": {
+        "summary": "Propositional logic studies how statements formed through logical operators like 'not' and 'if...then...' support conclusions. It forms the basis for understanding formal reasoning, laying groundwork for more complex logics.",
+        "key_points": [
+          "Explores patterns of reasoning using only propositions (statements that are either true or false).",
+          "Uses rules of inference to draw valid conclusions from premises.",
+          "Provides a foundation for other logical systems like First-order Logic."
+        ],
+        "common_confusion": "Beginners may struggle with the difference between propositional logic and informal reasoning, requiring practice to distinguish between them."
+      }
+    },
+    {
+      "concept": "First-Order Logic",
+      "type": "Application",
+      "knowledge": {
+        "summary": "First-order logic extends propositional logic by examining how the internal structure of propositions, such as names and predicates, influences reasoning.",
+        "key_points": [
+          "Analyzes statements with quantifiers (like 'for all' and 'there exists')",
+          "Investigates relationships between objects and properties",
+          "Provides a foundation for mathematical logic"
+        ],
+        "common_confusion": "Confusing it with propositional logic, which does not consider the structure of propositions"
+      }
+    },
+    {
+      "concept": "Formal System",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "Formal systems are structures designed to precisely capture and codify valid patterns of reasoning. They use rules of inference, such as rules of implication and replacement, to draw logical conclusions from premises.",
+        "key_points": [
+          "Formal systems cover various inferential patterns like those associated with propositional logic, first-order logic, possibility and necessity, beliefs, and temporal events.",
+          "Examples of formal systems include natural deduction systems and Hilbert systems, which differ in their rules of inference and expressiveness.",
+          "Formal systems are used extensively in mathematics, computer science, and philosophical studies."
+        ],
+        "common_confusion": "It's essential to understand that formal systems aim for consistency and validity, contrasting with fallacious arguments that contain logical errors."
+      }
+    },
+    {
+      "concept": "Natural Deduction System",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "A logical system that employs intuitive rules of inference to reflect human reasoning. It focuses on the natural flow of logical steps, as opposed to minimalistic frameworks like Hilbert systems.",
+        "key_points": [
+          "Reflects how people naturally reason",
+          "Uses simple and intuitive rules of inference",
+          "Preserves truth of premises and ensures deductive validity"
+        ],
+        "common_confusion": "Mistaking the system's simplicity for lack of rigor or completeness"
+      }
+    },
+    {
+      "concept": "Hilbert System",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "A minimalistic system for representing foundational principles in logic, using axioms and rules of inference to derive new theorems.",
+        "key_points": [
+          "Uses a finite set of axioms as starting points for proving other statements",
+          "Includes a small number of rules of inference, such as Modus Ponens and Modus Tollens, to deduce new theorems from the axioms",
+          "Aims to provide a clear, concise framework without redundancy"
+        ],
+        "common_confusion": "Mistaking it for Hilbert's program, which is a now-abandoned attempt to formalize all mathematics within set theory"
+      }
+    },
+    {
+      "concept": "Modus Tollens",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Denial of the conclusion in a conditional statement implies denial of the premise.",
+        "key_points": [
+          "'If P then Q'. Not Q implies Not P.",
+          "Example: 'If it is raining, then the ground is wet.' If the ground is not wet, then it is not raining.",
+          "This rule also operates in reverse from modus ponens."
+        ],
+        "common_confusion": "Incorrectly applying modus tollens to non-conditional statements or improper premises."
+      }
+    },
+    {
+      "concept": "Disjunctive Syllogism",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "A rule of inference that allows you to deduce the negation of one disjunct when the other is proven false and the if-then statement holds. In the form: If P or Q, not P, therefore Q.",
+        "key_points": [
+          "When one disjunct (P or Q) is falsified and the conditional statement is true, the remaining disjunct must be true.",
+          "If 'if P then Q' is a given premise and 'not P' is proven, then 'Q' can be deduced as the conclusion."
+        ],
+        "common_confusion": "Misunderstanding the necessity of proving one disjunct false before making the conclusion about the other."
+      }
+    },
+    {
+      "concept": "Constructive Dilemma",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Constructive dilemma is a rule of inference used in logic to derive a conclusion from two contradictory conditional statements. It states that if 'if P then Q' and 'if not P then R' are both valid, then 'either Q or R' is also valid.",
+        "key_points": [
+          "It deals with two contradictory conditional statements",
+          "Derives a conclusion of the form 'either Q or R'",
+          "Assumes that neither P nor its negation can be false simultaneously."
+        ],
+        "common_confusion": "Mistakenly applying constructive dilemma when only one conditional statement is available"
+      }
+    }
+  ]
+}

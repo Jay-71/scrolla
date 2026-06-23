@@ -1,0 +1,62 @@
+{
+  "topic": "Random Variances, PDFs",
+  "generated_at": "2026-06-20T14:00:51.030661",
+  "concepts": [
+    {
+      "concept": "Variance (Theoretical)",
+      "type": "Definition"
+    },
+    {
+      "concept": "Population Variance",
+      "type": "Application"
+    },
+    {
+      "concept": "Sample Variance",
+      "type": "Application"
+    },
+    {
+      "concept": "PDF (Probability Density Function)",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Sample Variance",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Population Variance",
+      "type": "Definition"
+    },
+    {
+      "concept": "Theoretical Probability Distribution",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Discrete Random Variable",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Continuous Random Variance",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Mixed Random Variable",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Expected Value (Expected Value of Squared Deviation)",
+      "type": "Metric"
+    },
+    {
+      "concept": "Covariance (with Self)",
+      "type": "Metric"
+    },
+    {
+      "concept": "Variance as Second Cumulant",
+      "type": "Definition"
+    },
+    {
+      "concept": "Designations of Variance (Var(X), V(X), \u03c3^2)",
+      "type": "Pitfall"
+    }
+  ]
+}

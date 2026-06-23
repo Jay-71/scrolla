@@ -1,0 +1,38 @@
+{
+  "topic": "Matrix & Matrix Operations",
+  "generated_at": "2026-06-20T12:38:55.300097",
+  "concepts": [
+    {
+      "concept": "Matrix Calculus",
+      "type": "Definition"
+    },
+    {
+      "concept": "Partial Derivatives",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Vector/Scalar Derivative (Matrix Context)",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Notational Conventions (Matrix Calculus)",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Gradient Matrix",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Derivative Vector",
+      "type": "Definition"
+    },
+    {
+      "concept": "Gradient with respect to a vector",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Derivative of a scalar function with respect to a matrix",
+      "type": "Algorithm"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "topic": "Isolation Forests (Anomaly Detection)",
+  "atoms": [
+    {
+      "concept": "Isolation Forests",
+      "atom_type": "explanation",
+      "content": "Isolation Forest is an unsupervised algorithm built specifically to find anomalies (fraud, server crashes). It isolates data points by randomly drawing lines to separate them.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 1,
+      "topic": "Isolation Forests (Anomaly Detection)"
+    },
+    {
+      "concept": "Isolation Forests",
+      "atom_type": "mental_model",
+      "content": "If you have 100 white sheep and 1 black sheep, it's very easy to draw a random fence that isolates the black sheep quickly. Normal sheep take much longer to isolate.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 2,
+      "topic": "Isolation Forests (Anomaly Detection)"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Unsupervised anomaly detection.\n2. Fast and efficient.\n3. Anomalies are isolated in very few splits.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 3,
+      "topic": "Isolation Forests (Anomaly Detection)"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "In an Isolation Forest, are anomalies isolated faster or slower than normal data points? (Answer: Faster, because they are mathematically far away from the group).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Isolation Forests (Anomaly Detection)"
+    },
+    {
+      "topic": "Isolation Forests (Anomaly Detection)",
+      "concept": "Mechanism",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 5,
+      "content": "The algorithm builds random binary trees. Anomalies require fewer random splits to isolate, resulting in shorter path lengths and higher anomaly scores."
+    },
+    {
+      "topic": "Isolation Forests (Anomaly Detection)",
+      "concept": "Contamination",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 6,
+      "content": "You must set the 'contamination' parameter \u2014 the estimated fraction of outliers in your data. Common values range from 0.01 (1%) to 0.1 (10%)."
+    }
+  ]
+}

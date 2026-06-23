@@ -1,0 +1,77 @@
+{
+  "topic": "Discrete Mathematics",
+  "atoms": [
+    {
+      "concept": "Discrete Math",
+      "atom_type": "explanation",
+      "content": "Discrete mathematics is the study of countable, distinct structures like graphs, logic, and integers, unlike calculus which deals with continuous, unbroken curves.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Discrete Mathematics"
+    },
+    {
+      "concept": "Discrete Math",
+      "atom_type": "mental_model",
+      "content": "Calculus is like pouring a smooth stream of water (continuous). Discrete math is like counting individual ice cubes (discrete).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2,
+      "topic": "Discrete Mathematics"
+    },
+    {
+      "concept": "Set Theory & Logic",
+      "atom_type": "explanation",
+      "content": "In ML, set theory defines how we group data, and boolean logic (true/false) is the foundation of decision trees and filtering algorithms.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Discrete Mathematics"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Focuses on distinct values (integers, graphs).\n2. Foundation for algorithms and data structures.\n3. Powers logic gates and decision algorithms.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Discrete Mathematics"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Is predicting the exact temperature (72.435 degrees) a discrete or continuous problem? (Answer: Continuous)",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Discrete Mathematics"
+    },
+    {
+      "topic": "Discrete Mathematics",
+      "concept": "Graph Theory",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 6,
+      "content": "Graph theory studies nodes connected by edges. In ML, graphs model social networks, molecules, and knowledge bases, powering Graph Neural Networks."
+    },
+    {
+      "topic": "Discrete Mathematics",
+      "concept": "Combinatorics",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 7,
+      "content": "Combinatorics is the math of counting arrangements. It helps calculate how many ways to select features or split data in ML experiments."
+    },
+    {
+      "topic": "Discrete Mathematics",
+      "concept": "Big-O Notation",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 8,
+      "content": "Big-O notation describes how an algorithm's runtime grows with input size. O(n) is linear, O(n^2) is quadratic. Critical for comparing ML algorithm efficiency."
+    }
+  ]
+}

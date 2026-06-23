@@ -1,0 +1,86 @@
+{
+  "topic": "Random Variables, PDFs",
+  "atoms": [
+    {
+      "concept": "Random Variable",
+      "atom_type": "explanation",
+      "content": "A random variable is a variable whose possible values are numerical outcomes of a random phenomenon. It maps an uncertain outcome to a real number.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Random Variables, PDFs"
+    },
+    {
+      "concept": "Random Variable",
+      "atom_type": "mental_model",
+      "content": "Think of a random variable as a placeholder box. You don't know exactly what number will go inside until you roll the dice.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2,
+      "topic": "Random Variables, PDFs"
+    },
+    {
+      "concept": "PDF",
+      "atom_type": "explanation",
+      "content": "A PDF describes the relative likelihood of a continuous random variable near a specific value. The probability of any single exact value is technically zero.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "Random Variables, PDFs"
+    },
+    {
+      "concept": "PDF",
+      "atom_type": "mental_model",
+      "content": "A PDF describes the relative likelihood of a continuous random variable near a specific value. The probability of any single exact value is technically zero.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Random Variables, PDFs"
+    },
+    {
+      "concept": "Variance",
+      "atom_type": "explanation",
+      "content": "Variance measures how far a set of numbers is spread out from their average value. High variance indicates high uncertainty.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Random Variables, PDFs"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What must the total area under a Probability Density Function curve always equal? (Answer: 1)",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 6,
+      "topic": "Random Variables, PDFs"
+    },
+    {
+      "topic": "Random Variables, PDFs",
+      "concept": "Discrete vs Continuous",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 15,
+      "order": 7,
+      "content": "Discrete random variables take countable values (dice roll: 1-6). Continuous random variables take any value in a range (height: 170.35cm)."
+    },
+    {
+      "topic": "Random Variables, PDFs",
+      "concept": "PMF",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 8,
+      "content": "A PMF (Probability Mass Function) gives exact probabilities for discrete random variables. Unlike a PDF, each outcome has a directly measurable probability."
+    },
+    {
+      "topic": "Random Variables, PDFs",
+      "concept": "CDF",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 9,
+      "content": "A CDF (Cumulative Distribution Function) gives the probability that a random variable is less than or equal to a specific value. It works for both discrete and continuous."
+    }
+  ]
+}

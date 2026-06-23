@@ -1,0 +1,59 @@
+{
+  "topic": "Bias-Variance Tradeoff",
+  "atoms": [
+    {
+      "concept": "Bias",
+      "atom_type": "explanation",
+      "content": "Bias is the error introduced by approximating a real-world problem with a model that is too simple (leading to Underfitting).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Bias-Variance Tradeoff"
+    },
+    {
+      "concept": "Variance",
+      "atom_type": "explanation",
+      "content": "Variance is the error introduced by a model being too complex and highly sensitive to small fluctuations in the training data (leading to Overfitting).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Bias-Variance Tradeoff"
+    },
+    {
+      "concept": "Tradeoff",
+      "atom_type": "mental_model",
+      "content": "High Bias is a stubborn person who won't change their mind despite evidence. High Variance is an anxious person who changes their mind based on every tiny detail.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Bias-Variance Tradeoff"
+    },
+    {
+      "concept": "Tradeoff Math",
+      "atom_type": "explanation",
+      "content": "You cannot minimize both simultaneously. Decreasing bias increases variance, and decreasing variance increases bias. ML is about finding the optimal middle ground.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Bias-Variance Tradeoff"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. High Bias = Underfitting.\n2. High Variance = Overfitting.\n3. Goal: Low Bias and Low Variance.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Bias-Variance Tradeoff"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Does a massively complex neural network naturally suffer from high bias or high variance? (Answer: High Variance, as it is prone to overfitting).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "Bias-Variance Tradeoff"
+    }
+  ]
+}

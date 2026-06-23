@@ -1,0 +1,50 @@
+{
+  "topic": "Activation functions",
+  "atoms": [
+    {
+      "concept": "Activation Functions",
+      "atom_type": "explanation",
+      "content": "Activation functions are mathematical gates attached to the end of a neuron. They decide whether the neuron should 'fire' its signal forward to the next layer based on its input.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 1,
+      "topic": "Activation functions"
+    },
+    {
+      "concept": "Non-Linearity",
+      "atom_type": "explanation",
+      "content": "Without activation functions, a massive 100-layer neural network would mathematically collapse into a single linear equation, making it impossible to learn complex patterns.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 2,
+      "topic": "Activation functions"
+    },
+    {
+      "concept": "Activation Functions",
+      "atom_type": "mental_model",
+      "content": "It's like a bouncer at a club. The input arrives, but the activation function (the bouncer) decides exactly how much of that signal is actually allowed inside.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Activation functions"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Introduces non-linearity.\n2. ReLU is the modern default.\n3. Sigmoid is used for binary probabilities.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Activation functions"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What is the name of the most popular activation function that simply outputs the input directly if it's positive, and outputs 0 if it's negative? (Answer: ReLU).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 5,
+      "topic": "Activation functions"
+    }
+  ]
+}

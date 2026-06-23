@@ -1,0 +1,161 @@
+{
+  "topic": "Eigenvalues, Diagonalization",
+  "generated_at": "2026-06-20T13:47:02.957903",
+  "concepts": [
+    {
+      "concept": "Eigenvalue",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "An eigenvalue is a scalar (single number) associated with a linear transformation that determines the amount of stretch or compression in the corresponding eigenvector direction.",
+        "key_points": [
+          "It's a solution to the eigenvalue equation Av = \u03bbv.",
+          "Eigenvalues are found on the diagonal of the matrix obtained from eigendecomposition.",
+          "Geometrically, an eigenvector is elongated or shrunk by the factor of its corresponding eigenvalue."
+        ],
+        "common_confusion": "The mistake often made by beginners is thinking that eigenvectors are stretched or compressed in all directions equally, but this only applies to the eigenvector direction."
+      }
+    },
+    {
+      "concept": "Eigenvector",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "An eigenvector of a square matrix is a nonzero vector that the matrix stretches or shrinks but does not rotate, with the amount of stretching/shrinking determined by the corresponding eigenvalue.",
+        "key_points": [
+          "Satisfies the equation Av = \u03bbv for some scalar \u03bb (eigenvalue)",
+          "The corresponding eigenvector can be found from the characteristic equation det(A - \u03bbI) = 0",
+          "Only diagonalizable matrices have eigenvectors"
+        ],
+        "common_confusion": "Remember, eigenvectors do not change direction when multiplied by the matrix, only their magnitude."
+      }
+    },
+    {
+      "concept": "Eigendecomposition",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Factorization of a matrix into a diagonal form via its eigenvalues and eigenvectors. Only applicable to diagonalizable matrices.",
+        "key_points": [
+          "The matrix is decomposed as A = VDV^T, where D contains eigenvalues and V contains corresponding eigenvectors.",
+          "Eigenvectors are vectors that a matrix either elongates or shrinks, with the eigenvalue indicating the factor of change."
+        ],
+        "common_confusion": "Not all matrices can be decomposed; only diagonalizable ones."
+      }
+    },
+    {
+      "concept": "Diagonal Matrix",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "A diagonal matrix is a square matrix with non-zero entries only on the main diagonal and zeros everywhere else.",
+        "key_points": [
+          "Its diagonal elements are referred to as the 'diagonal entries'.",
+          "Since they form a line down the middle of the matrix, this structure can be easily visualized.",
+          "Diagonal matrices appear in many applications such as solving simultaneous linear equations with equal variables."
+        ],
+        "common_confusion": "Diagonal matrices should not be confused with triangular matrices, which have zeros below (or above) the main diagonal but can have non-zero entries on the other diagonal."
+      }
+    },
+    {
+      "concept": "Orthogonal Matrix",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "An orthogonal matrix is a square matrix whose columns and rows are orthonormal vectors. This means that the dot product of any row with any other row, as well as any column with any other column, equals zero (orthogonal) and the dot product of a row with itself, as well as any column with itself, equals 1 (normalized).",
+        "key_points": [
+          "The determinant of an orthogonal matrix is \u00b11.",
+          "Multiplying an orthogonal matrix by its transpose results in the identity matrix.",
+          "Orthogonal matrices are important in linear transformations, rotations, and diagonalization."
+        ],
+        "common_confusion": "A common mistake for beginners is to forget that columns and rows must be orthonormal for a matrix to be orthogonal."
+      }
+    },
+    {
+      "concept": "Eigenvalue Problem",
+      "type": "Problem",
+      "knowledge": {
+        "summary": "The eigenvalue problem is finding the scalar values, known as eigenvalues, that correspond to non-zero vectors, known as eigenvectors, for a given square matrix A. Eigenvectors change direction but not magnitude when multiplied by the matrix A, and the factor by which they scale represents the corresponding eigenvalue.",
+        "key_points": [
+          "The eigenvalue equation is given by Av = \u03bbv",
+          "The set of solutions, or eigenvalues, can be found by solving the characteristic equation det(A - \u03bbI) = 0",
+          "The characteristic polynomial p(\u03bb) = det(A - \u03bbI) provides the eigenvalues and their multiplicities"
+        ],
+        "common_confusion": "It's important to remember that the eigenvectors may not be unique for a given eigenvalue, as there can be multiple linearly independent eigenvectors associated with each eigenvalue."
+      }
+    },
+    {
+      "concept": "Characteristic Equation",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "The characteristic equation is the polynomial equation derived from a matrix A, which determines its eigenvalues. The equation is det(A - \u03bbI) = 0, where det is the determinant and \u03bb are the potential eigenvalues.",
+        "key_points": [
+          "The characteristic equation provides eigenvalues for a given matrix A.",
+          "It is an Nth-order polynomial equation in the unknown \u03bb.",
+          "The set of solutions (eigenvalues) is called the spectrum of A."
+        ],
+        "common_confusion": "Confusing the characteristic equation with the characteristic polynomial; they are the same entity but have different uses."
+      }
+    },
+    {
+      "concept": "Characteristic Polynomial",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "The characteristic polynomial is an Nth-order polynomial equation derived from a square matrix A, used to find the eigenvalues. It's defined as the determinant of A minus lambda times the identity matrix (A - \u03bbI). The polynomial factored shows each eigenvalue and its algebraic multiplicity.",
+        "key_points": [
+          "The characteristic polynomial p(\u03bb) is the determinant of A - \u03bbI, which when equated to zero gives the characteristic equation.",
+          "The factored form of the characteristic polynomial shows each eigenvalue (\u03bbi) and its corresponding algebraic multiplicity (ni).",
+          "Algebraic multiplicities sum up to the total number of rows/columns (N) in matrix A."
+        ],
+        "common_confusion": "It's essential to remember that the characteristic polynomial helps find eigenvalues, not the inverse of a matrix."
+      }
+    },
+    {
+      "concept": "Spectrum",
+      "type": "Application",
+      "knowledge": {
+        "summary": "The set of solutions to the characteristic equation of a square matrix, known as eigenvalues, is called the spectrum. The algebraic multiplicity of an eigenvalue represents its number of repetitions in the factorization of the characteristic polynomial.",
+        "key_points": [
+          "Eigenvalues are roots of the characteristic polynomial",
+          "Algebraic multiplicity indicates the number of times an eigenvalue appears in the factorized form of the characteristic polynomial",
+          "For each eigenvalue, there are linearly independent solutions (eigenvectors)"
+        ],
+        "common_confusion": "Mistaking geometric multiplicity for algebraic multiplicity"
+      }
+    },
+    {
+      "concept": "Algebraic Multiplicity",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "In linear algebra, the algebraic multiplicity of an eigenvalue represents the highest power to which the eigenvalue appears in the characteristic equation.",
+        "key_points": [
+          "The integer ni is the algebraic multiplicity of the eigenvalue \u03bbi.",
+          "The sum of all algebraic multiplicities equals the total number of eigenvalues N.",
+          "Algebraic multiplicities do not have to be equal to geometric multiplicities but are always greater than or equal to them."
+        ],
+        "common_confusion": "It's essential to recognize that different eigenvalues may have distinct algebraic multiplicities, making the matrix diagonalization process potentially complex."
+      }
+    },
+    {
+      "concept": "Geometric Multiplicity",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "The geometric multiplicity mi of an eigenvalue \u03bbi is the number of linearly independent eigenvectors associated with it. The sum of geometric multiplicities across all eigenvalues equals the total number of linearly independent eigenvectors.",
+        "key_points": [
+          "mi is the number of unique, non-zero solutions to the eigenvalue equation for \u03bbi",
+          "The geometric multiplicity may be less than or equal to the algebraic multiplicity",
+          "The total number of linearly independent eigenvectors can be calculated by summing the geometric multiplicities"
+        ],
+        "common_confusion": "It's important to remember that both geometric and algebraic multiplicities are related to eigenvalues, but they don't necessarily have the same value."
+      }
+    },
+    {
+      "concept": "Diagonalization",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Diagonalization is a factorization of a square matrix A into the product of a diagonal matrix D and an orthogonal matrix V. This decomposition occurs when A has eigenvectors, and it results in a new matrix D where the diagonal elements are the eigenvalues of A.",
+        "key_points": [
+          "A diagonalizable matrix can be factored as A = VDV^T",
+          "The diagonal matrix D contains the eigenvalues of A, and V is made up of the corresponding eigenvectors",
+          "The decomposition is particularly useful for simplifying complex linear systems and understanding the behavior of matrices"
+        ],
+        "common_confusion": "A common mistake is to try to diagonalize a non-diagonalizable matrix, which will result in an error."
+      }
+    }
+  ]
+}

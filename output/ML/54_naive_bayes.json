@@ -1,0 +1,59 @@
+{
+  "topic": "Naive Bayes",
+  "atoms": [
+    {
+      "concept": "Naive Bayes",
+      "atom_type": "explanation",
+      "content": "Naive Bayes is a lightning-fast probability algorithm based on Bayes' Theorem. It calculates the probability of a class given a set of features.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Naive Bayes"
+    },
+    {
+      "concept": "Naive Bayes",
+      "atom_type": "mental_model",
+      "content": "It acts like a detective making a snap judgment based on clues. \"I see the word 'Free' and 'Winner', so I'm 99% sure this email is Spam.\"",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 2,
+      "topic": "Naive Bayes"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Assumes all features are perfectly independent (which is 'naive').\n2. Incredibly fast.\n3. Industry standard for text classification.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Naive Bayes"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Why is the algorithm called 'Naive'? (Answer: Because it naively assumes all features in the dataset have zero correlation with each other).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Naive Bayes"
+    },
+    {
+      "topic": "Naive Bayes",
+      "concept": "Bayes Intuition",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 5,
+      "content": "It computes the probability of each class given the input features, then picks the class with the highest probability. Prior probability is updated with new evidence."
+    },
+    {
+      "topic": "Naive Bayes",
+      "concept": "Variants",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 6,
+      "content": "GaussianNB works with continuous data (assumes bell curve). MultinomialNB works with word counts (text classification). BernoulliNB works with binary features (yes/no)."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "topic": "Natural Language Processing (NLP)",
+  "atoms": [
+    {
+      "concept": "NLP",
+      "atom_type": "explanation",
+      "content": "NLP is the branch of AI focused on enabling computers to understand, interpret, and generate human language in a meaningful way.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Natural Language Processing (NLP)"
+    },
+    {
+      "concept": "Tokenization",
+      "atom_type": "explanation",
+      "content": "Tokenization is the first step of NLP. It chops a raw sentence into smaller, manageable pieces (tokens), which can be individual words, subwords, or characters.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Natural Language Processing (NLP)"
+    },
+    {
+      "concept": "Embeddings",
+      "atom_type": "explanation",
+      "content": "Word embeddings (like Word2Vec) map words to dense vectors of numbers. Words with similar meanings are mapped mathematically close to each other in vector space.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "Natural Language Processing (NLP)"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Bridges human text and computer math.\n2. Tokenization splits text.\n3. Embeddings capture semantic meaning.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Natural Language Processing (NLP)"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What is the process called when a computer converts a word like 'King' into a list of 300 floating-point numbers? (Answer: Word Embedding).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Natural Language Processing (NLP)"
+    },
+    {
+      "topic": "Natural Language Processing (NLP)",
+      "concept": "Mental Model",
+      "atom_type": "mental_model",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 15,
+      "order": 6,
+      "content": "NLP teaches computers to be translators, therapists, and editors all at once \u2014 understanding meaning, detecting emotions, and generating coherent language."
+    },
+    {
+      "topic": "Natural Language Processing (NLP)",
+      "concept": "NLP Tasks",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 15,
+      "order": 7,
+      "content": "Key NLP tasks include sentiment analysis, machine translation, text summarization, named entity recognition, question answering, and chatbot development."
+    }
+  ]
+}

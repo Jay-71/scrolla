@@ -1,0 +1,41 @@
+{
+  "topic": "What is an ML Engineer?",
+  "atoms": [
+    {
+      "topic": "What is an ML Engineer?",
+      "concept": "Role Definition",
+      "atom_type": "explanation",
+      "content": "A Machine Learning Engineer is a software developer who specializes in designing, building, and deploying machine learning models into production systems.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1
+    },
+    {
+      "topic": "What is an ML Engineer?",
+      "concept": "Role Definition",
+      "atom_type": "mental_model",
+      "content": "Imagine a chef who not only cooks the food (Data Scientist) but also builds the automated kitchen assembly line so millions can get the meal instantly. That's an ML Engineer.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2
+    },
+    {
+      "topic": "What is an ML Engineer?",
+      "concept": "Role Definition",
+      "atom_type": "key_points",
+      "content": "1. Bridges the gap between Data Science and Software Engineering.\n2. Focuses on scaling models.\n3. Requires strong programming and infrastructure skills.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 3
+    },
+    {
+      "topic": "What is an ML Engineer?",
+      "concept": "Role Definition",
+      "atom_type": "quick_check",
+      "content": "True or False: An ML Engineer's primary job is exclusively creating theoretical math algorithms, not writing code.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 5,
+      "order": 4
+    }
+  ]
+}

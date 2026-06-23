@@ -1,0 +1,66 @@
+{
+  "topic": "Singular Value Decomposition",
+  "generated_at": "2026-06-20T11:52:37.781223",
+  "concepts": [
+    {
+      "concept": "Definition",
+      "type": "Definition"
+    },
+    {
+      "concept": "Architecture",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Algorithm",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Matrix Factorization",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Singular Value",
+      "type": "Metric"
+    },
+    {
+      "concept": "Left-Singular Vector",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Right-Singular Vector",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Unitary Matrix",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Rank",
+      "type": "Metric"
+    },
+    {
+      "concept": "Architecture",
+      "type": "Definition"
+    },
+    {
+      "concept": "Matrix Decomposition",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "U Matrix",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "V Matrix",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Sigma Diagonal",
+      "type": "Metric"
+    },
+    {
+      "concept": "Singular Value",
+      "type": "Definition"
+    }
+  ]
+}

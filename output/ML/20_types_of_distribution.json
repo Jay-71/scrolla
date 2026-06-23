@@ -1,0 +1,95 @@
+{
+  "topic": "Types of Distribution",
+  "atoms": [
+    {
+      "concept": "Distributions",
+      "atom_type": "explanation",
+      "content": "A probability distribution is a mathematical function showing the probabilities of occurrence of different possible outcomes for an experiment.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Types of Distribution"
+    },
+    {
+      "concept": "Normal Distribution",
+      "atom_type": "explanation",
+      "content": "Also known as the Gaussian or Bell Curve, it is a symmetrical distribution where data clumps around the mean. It's the most common distribution in nature and ML.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Types of Distribution"
+    },
+    {
+      "concept": "Uniform Distribution",
+      "atom_type": "explanation",
+      "content": "In a uniform distribution, all outcomes are equally likely. A perfectly fair dice roll is a discrete uniform distribution.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 3,
+      "topic": "Types of Distribution"
+    },
+    {
+      "concept": "Binomial Distribution",
+      "atom_type": "explanation",
+      "content": "The binomial distribution models the number of successes in a fixed number of independent trials, each with the same probability of success (like counting heads in 10 flips).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 4,
+      "topic": "Types of Distribution"
+    },
+    {
+      "concept": "Distributions",
+      "atom_type": "mental_model",
+      "content": "Uniform is a flat brick wall. Normal is a symmetrical hill. Binomial is flipping a coin 100 times to see how many heads you get.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Types of Distribution"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Normal: Bell curve, continuous.\n2. Uniform: Flat, equal chance.\n3. Binomial: Success vs Failure (Yes/No).\n4. Poisson: Events over time.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 6,
+      "topic": "Types of Distribution"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Heights of adult humans naturally form a bell curve. What is the mathematical name for this distribution? (Answer: Normal Distribution)",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 7,
+      "topic": "Types of Distribution"
+    },
+    {
+      "topic": "Types of Distribution",
+      "concept": "Poisson Distribution",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 8,
+      "content": "The Poisson distribution models the count of events in a fixed time or space interval, like the number of emails you receive per hour or bugs in code."
+    },
+    {
+      "topic": "Types of Distribution",
+      "concept": "68-95-99.7 Rule",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 15,
+      "order": 9,
+      "content": "The 68-95-99.7 rule: In a normal distribution, ~68% of data falls within 1 standard deviation of the mean, ~95% within 2, and ~99.7% within 3."
+    },
+    {
+      "topic": "Types of Distribution",
+      "concept": "Exponential Distribution",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 10,
+      "content": "The exponential distribution models the time between events in a Poisson process, like the wait time between bus arrivals or server requests."
+    }
+  ]
+}

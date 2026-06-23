@@ -1,0 +1,30 @@
+{
+  "topic": "Determinants, inverse of Matrix",
+  "generated_at": "2026-06-20T13:43:51.438672",
+  "concepts": [
+    {
+      "concept": "Jacobian Matrix",
+      "type": "Definition"
+    },
+    {
+      "concept": "Jacobian Determinant",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Change of Variables in Multiple Integrals",
+      "type": "Application"
+    },
+    {
+      "concept": "Jacobian Matrix",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Inverse of Matrix (local invertibility)",
+      "type": "Application"
+    },
+    {
+      "concept": "Jacobian Determinant",
+      "type": "Metric"
+    }
+  ]
+}

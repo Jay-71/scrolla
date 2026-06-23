@@ -1,0 +1,77 @@
+{
+  "topic": "Descriptive Statistics",
+  "atoms": [
+    {
+      "concept": "Descriptive Stats",
+      "atom_type": "explanation",
+      "content": "Descriptive statistics summarize and organize characteristics of a dataset. They don't predict the future; they just describe what the data currently looks like.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Descriptive Statistics"
+    },
+    {
+      "concept": "Central Tendency",
+      "atom_type": "explanation",
+      "content": "Measures of central tendency include the Mean (average), Median (middle value), and Mode (most frequent value). They locate the center of your data.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Descriptive Statistics"
+    },
+    {
+      "concept": "Spread / Dispersion",
+      "atom_type": "explanation",
+      "content": "Variance and Standard Deviation measure how spread out the data is. High standard deviation means data points are far from the average.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Descriptive Statistics"
+    },
+    {
+      "concept": "Descriptive Stats",
+      "atom_type": "mental_model",
+      "content": "Descriptive stats are like the scoreboard at a basketball game. It tells you the current score and player fouls, but doesn't predict who will win.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Descriptive Statistics"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If Jeff Bezos walks into a bar, the 'average' wealth skyrockets. Which metric should you use instead to find typical wealth? (Answer: Median)",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Descriptive Statistics"
+    },
+    {
+      "topic": "Descriptive Statistics",
+      "concept": "Range",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "content": "Range is the simplest measure of spread: maximum value minus minimum value. It's sensitive to outliers."
+    },
+    {
+      "topic": "Descriptive Statistics",
+      "concept": "Percentiles and IQR",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 7,
+      "content": "Percentiles divide data into 100 equal parts. The IQR (Interquartile Range) spans the 25th to 75th percentile and is used to detect outliers."
+    },
+    {
+      "topic": "Descriptive Statistics",
+      "concept": "Skewness",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 8,
+      "content": "Skewness measures asymmetry in your data distribution. Positive skew has a long right tail; negative skew has a long left tail. Many ML algorithms assume low skew."
+    }
+  ]
+}

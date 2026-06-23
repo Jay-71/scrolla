@@ -1,0 +1,77 @@
+{
+  "topic": "Numpy",
+  "atoms": [
+    {
+      "concept": "NumPy",
+      "atom_type": "explanation",
+      "content": "NumPy is the foundational Python library for numerical computing. It provides a powerful N-dimensional array object that is significantly faster than standard Python lists.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Numpy"
+    },
+    {
+      "concept": "NumPy Arrays",
+      "atom_type": "mental_model",
+      "content": "A Python list is a row of separate buckets. A NumPy array is a single, tightly packed crate of identical items, allowing machines to process them instantly in bulk.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 2,
+      "topic": "Numpy"
+    },
+    {
+      "concept": "Vectorization",
+      "atom_type": "explanation",
+      "content": "NumPy avoids slow for-loops by applying mathematical operations to entire arrays at once, a process known as vectorization.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 10,
+      "order": 3,
+      "topic": "Numpy"
+    },
+    {
+      "concept": "Broadcasting",
+      "atom_type": "explanation",
+      "content": "Broadcasting allows NumPy to perform operations on arrays of different sizes by virtually stretching the smaller array to match the larger one.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Numpy"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Written in C for extreme speed.\n2. Core data structure is the ndarray.\n3. Uses vectorization instead of loops.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Numpy"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Why is a NumPy array faster than a Python list for math operations? (Answer: It uses dense C arrays and avoids loop overhead through vectorization).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "Numpy"
+    },
+    {
+      "topic": "Numpy",
+      "concept": "Array Creation",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 15,
+      "order": 7,
+      "content": "Create arrays with np.array(), np.zeros(), np.ones(), np.arange(), and np.linspace(). These are the building blocks of every numerical computation."
+    },
+    {
+      "topic": "Numpy",
+      "concept": "Shape/Reshape",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 8,
+      "content": "Every array has a .shape attribute showing its dimensions. Use .reshape() to change dimensions without altering data \u2014 critical for preparing ML model inputs."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "topic": "Eigenvalues, Diagonalization",
+  "atoms": [
+    {
+      "concept": "Eigenvectors",
+      "atom_type": "explanation",
+      "content": "An eigenvector is a special vector that only stretches or shrinks when a specific matrix is applied to it, without changing its overall direction.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Eigenvalues, Diagonalization"
+    },
+    {
+      "concept": "Eigenvalues",
+      "atom_type": "explanation",
+      "content": "An eigenvalue is the scalar number that tells you exactly how much the eigenvector was stretched, shrunk, or flipped.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 2,
+      "topic": "Eigenvalues, Diagonalization"
+    },
+    {
+      "concept": "Eigen",
+      "atom_type": "mental_model",
+      "content": "Imagine stretching a rubber sheet. Most lines painted on it will curve and change direction. The few lines that stay perfectly straight but get longer are eigenvectors.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Eigenvalues, Diagonalization"
+    },
+    {
+      "concept": "Diagonalization",
+      "atom_type": "explanation",
+      "content": "Diagonalization is rewriting a matrix strictly in terms of its eigenvectors and eigenvalues. This makes raising the matrix to a large power computationally trivial.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 4,
+      "topic": "Eigenvalues, Diagonalization"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Eigenvectors don't change direction.\n2. Eigenvalues measure the stretch factor.\n3. Core math behind Principal Component Analysis (PCA).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Eigenvalues, Diagonalization"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If a transformation stretches a vector by a factor of 3 without rotating it, what is the eigenvalue? (Answer: 3)",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 6,
+      "order": 6,
+      "topic": "Eigenvalues, Diagonalization"
+    }
+  ]
+}

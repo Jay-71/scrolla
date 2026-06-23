@@ -1,0 +1,59 @@
+{
+  "topic": "K-Means Clustering",
+  "atoms": [
+    {
+      "concept": "K-Means",
+      "atom_type": "explanation",
+      "content": "K-Means is an unsupervised algorithm that groups unlabeled data into 'K' distinct clusters by finding central points (centroids) and assigning data to the nearest centroid.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 1,
+      "topic": "K-Means Clustering"
+    },
+    {
+      "concept": "K-Means",
+      "atom_type": "mental_model",
+      "content": "Imagine you have 3 pizza delivery guys for a city. You want to place them in the 3 exact center spots that minimize driving distance for everyone.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "K-Means Clustering"
+    },
+    {
+      "concept": "How it works",
+      "atom_type": "explanation",
+      "content": "1) Place K random centroids. 2) Assign points to nearest centroid. 3) Move centroid to the middle of its new points. 4) Repeat until they stop moving.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "K-Means Clustering"
+    },
+    {
+      "concept": "Choosing K",
+      "atom_type": "explanation",
+      "content": "The algorithm requires you to tell it how many clusters (K) exist upfront. Data scientists use the 'Elbow Method' graph to find the optimal number.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "K-Means Clustering"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Unsupervised learning.\n2. Distance-based.\n3. You must specify 'K' beforehand.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "K-Means Clustering"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Does K-Means automatically figure out how many clusters are in your dataset? (Answer: No, you must define 'K' manually).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "K-Means Clustering"
+    }
+  ]
+}

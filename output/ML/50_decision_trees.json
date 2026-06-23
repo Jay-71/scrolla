@@ -1,0 +1,59 @@
+{
+  "topic": "Decision Trees",
+  "atoms": [
+    {
+      "concept": "Decision Trees",
+      "atom_type": "explanation",
+      "content": "A Decision Tree classifies data by answering a series of sequential Yes/No questions, splitting the dataset into smaller branches until it reaches a final decision.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Decision Trees"
+    },
+    {
+      "concept": "Decision Trees",
+      "atom_type": "mental_model",
+      "content": "It works exactly like a game of '20 Questions'. Does it have fur? (Yes) Does it bark? (Yes) -> It's a dog.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2,
+      "topic": "Decision Trees"
+    },
+    {
+      "concept": "Entropy/Gini",
+      "atom_type": "explanation",
+      "content": "The tree decides which question to ask first by using math (Gini Impurity or Entropy) to find the question that most perfectly separates the data categories.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "Decision Trees"
+    },
+    {
+      "concept": "Overfitting Risk",
+      "atom_type": "explanation",
+      "content": "Decision trees are highly prone to overfitting because, if left unconstrained, they will keep asking questions until every single training data point has its own tiny branch.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 4,
+      "topic": "Decision Trees"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Highly interpretable.\n2. No data scaling required.\n3. Extremely prone to overfitting if not pruned.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Decision Trees"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Does a Decision Tree require you to use Min-Max scaling on your features before training? (Answer: No, trees do not rely on distances between points).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 6,
+      "topic": "Decision Trees"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "topic": "Supervised Learning",
+  "generated_at": "2026-06-20T11:25:08.804096",
+  "concepts": [
+    {
+      "concept": "Supervised Learning",
+      "type": "Definition"
+    },
+    {
+      "concept": "Algorithm",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Labeled Data",
+      "type": "Training Data"
+    },
+    {
+      "concept": "Generalization Error",
+      "type": "Metric"
+    },
+    {
+      "concept": "Classification",
+      "type": "Application"
+    },
+    {
+      "concept": "Regression",
+      "type": "Application"
+    },
+    {
+      "concept": "Training Samples",
+      "type": "Data Format"
+    },
+    {
+      "concept": "Feature Vector",
+      "type": "Data Representation"
+    },
+    {
+      "concept": "Features",
+      "type": "Definition"
+    },
+    {
+      "concept": "Learning Algorithm",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Support-Vector Machines",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Decision Trees",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Training Set",
+      "type": "Application"
+    },
+    {
+      "concept": "Validation Set",
+      "type": "Application"
+    },
+    {
+      "concept": "Test Set",
+      "type": "Application"
+    },
+    {
+      "concept": "Bias-Variance Tradeoff",
+      "type": "Pitfall"
+    }
+  ]
+}

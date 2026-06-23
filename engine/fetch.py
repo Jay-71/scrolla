@@ -1,35 +1,48 @@
 import requests
 import wikipedia
 
+import time
 # --- Wikipedia Fetcher ---
-def fetch_wikipedia_text(topic: str) -> str:
+def fetch_wikipedia_text(topic: str, retries=3) -> str:
+    # Set a custom user agent to avoid being blocked by Wikipedia's generic requests blocker
+    wikipedia.set_user_agent("ScrollaBot/1.0 (bot@scrolla.com)")
     wikipedia.set_lang("en")
-    try:
-        # 1. Try direct page
-        page = wikipedia.page(topic, auto_suggest=True)
-        return clean_wiki_text(page.content)
-    except wikipedia.PageError:
-        print("[WARN] Direct page not found. Searching Wikipedia...")
-        # 2. Search fallback
-        results = wikipedia.search(topic, results=5)
-        if not results:
-            print("[ERROR] No Wikipedia search results")
-            return ""
-        # 3. Pick the first result
+    
+    # Contextualize ambiguous topics
+    search_topic = topic
+    if topic.lower() in ["loops", "conditionals", "exceptions", "basic syntax", "variables and data types"]:
+        search_topic = topic + " (programming)"
+    
+    for attempt in range(retries):
         try:
-            page = wikipedia.page(results[0])
-            print(f"[INFO] Using Wikipedia page: {results[0]}")
+            page = wikipedia.page(search_topic, auto_suggest=True)
+            time.sleep(1) # Rate limit protection
             return clean_wiki_text(page.content)
+        except wikipedia.PageError:
+            print(f"[WARN] Direct page not found for '{search_topic}'. Searching...")
+            try:
+                results = wikipedia.search(search_topic, results=5)
+                if not results:
+                    return ""
+                page = wikipedia.page(results[0])
+                time.sleep(1)
+                return clean_wiki_text(page.content)
+            except Exception as e:
+                print("[ERROR] Failed to load search result:", e)
+                return ""
+        except wikipedia.DisambiguationError as e:
+            print("[WARN] Disambiguation detected. Using first option:", e.options[0])
+            try:
+                page = wikipedia.page(e.options[0])
+                time.sleep(1)
+                return clean_wiki_text(page.content)
+            except Exception:
+                return ""
         except Exception as e:
-            print("[ERROR] Failed to load search result:", e)
-            return ""
-    except wikipedia.DisambiguationError as e:
-        print("[WARN] Disambiguation detected. Using first option.")
-        page = wikipedia.page(e.options[0])
-        return clean_wiki_text(page.content)
-    except Exception as e:
-        print("[ERROR] Wiki fetch failed:", e)
-        return ""
+            print(f"[ERROR] Wiki fetch failed (attempt {attempt+1}):", e)
+            time.sleep(2)
+            
+    return ""
 
 def clean_wiki_text(text: str) -> str:
     lines = []

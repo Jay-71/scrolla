@@ -1,0 +1,54 @@
+{
+  "topic": "Basic concepts",
+  "generated_at": "2026-06-20T13:55:16.267798",
+  "concepts": [
+    {
+      "concept": "Rule of Inference",
+      "type": "Definition"
+    },
+    {
+      "concept": "Modus Ponens",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Rule of Implication",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Rule of Replacement",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Propositional Logic",
+      "type": "Application"
+    },
+    {
+      "concept": "First-Order Logic",
+      "type": "Application"
+    },
+    {
+      "concept": "Formal System",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Natural Deduction System",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Hilbert System",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Modus Tollens",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Disjunctive Syllogism",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Constructive Dilemma",
+      "type": "Algorithm"
+    }
+  ]
+}

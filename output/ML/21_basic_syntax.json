@@ -1,0 +1,59 @@
+{
+  "topic": "Basic Syntax",
+  "atoms": [
+    {
+      "concept": "Python Syntax",
+      "atom_type": "explanation",
+      "content": "Python is an interpreted, high-level programming language that prioritizes readability, using whitespace (indentation) to define code blocks instead of curly braces.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Basic Syntax"
+    },
+    {
+      "concept": "Python Syntax",
+      "atom_type": "mental_model",
+      "content": "Python reads like plain English. Instead of assembling a complex machine with tiny gears (like C++), you give high-level instructions to a smart assistant.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 2,
+      "topic": "Basic Syntax"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Indentation matters.\n2. No semicolons needed.\n3. Huge standard library.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 3,
+      "topic": "Basic Syntax"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Does Python use curly braces {} to define the scope of a function? (Answer: No, it uses indentation).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 4,
+      "topic": "Basic Syntax"
+    },
+    {
+      "topic": "Basic Syntax",
+      "concept": "print() and input()",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 5,
+      "content": "print() displays output to the screen. input() pauses the program and waits for the user to type something. These are the first functions every learner uses."
+    },
+    {
+      "topic": "Basic Syntax",
+      "concept": "Comments",
+      "atom_type": "explanation",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 6,
+      "content": "Comments are notes for humans that Python ignores. Use # for single-line comments and triple quotes (triple-double-quotes) for multi-line comments."
+    }
+  ]
+}

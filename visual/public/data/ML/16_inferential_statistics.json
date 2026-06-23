@@ -1,0 +1,86 @@
+{
+  "topic": "Inferential Statistics",
+  "atoms": [
+    {
+      "concept": "Inferential Stats",
+      "atom_type": "explanation",
+      "content": "Inferential statistics use complex math to make predictions or draw conclusions about a massive population based solely on a small sample.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Inferential Statistics"
+    },
+    {
+      "concept": "Hypothesis Testing",
+      "atom_type": "explanation",
+      "content": "Hypothesis testing evaluates two mutually exclusive statements about a population to determine which statement is best supported by the sample data.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Inferential Statistics"
+    },
+    {
+      "concept": "P-Value",
+      "atom_type": "explanation",
+      "content": "A p-value measures the probability of getting your sample results if the default assumption (null hypothesis) were true. A low p-value indicates statistical significance.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "Inferential Statistics"
+    },
+    {
+      "concept": "Inferential Stats",
+      "atom_type": "mental_model",
+      "content": "If descriptive stats is reading the dashboard of your car, inferential stats is using that dashboard to predict if you have enough gas to reach the next city.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Inferential Statistics"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Uses samples to predict populations.\n2. Involves confidence intervals.\n3. Relies heavily on probability theory.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "Inferential Statistics"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If your p-value is 0.01 (1%), does this mean your results are likely a random fluke? (Answer: No, it means the results are statistically significant)",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "Inferential Statistics"
+    },
+    {
+      "topic": "Inferential Statistics",
+      "concept": "Hypotheses",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 7,
+      "content": "The null hypothesis (H0) states there is no effect or difference. The alternative hypothesis (H1) states there IS an effect. Testing determines which to accept."
+    },
+    {
+      "topic": "Inferential Statistics",
+      "concept": "Confidence Intervals",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 8,
+      "content": "A confidence interval is a range likely to contain the true population parameter. A 95% CI means roughly 95 out of 100 repeated studies would capture the true value."
+    },
+    {
+      "topic": "Inferential Statistics",
+      "concept": "Type I and Type II Errors",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 9,
+      "content": "A Type I error (false positive) rejects a true H0. A Type II error (false negative) fails to reject a false H0. In ML, this maps to precision and recall."
+    }
+  ]
+}

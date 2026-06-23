@@ -1,0 +1,50 @@
+{
+  "topic": "Random Forest",
+  "atoms": [
+    {
+      "concept": "Random Forest",
+      "atom_type": "explanation",
+      "content": "A Random Forest is an 'ensemble' model that trains hundreds of separate Decision Trees on random subsets of the data, and then has them vote on the final prediction.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 14,
+      "order": 1,
+      "topic": "Random Forest"
+    },
+    {
+      "concept": "Random Forest",
+      "atom_type": "mental_model",
+      "content": "A single Decision Tree is asking one friend for advice. A Random Forest is asking 500 friends for advice and going with the majority vote.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Random Forest"
+    },
+    {
+      "concept": "Bagging",
+      "atom_type": "explanation",
+      "content": "This technique is called Bagging (Bootstrap Aggregating). Because the trees are trained on random subsets, they don't make the exact same mistakes, making the forest highly accurate.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3,
+      "topic": "Random Forest"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Ensemble of many trees.\n2. Fixes the overfitting problem of single trees.\n3. Very accurate but less interpretable.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Random Forest"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What do we call a machine learning model (like Random Forest) that combines the predictions of multiple smaller models? (Answer: An Ensemble model).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Random Forest"
+    }
+  ]
+}

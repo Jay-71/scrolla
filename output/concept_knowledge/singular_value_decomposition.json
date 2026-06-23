@@ -1,0 +1,174 @@
+{
+  "topic": "Singular Value Decomposition",
+  "generated_at": "2026-06-20T11:53:44.699064",
+  "concepts": [
+    {
+      "concept": "Definition",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "Singular Value Decomposition (SVD) is a factorization of a matrix into three parts: a left rotation, a diagonal scaling, and a right rotation. It applies to both real and complex matrices and generalizes eigendecomposition for square normal matrices.",
+        "key_points": [
+          "The SVD of an m x n matrix M is represented as M = U\u03a3V^T where U, V are unitary matrices and \u03a3 is a diagonal matrix with non-negative real numbers.",
+          "U and V are used to rotate the matrix left and right respectively while \u03a3 scales the matrix diagonally.",
+          "The SVD always exists for any complex matrix, and if M is real, then U is also real."
+        ],
+        "common_confusion": "Beginners might confuse SVD with eigendecomposition. While similar, SVD applies to non-square matrices, whereas eigendecomposition requires a square, normal matrix."
+      }
+    },
+    {
+      "concept": "Architecture",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "Singular Value Decomposition (SVD) is a factorization of a matrix into products of three matrices: a left rotation, a diagonal scaling with non-negative real numbers, and a right rotation. This decomposition applies to any complex or real m x n matrix.",
+        "key_points": [
+          "It generalizes the eigendecomposition of square normal matrices.",
+          "The resulting factors are unitary matrices (orthonormal in the real case) and a rectangular diagonal matrix.",
+          "SVD is related to the polar decomposition."
+        ],
+        "common_confusion": "Remember, SVD can be applied to any complex or real m x n matrix, not just square ones."
+      }
+    },
+    {
+      "concept": "Algorithm",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Singular Value Decomposition (SVD) is a factorization method for matrices that generalizes the eigendecomposition of square normal matrices. It involves decomposing an m x n matrix M into three parts: U (an m x m unitary matrix), \u03a3 (an m x n diagonal matrix with non-negative real numbers on the diagonal), and V^T (the conjugate transpose of an n x n unitary matrix V).",
+        "key_points": [
+          "U, \u03a3, V are the factors obtained from the SVD of a matrix.",
+          "The diagonal elements of \u03a3 are called singular values.",
+          "SVD can be used for various applications such as data compression and finding the closest low-rank approximation of a given matrix."
+        ],
+        "common_confusion": "A common mistake is to forget that V^T is the conjugate transpose of V, not its transpose."
+      }
+    },
+    {
+      "concept": "Matrix Factorization",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Singular Value Decomposition (SVD) is a method that decomposes a matrix into three parts: a left-singular matrix U, a diagonal matrix of singular values \u03a3, and a right-singular matrix V. It helps in understanding the structure of a matrix and solving certain types of linear algebra problems.",
+        "key_points": [
+          "U is an unitary matrix that represents the direction of the dominant features in the original matrix",
+          "\u03a3 contains non-negative real numbers known as singular values, which represent the magnitudes of these dominant features",
+          "V is also a unitary matrix and it shows how the original matrix can be rebuilt from the singular values and U."
+        ],
+        "common_confusion": "The SVD involves complex numbers and unitary matrices, which may confuse those less familiar with linear algebra"
+      }
+    },
+    {
+      "concept": "Singular Value",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "A singular value is a non-negative square root of an eigenvalue in the Singular Value Decomposition (SVD) of a matrix, representing the magnitude of the corresponding singular vector.",
+        "key_points": [
+          "It is a measure of the magnitude of the contribution of a singular vector to the representation of a given matrix",
+          "Singular values are always non-negative real numbers",
+          "They determine the rank and condition number (a measure of numerical stability) of the original matrix."
+        ],
+        "common_confusion": "Mistaking singular values with eigenvalues, although they share similarities, they have different properties and interpretations in a matrix factorization."
+      }
+    },
+    {
+      "concept": "Left-Singular Vector",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "The left-singular vector is a column of the matrix U in the Singular Value Decomposition (SVD). It forms an orthonormal basis with the right-singular vectors, and is determined by the original matrix M up to reordering.",
+        "key_points": [
+          "It is one of the two sets of orthogonal bases formed from SVD.",
+          "Each left-singular vector corresponds to a column in the matrix U.",
+          "They are used to compute the product between matrices, along with singular values and right-singular vectors."
+        ],
+        "common_confusion": "It is important to remember that left-singular vectors should not be confused with rows of the original matrix M."
+      }
+    },
+    {
+      "concept": "Right-Singular Vector",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "A right-singular vector is a column from the matrix V in Singular Value Decomposition (SVD). It forms an orthonormal basis with left-singular vectors and represents the direction of the dominant variation in the corresponding eigenvector of M.",
+        "key_points": [
+          "It is one of two sets of orthonormal bases formed by SVD",
+          "Each right-singular vector corresponds to a singular value and a left-singular vector",
+          "They represent the dominant directions of variation in the data represented by matrix M"
+        ],
+        "common_confusion": "Right-singular vectors are often confused with eigenvectors, but while they share some similarities, they serve slightly different purposes in the context of SVD."
+      }
+    },
+    {
+      "concept": "Unitary Matrix",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "A unitary matrix is a square matrix that preserves the length of vectors when multiplied, meaning its inverse is the complex conjugate transpose. In the context of Singular Value Decomposition (SVD), it's an m x m and n x n complex or real orthogonal matrix.",
+        "key_points": [
+          "It ensures that the product of a matrix with its conjugate transpose results in an identity matrix",
+          "In SVD, U and V are unitary matrices that help decompose a given matrix into simpler components",
+          "Unitary matrices can be either complex or real orthogonal if the original matrix is real."
+        ],
+        "common_confusion": "Confusing unitary matrices with orthogonal matrices. While they share similar properties, unitary matrices allow for complex entries."
+      }
+    },
+    {
+      "concept": "Rank",
+      "type": "Metric",
+      "knowledge": {
+        "summary": "The rank of a matrix M is the number of its non-zero singular values. It represents the maximal number of linearly independent columns (or rows) in M.",
+        "key_points": [
+          "The rank indicates the independence of the columns/rows",
+          "It is determined by the number of non-zero singular values"
+        ],
+        "common_confusion": "Conflating the matrix size with its rank"
+      }
+    },
+    {
+      "concept": "Matrix Decomposition",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "Singular Value Decomposition (SVD) is a factorization of a matrix into products of unitary matrices and a diagonal matrix containing singular values. It's used for solving linear algebraic equations, finding the minimum distance between matrices, and reducing data dimensionality.",
+        "key_points": [
+          "The SVD of an m x n matrix M decomposes it as M = U\u03a3V^T where U and V are unitary matrices and \u03a3 is a diagonal matrix with singular values.",
+          "Singular values represent the 'importance' of the columns (for an m x n matrix) or rows (for an n x m matrix).",
+          "SVD is defined for both real and complex matrices, and it always exists."
+        ],
+        "common_confusion": "It's important to note that U and V are unitary matrices, not inverse of each other. Also, \u03a3 contains only non-negative singular values on the diagonal."
+      }
+    },
+    {
+      "concept": "U Matrix",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "The U matrix in Singular Value Decomposition (SVD) is the left singular matrix, an m x m complex unitary matrix that represents the first factor of the SVD factorization. It orients the original matrix M into the space spanned by the singular vectors.",
+        "key_points": [
+          "It is a square matrix of size m x m",
+          "It is complex and unitary",
+          "Represents the orientation of the original matrix in the space of singular vectors"
+        ],
+        "common_confusion": "Remember that the U matrix is only part of the SVD factorization and it's always square."
+      }
+    },
+    {
+      "concept": "V Matrix",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "The V matrix in Singular Value Decomposition (SVD) is an n x n complex unitary matrix that appears in the factorization of a given matrix M. It represents the right-singular vectors of the matrix.",
+        "key_points": [
+          "It's a square matrix with dimensions n x n.",
+          "It's a left eigenvector of MM^T or MTMT, where T denotes transpose.",
+          "Its columns form an orthogonal basis for the column space of M."
+        ],
+        "common_confusion": "Remember, V is a left eigenvector and not a right eigenvector."
+      }
+    },
+    {
+      "concept": "Sigma Diagonal",
+      "type": "Metric",
+      "knowledge": {
+        "summary": "The Sigma diagonal refers to the diagonal elements of the rectangular diagonal matrix \u03a3 in a Singular Value Decomposition (SVD). These are non-negative real numbers that represent the singular values of the original matrix.",
+        "key_points": [
+          "Singular values are on the diagonal of \u03a3",
+          "They are non-negative real numbers",
+          "They represent the scaling in the SVD factorization"
+        ],
+        "common_confusion": "Sigma is not a function, but a matrix"
+      }
+    }
+  ]
+}

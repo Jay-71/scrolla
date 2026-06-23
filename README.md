@@ -29,14 +29,12 @@ graph LR
 
 ### Core Components
 
-1.  **Input (`input/`)**: Fetches raw text from Wikipedia, Open Textbooks, GeeksForGeeks, W3Schools, etc.
-2.  **Process (`process/`)**:
-    *   **LLM Extractor**: Uses a local LLM to identify key concepts.
-    *   **Knowledge Resolver**: Expands each concept into authoritative knowledge.
-    *   **Atom Generator**: Converts knowledge into specific atom types (Explanation, Mental Model, etc.).
-3.  **Atoms (`atoms/`)**: Defines the structure and validation rules for atoms.
-4.  **Storage (`storage/`)**: Handles saving raw data, semantic concepts, and final atom feeds to JSON (`output/`).
-5.  **Visual Frontend (`visual/`)**: A React/Vite powered vertical-scroll UI that renders the generated JSON feeds with animations, Lottie graphics, and rich data cards.
+1.  **Engine (`engine/`)**: The consolidated backend logic containing modules for fetching, extracting, generating, curating, and storing content.
+    *   **LLM Gateway**: A unified, concurrent pipeline to interact with Ollama.
+    *   **Extraction & Generation**: Uses LLMs to dynamically pull and expand central topics into structured knowledge and learning atoms.
+2.  **Containers (`containers/`)**: Domain-isolated configurations (e.g., DSA, ML, General) that define specific remote sources and concept types per topic area.
+3.  **Output (`output/`)**: Automatically stores the generated JSON atom feeds and intermediate caching files. The pipeline uses this folder as an implicit index to prevent redundant LLM calls for repeated topics.
+4.  **Visual Frontend (`visual/`)**: A React/Vite powered vertical-scroll UI that renders the generated JSON feeds with animations, Lottie graphics, and rich data cards.
 
 ## 🛠️ Setup & Installation
 
@@ -85,7 +83,7 @@ npm install
     python main.py
     ```
 
-3.  **Enter a Topic**: When prompted, type a topic you want to learn about (e.g., "Binary Search Trees", "Quantum Entanglement"). The pipeline will fetch sources, extract concepts, resolve knowledge, and generate atoms.
+3.  **Enter a Topic & Domain**: When prompted, type a topic you want to learn about (e.g., "Binary Search Trees", "Quantum Entanglement") and select a matching domain (e.g., `dsa`, `ml`, or `general`). The pipeline checks the local cache first, then fetches sources and runs concurrent LLM extractions to generate atoms.
 
 4.  **View Output**: The final curated feed is saved in the `output/` directory as a JSON file (e.g., `output/<topic>_atoms.json`). The frontend automatically reads from the output to display the feeds.
 
@@ -104,15 +102,10 @@ npm install
 
 ```text
 scrolla/
-├── atoms/              # Atom definitions, validation, and curation logic
-├── input/              # Scrapers for Wikipedia, textbooks, and web references
-├── intelligence/       # Advanced concept scoring and graph logic
-├── process/            # Core LLM pipeline (Extraction, Generation)
-├── storage/            # JSON file I/O operations for caching and output
+├── containers/         # Domain-specific configurations (sources, concept types)
+├── engine/             # Core backend logic (fetch, extract, generate, curate, store)
 ├── visual/             # React + Vite frontend for the vertical scroll feed
-├── output/             # Generated final atom JSON feeds
-├── raw_knowledge/      # Cached scraped text content
-├── semantic_knowledge/ # Cached extracted concepts and definitions
+├── output/             # Generated final atom JSON feeds and cache mappings
 ├── main.py             # Entry point for the backend generation pipeline
 └── requirements.txt    # Python dependencies
 ```
@@ -127,4 +120,4 @@ Scrolla uses a strict format for "Atoms" to ensure quality:
 *   **Pitfall**: Common user mistakes.
 *   **Quick Check**: Interactive question to verify understanding.
 
-See `atoms/atom_generator.py` for specific implementation details and validation rules.
+See `engine/generate.py` and `engine/curate.py` for specific implementation details and validation rules.

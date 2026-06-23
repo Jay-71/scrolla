@@ -1,0 +1,264 @@
+{
+  "topic": "Derivatives, Partial Derivatives",
+  "generated_at": "2026-06-20T12:30:18.557430",
+  "concepts": [
+    {
+      "concept": "Derivative",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "A financial contract that obligates the buyer and seller to buy or sell an asset at a future date for a predetermined price.",
+        "key_points": [
+          "The underlier is the item involved in the transaction.",
+          "Derivatives can be used for hedging, speculation, or accessing hard-to-trade assets.",
+          "Their value depends on the underlier's performance."
+        ],
+        "common_confusion": "Derivatives are not the assets themselves but contracts based on their future prices."
+      }
+    },
+    {
+      "concept": "Underlier",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "In finance, the 'underlier' is the item or asset (commodity, stock, bond, currency, interest rate, etc.) upon which the value of a derivative contract depends.",
+        "key_points": [
+          "It's the entity that can be bought or sold according to the terms of the derivative contract.",
+          "The performance of the underlier determines the value of the derivative.",
+          "Examples include corn, oil, stocks, bonds, and price indices."
+        ],
+        "common_confusion": "Beginners might confuse 'underlier' with the underlying asset or market in general. However, it specifically refers to the item that directly influences a derivative's value."
+      }
+    },
+    {
+      "concept": "Future Act",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "The future act in a derivative is the agreed transaction (purchase or sale) of an underlier that must occur on a specific date at a predetermined price.",
+        "key_points": [
+          "It's a part of every derivative contract.",
+          "It specifies when and how the underlier will be traded.",
+          "The terms are agreed upon by both the buyer and seller."
+        ],
+        "common_confusion": "Beginners might confuse the future act with the actual trading of the underlier, but it's important to understand that the future act is just a predetermined agreement for a transaction."
+      }
+    },
+    {
+      "concept": "Price",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "In finance, the price in a derivative contract is the agreed-upon value at which the future transaction will occur.",
+        "key_points": [
+          "It's one of four elements in every derivative contract.",
+          "The price is determined beforehand and can be based on various underliers such as commodities, financial instruments, or indices.",
+          "Its value changes depending on the performance of the underlier."
+        ],
+        "common_confusion": "Beginners might confuse the derivative's price with its current market value, but they are not always the same."
+      }
+    },
+    {
+      "concept": "Date",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "The future date specified in a derivative contract, by which the agreed transaction (purchase or sale) must occur.",
+        "key_points": [
+          "It is one of four essential elements of a derivative contract.",
+          "It determines when the agreement will be fulfilled."
+        ],
+        "common_confusion": "Newcomers might confuse it with the expiration date of an individual derivative product, but they are related as the date is when all agreements within that product expire."
+      }
+    },
+    {
+      "concept": "Financial Instrument",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A financial instrument used for risk management or speculation, representing a contractual obligation to exchange assets, cash flows, or other financial instruments in the future at a predetermined price and date. The value of derivatives depends on the performance of an underlier, such as a commodity, financial instrument, index, currency, or interest rate.",
+        "key_points": [
+          "Derivatives can be used for hedging (risk management), speculation (increasing exposure to price movements), or accessing hard-to-trade assets or markets.",
+          "Common types include forwards, futures, options, swaps, synthetic collateralized debt obligations, and credit default swaps.",
+          "Most are traded over-the-counter or on exchanges like the Chicago Mercantile Exchange."
+        ],
+        "common_confusion": "Beginners might confuse derivatives with the actual assets they represent (e.g., corn instead of a futures contract for corn)"
+      }
+    },
+    {
+      "concept": "Hedging",
+      "type": "Application",
+      "knowledge": {
+        "summary": "Using derivatives to offset potential losses or gains from an underlying asset by taking an opposite position.",
+        "key_points": [
+          "Investors can protect against unfavorable price changes by buying a derivative that responds inversely to the price of the asset.",
+          "Derivatives like options and futures are commonly used for hedging purposes.",
+          "Hedging is crucial in industries sensitive to market volatility, such as agriculture and energy."
+        ],
+        "common_confusion": "Confusing hedging with speculation; while both involve derivatives, hedging aims to reduce risk, whereas speculation seeks profit from price changes"
+      }
+    },
+    {
+      "concept": "Speculation",
+      "type": "Application",
+      "knowledge": {
+        "summary": "Using derivatives for anticipating and benefiting from price movements in underlier assets, aiming to profit from potential price increases or decreases.",
+        "key_points": [
+          "Derivatives can be used strategically for speculation by individuals or entities to capitalize on expected changes in asset prices.",
+          "This strategy involves taking positions that bet on the direction of price movements, such as buying call options when expecting a rise or selling put options when anticipating a fall.",
+          "Speculation with derivatives is riskier compared to hedging because it aims for profit rather than risk reduction."
+        ],
+        "common_confusion": "Mistaking speculation as the same as hedging, which involves managing risk instead of profiting from price movements."
+      }
+    },
+    {
+      "concept": "Commodity",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A commodity is an item (like corn or oil) used as the 'underlier' in a derivative. Derivatives, such as forwards, futures, options, and swaps, are financial contracts that can be used to insure against price movements, increase exposure for speculation, or access hard-to-trade assets.",
+        "key_points": [
+          "Commodities serve as the underlying asset in a derivative contract.",
+          "Derivatives can help manage risks, such as adverse weather affecting agricultural products."
+        ],
+        "common_confusion": "It's essential to understand that derivatives are financial instruments based on an underlying asset, not the asset itself."
+      }
+    },
+    {
+      "concept": "Stock",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A stock is a type of financial instrument that represents ownership in a corporation. It can be bought or sold, and its value depends on the performance of the corporation.",
+        "key_points": [
+          "Stocks provide investors with a portion of the company's earnings and the right to vote on certain decisions.",
+          "Investing in stocks can yield capital gains (an increase in price) or dividends (cash payments from profits).",
+          "Stock prices are influenced by various factors, including market conditions, company performance, and investor sentiment."
+        ],
+        "common_confusion": "Beginners may confuse stocks with bonds, as both are used to raise capital, but stocks represent ownership while bonds represent debt."
+      }
+    },
+    {
+      "concept": "Bond",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A bond is a type of financial derivative that represents a debt obligation issued by an entity. It promises to repay a specified amount on a future date at a predetermined interest rate.",
+        "key_points": [
+          "Bonds are often used for borrowing money and can be bought or sold.",
+          "The value of a bond depends on the creditworthiness of the issuer and prevailing interest rates.",
+          "Investors buy bonds as a way to earn fixed income over a specified period."
+        ],
+        "common_confusion": "Bonds should not be confused with stocks, which represent ownership in a company rather than debt."
+      }
+    },
+    {
+      "concept": "Mortgage",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A mortgage is a loan used to buy real estate, typically repaid with regular installments over a fixed period. The property serves as collateral for the loan.",
+        "key_points": [
+          "Mortgages are common financial instruments in the debt category.",
+          "They involve two parties and specify conditions for payments based on factors such as dates, amounts, and property value.",
+          "The borrower's failure to repay the mortgage can result in the lender taking ownership of the property."
+        ],
+        "common_confusion": "Mortgages should not be confused with equity or stocks, which represent ownership in a company."
+      }
+    },
+    {
+      "concept": "Forwards",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A forward contract is a customizable agreement between two parties to buy or sell an asset at a future date, at a predetermined price. Commonly used in trade of commodities and currencies for risk management.",
+        "key_points": [
+          "It's a private contract that specifies the terms of buying/selling an asset at a future date.",
+          "Parties agree on the asset type, quantity, delivery date, and price today.",
+          "No exchange is involved; it's traded over-the-counter."
+        ],
+        "common_confusion": "Forwards are not exchange-traded like futures, nor do they give the buyer an option to opt out of the contract (unlike options)."
+      }
+    },
+    {
+      "concept": "Futures",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A contract between two parties to buy or sell an asset at a specific price and date in the future.",
+        "key_points": [
+          "Used by businesses such as agriculture, natural gas, electricity, oil to hedge against price volatility and risk from adverse weather.",
+          "Can also be used to protect lenders against borrower default risk.",
+          "Traded over-the-counter or on exchanges like the Chicago Mercantile Exchange."
+        ],
+        "common_confusion": "Mistaking futures for simple forward contracts, which lack a defined exchange and have no mandatory settlement"
+      }
+    },
+    {
+      "concept": "Options",
+      "type": "Application",
+      "knowledge": {
+        "summary": "Options are derivatives that give the buyer the right, but not the obligation, to buy or sell an underlying asset at a specified price on or before a certain date.",
+        "key_points": [
+          "Options can be used for risk management in various industries such as agriculture and energy.",
+          "They are often used to speculate on the future price movements of assets.",
+          "Unlike futures, options do not obligate the buyer to complete the transaction."
+        ],
+        "common_confusion": "Some beginners might confuse options with futures; while both are derivatives, options provide the right but not the obligation to buy or sell, whereas futures require delivery of the underlying asset at a future date."
+      }
+    },
+    {
+      "concept": "Swaps",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A swap is a derivative contract between two parties in which they agree to exchange a series of cash flows based on a notional principal over a specific period. The payments are contingent upon the occurrence of specified events, such as interest rates or commodity prices.",
+        "key_points": [
+          "Swaps involve regular cash flow exchanges, based on a notional principal and predetermined conditions.",
+          "They can be used to hedge risks related to changes in interest rates or commodity prices.",
+          "Swaps can also be customized to suit specific needs."
+        ],
+        "common_confusion": "Beginners may initially confuse swaps with forwards, but while both involve future exchanges of cash flows, swaps are more flexible and have multiple payment periods."
+      }
+    },
+    {
+      "concept": "Synthetic Collateralized Debt Obligation",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A synthetic CDO is a financial derivative used to transfer credit risk without directly holding the underlying assets. This is achieved through complex structures of swaps that mimic the returns of the assets.",
+        "key_points": [
+          "Involves a combination of swaps instead of holding the actual assets",
+          "Used to mitigate credit risk for lenders",
+          "Often employed in complex financial strategies due to its indirect nature"
+        ],
+        "common_confusion": "It's important to note that while synthetic CDOs are derivatives, they are distinct from traditional CDOs which involve holding the underlying assets."
+      }
+    },
+    {
+      "concept": "Credit Default Swap",
+      "type": "Application",
+      "knowledge": {
+        "summary": "A financial contract that provides protection against the risk of a borrower defaulting on an obligation. Parties agree on payments based on the creditworthiness of a debtor.",
+        "key_points": [
+          "It's a type of derivative used by lenders to hedge against borrowers' potential default.",
+          "The contract involves periodic payments in exchange for protection from default-related losses.",
+          "Credit Default Swaps are often traded over-the-counter or on exchanges."
+        ],
+        "common_confusion": "It's sometimes confused with a loan, but it is not a debt instrument nor a form of credit."
+      }
+    },
+    {
+      "concept": "Over-the-counter trade",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "An agreement between two parties for a future transaction involving an asset, with a predetermined price and date. OTC trades often involve hard-to-trade assets or complex derivatives.",
+        "key_points": [
+          "Involves the exchange of a financial instrument (e.g., stock or bond), commodity, currency, or interest rate",
+          "Typically settled privately between buyer and seller without a centralized exchange",
+          "Can be used for hedging, speculation, or accessing hard-to-trade assets or markets"
+        ],
+        "common_confusion": "OTC trades are not necessarily riskier than exchange-traded contracts, as they offer more flexibility in terms of customization and asset variety."
+      }
+    },
+    {
+      "concept": "Exchange",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "A platform where parties agree on terms for derivative contracts, specifying conditions under which payments are made. Derivatives can be traded both over-the-counter and on exchanges like the Chicago Mercantile Exchange.",
+        "key_points": [
+          "Exchanges facilitate trading of derivatives such as forwards, futures, options, swaps, and others",
+          "Some examples include the Chicago Mercantile Exchange for exchange-traded derivatives and over-the-counter markets for off-exchange trades",
+          "Increased pressure exists to move derivatives trading to exchanges after the 2008 financial crisis in the US"
+        ],
+        "common_confusion": "It is important to understand that not all derivative contracts are traded on an exchange, some are traded over-the-counter instead"
+      }
+    }
+  ]
+}

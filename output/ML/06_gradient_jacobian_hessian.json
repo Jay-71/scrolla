@@ -1,0 +1,86 @@
+{
+  "topic": "Gradient, Jacobian, Hessian",
+  "atoms": [
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Gradient",
+      "atom_type": "explanation",
+      "content": "The gradient is a vector that packs all the partial derivatives of a function into one list. It points in the direction of the steepest ascent (maximum increase) of a function.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Gradient",
+      "atom_type": "mental_model",
+      "content": "Imagine standing on a foggy mountain. If you always step in the steepest upward direction, you'll reach the top. That direction is the gradient.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 14,
+      "order": 2
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Jacobian",
+      "atom_type": "explanation",
+      "content": "While a gradient is for functions outputting a single number, the Jacobian is a matrix of all first-order partial derivatives for a function that outputs multiple numbers (a vector).",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 14,
+      "order": 3
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Hessian",
+      "atom_type": "explanation",
+      "content": "The Hessian is a matrix of second-order partial derivatives. It describes the local curvature of a function, telling us if the slope itself is getting steeper or flatter.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 4
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Hessian",
+      "atom_type": "mental_model",
+      "content": "If the gradient tells you whether you are walking uphill or downhill, the Hessian tells you whether the hill curves like a bowl (convex) or like a saddle.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 5
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Gradient: 1st derivatives (Vector).\n2. Jacobian: 1st derivatives of multiple outputs (Matrix).\n3. Hessian: 2nd derivatives (Matrix of curvature).",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 10,
+      "order": 6
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If an optimizer wants to know the 'curvature' of the error landscape to take smarter steps, which mathematical tool should it use? (Answer: Hessian)",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 7
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Gradient Descent",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 8,
+      "content": "In ML, gradient descent minimizes the loss function by iteratively moving parameters in the opposite direction of the gradient \u2014 downhill toward lower error."
+    },
+    {
+      "topic": "Gradient, Jacobian, Hessian",
+      "concept": "Jacobian in ML",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 9,
+      "content": "Jacobians appear in multi-output neural network layers, where they track how each output changes with respect to each input simultaneously."
+    }
+  ]
+}

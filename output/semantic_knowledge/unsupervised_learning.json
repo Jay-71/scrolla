@@ -1,0 +1,42 @@
+{
+  "topic": "Unsupervised Learning",
+  "generated_at": "2026-06-20T11:29:22.796534",
+  "concepts": [
+    {
+      "concept": "Unsupervised Learning",
+      "type": "Definition"
+    },
+    {
+      "concept": "Algorithm",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Generalization Error",
+      "type": "Metric"
+    },
+    {
+      "concept": "Training Set",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Feature Vector",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Feature Extraction",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Support Vector Machines",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Decision Trees",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Bias-Variance Tradeoff",
+      "type": "Pitfall"
+    }
+  ]
+}

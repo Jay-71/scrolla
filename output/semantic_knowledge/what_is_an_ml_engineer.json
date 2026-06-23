@@ -1,0 +1,86 @@
+{
+  "topic": "What is an ML Engineer?",
+  "generated_at": "2026-06-20T12:15:32.898397",
+  "concepts": [
+    {
+      "concept": "MLOps",
+      "type": "Definition"
+    },
+    {
+      "concept": "Machine Learning Model Deployment",
+      "type": "Application"
+    },
+    {
+      "concept": "DevOps/CI/CD Integration",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Model Maintenance",
+      "type": "Application"
+    },
+    {
+      "concept": "Business Alignment",
+      "type": "Metric"
+    },
+    {
+      "concept": "Regulatory Compliance",
+      "type": "Metric"
+    },
+    {
+      "concept": "Reproducibility",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Versioning (Data, Model, Code)",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Collaboration",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "ML Engineer",
+      "type": "Definition"
+    },
+    {
+      "concept": "ML Systems",
+      "type": "Application"
+    },
+    {
+      "concept": "Data Collection",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Data Processing",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Feature Engineering",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Data Labeling",
+      "type": "Application"
+    },
+    {
+      "concept": "Model Design",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Model Training and Optimization",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Endpoint Deployment",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Endpoint Monitoring",
+      "type": "Metrics"
+    },
+    {
+      "concept": "MLOps",
+      "type": "Practice"
+    }
+  ]
+}

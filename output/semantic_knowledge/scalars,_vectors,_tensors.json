@@ -1,0 +1,50 @@
+{
+  "topic": "Scalars, Vectors, Tensors",
+  "generated_at": "2026-06-20T11:49:18.384445",
+  "concepts": [
+    {
+      "concept": "Tensor",
+      "type": "Definition"
+    },
+    {
+      "concept": "Scalar",
+      "type": "Definition"
+    },
+    {
+      "concept": "Vector",
+      "type": "Definition"
+    },
+    {
+      "concept": "Multilinear Map",
+      "type": "Definition"
+    },
+    {
+      "concept": "Tensor Field",
+      "type": "Application"
+    },
+    {
+      "concept": "Riemann Curvature Tensor",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Multidimensional Array",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Components",
+      "type": "Definition"
+    },
+    {
+      "concept": "Indices",
+      "type": "Definition"
+    },
+    {
+      "concept": "Transformation Law",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Covariance and Contravariance",
+      "type": "Hyperparameter"
+    }
+  ]
+}

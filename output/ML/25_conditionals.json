@@ -1,0 +1,59 @@
+{
+  "topic": "Conditionals",
+  "atoms": [
+    {
+      "concept": "Conditionals",
+      "atom_type": "explanation",
+      "content": "Conditionals (if, elif, else) allow your code to make decisions. The program will execute different blocks of code depending on whether a condition is true or false.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Conditionals"
+    },
+    {
+      "concept": "Conditionals",
+      "atom_type": "mental_model",
+      "content": "Conditionals are like train tracks with switches. The train (code) hits a switch (condition) and gets routed down one specific track based on the rules.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Conditionals"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Use 'if' for the first condition.\n2. Use 'elif' for alternative conditions.\n3. Use 'else' as the final fallback.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 3,
+      "topic": "Conditionals"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If multiple 'elif' conditions evaluate to True, how many of their code blocks will execute? (Answer: Only the first one that evaluates to True).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "Conditionals"
+    },
+    {
+      "topic": "Conditionals",
+      "concept": "Boolean Operators",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 5,
+      "content": "Boolean operators combine conditions: 'and' requires both True, 'or' requires at least one True, 'not' inverts the result. Essential for complex decision logic."
+    },
+    {
+      "topic": "Conditionals",
+      "concept": "Truthiness",
+      "atom_type": "explanation",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 6,
+      "content": "In Python, 0, None, empty string (''), and empty list ([]) are all 'falsy' \u2014 they evaluate to False in conditions. Everything else is 'truthy'."
+    }
+  ]
+}

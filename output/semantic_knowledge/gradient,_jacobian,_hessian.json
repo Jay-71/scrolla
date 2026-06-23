@@ -1,0 +1,34 @@
+{
+  "topic": "Gradient, Jacobian, Hessian",
+  "generated_at": "2026-06-20T12:36:47.057596",
+  "concepts": [
+    {
+      "concept": "Jacobian Matrix",
+      "type": "Definition"
+    },
+    {
+      "concept": "Jacobian Determinant",
+      "type": "Definition"
+    },
+    {
+      "concept": "Partial Derivative",
+      "type": "Prerequisite"
+    },
+    {
+      "concept": "Jacobian Matrix",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Gradient Vector",
+      "type": "Definition"
+    },
+    {
+      "concept": "Hessian Matrix",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Jacobian Determinant",
+      "type": "Metric"
+    }
+  ]
+}

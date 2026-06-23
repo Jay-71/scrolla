@@ -1,0 +1,70 @@
+{
+  "topic": "What is Machine Learning?",
+  "generated_at": "2026-06-20T11:32:40.273261",
+  "concepts": [
+    {
+      "concept": "Definition",
+      "type": "Definition"
+    },
+    {
+      "concept": "Artificial Intelligence",
+      "type": "Application"
+    },
+    {
+      "concept": "Statistical Algorithms",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Deep Learning",
+      "type": "Application"
+    },
+    {
+      "concept": "Neural Networks",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Empirical Risk Minimisation",
+      "type": "Framework"
+    },
+    {
+      "concept": "Probably Approximately Correct Learning",
+      "type": "Framework"
+    },
+    {
+      "concept": "Machine Learning History",
+      "type": "Background"
+    },
+    {
+      "concept": "Checkers Program",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Hebbian Theory",
+      "type": "Theory"
+    },
+    {
+      "concept": "Neural Network",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Reinforcement Learning",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Pattern Classification",
+      "type": "Application"
+    },
+    {
+      "concept": "Artificial Neural Network (ANN)",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Generative Adversarial Networks (GAN)",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "AlphaGo",
+      "type": "Application"
+    }
+  ]
+}

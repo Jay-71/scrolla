@@ -1,0 +1,59 @@
+{
+  "topic": "Seaborn",
+  "atoms": [
+    {
+      "concept": "Seaborn",
+      "atom_type": "explanation",
+      "content": "Seaborn is a high-level data visualization library built directly on top of Matplotlib. It focuses on making attractive statistical graphics with minimal code.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Seaborn"
+    },
+    {
+      "concept": "Seaborn",
+      "atom_type": "mental_model",
+      "content": "If Matplotlib is painting a chart from scratch, Seaborn is using beautiful, pre-designed templates where you just drop in your dataset and it looks professional instantly.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Seaborn"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Built on Matplotlib.\n2. Excellent default themes and color palettes.\n3. Designed specifically for working with Pandas DataFrames.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 3,
+      "topic": "Seaborn"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "Which library requires less code to make a statistically complex, visually appealing chart: Matplotlib or Seaborn? (Answer: Seaborn).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 4,
+      "topic": "Seaborn"
+    },
+    {
+      "topic": "Seaborn",
+      "concept": "Key Plots",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 5,
+      "content": "Essential ML plots: sns.heatmap() for correlation matrices, sns.pairplot() for feature relationships, sns.boxplot() for outlier detection, sns.histplot() for distributions."
+    },
+    {
+      "topic": "Seaborn",
+      "concept": "Statistical Visualization",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 6,
+      "content": "Seaborn excels at statistical plots: sns.regplot() adds regression lines automatically, sns.kdeplot() shows smooth density curves, and sns.violinplot() combines box and density plots."
+    }
+  ]
+}

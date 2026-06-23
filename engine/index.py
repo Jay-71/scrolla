@@ -9,13 +9,13 @@ def build_topic_index() -> dict[str, str]:
     if not os.path.exists(OUTPUT_DIR):
         return index
 
-    search_pattern = os.path.join(OUTPUT_DIR, "*_atoms.json")
-    for file_path in glob.glob(search_pattern):
-        filename = os.path.basename(file_path)
+    from pathlib import Path
+    for file_path in Path(OUTPUT_DIR).rglob("*_atoms.json"):
+        filename = file_path.name
         canonical_name = filename[:-11]
         topic_string = canonical_name.replace("_", " ")
         stemmed_topic = normalize_concept_name(topic_string)
-        index[stemmed_topic] = file_path.replace("\\", "/")
+        index[stemmed_topic] = str(file_path).replace("\\", "/")
         
     return index
 

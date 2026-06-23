@@ -1,0 +1,86 @@
+{
+  "topic": "Discrete Mathematics",
+  "generated_at": "2026-06-20T13:50:06.439109",
+  "concepts": [
+    {
+      "concept": "Discrete Structures",
+      "type": "Definition"
+    },
+    {
+      "concept": "Integers",
+      "type": "Application"
+    },
+    {
+      "concept": "Graphs",
+      "type": "Application"
+    },
+    {
+      "concept": "Logic Statements",
+      "type": "Application"
+    },
+    {
+      "concept": "Countable Sets",
+      "type": "Definition"
+    },
+    {
+      "concept": "Finite Mathematics",
+      "type": "Application"
+    },
+    {
+      "concept": "Digital Computers",
+      "type": "Pitfall"
+    },
+    {
+      "concept": "Computer Algorithms",
+      "type": "Application"
+    },
+    {
+      "concept": "Cryptography",
+      "type": "Application"
+    },
+    {
+      "concept": "Automated Theorem Proving",
+      "type": "Application"
+    },
+    {
+      "concept": "Software Development",
+      "type": "Application"
+    },
+    {
+      "concept": "Analytic Methods (from Continuous Mathematics)",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Discrete Mathematics Course",
+      "type": "Definition"
+    },
+    {
+      "concept": "Fulkerson Prize",
+      "type": "Application"
+    },
+    {
+      "concept": "Graph Theory",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Mathematical Logic",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Algorithms",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Data Structures",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Computability",
+      "type": "Theory"
+    },
+    {
+      "concept": "Complexity",
+      "type": "Theory"
+    }
+  ]
+}

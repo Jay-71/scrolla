@@ -1,0 +1,426 @@
+{
+  "roadmap_title": "Machine Learning",
+  "total_topics": 70,
+  "topics": [
+    {
+      "id": 1,
+      "file": "01_what_is_an_ml_engineer.json",
+      "title": "What is an ML Engineer?",
+      "atom_count": 4
+    },
+    {
+      "id": 2,
+      "file": "02_ml_engineer_vs_ai_engineer.json",
+      "title": "ML Engineer vs AI Engineer",
+      "atom_count": 5
+    },
+    {
+      "id": 3,
+      "file": "03_skills_and_responsibilities.json",
+      "title": "Skills and Responsibilities",
+      "atom_count": 6
+    },
+    {
+      "id": 4,
+      "file": "04_derivatives_partial_derivatives.json",
+      "title": "Derivatives, Partial Derivatives",
+      "atom_count": 6
+    },
+    {
+      "id": 5,
+      "file": "05_chain_rule_of_derivation.json",
+      "title": "Chain rule of derivation",
+      "atom_count": 5
+    },
+    {
+      "id": 6,
+      "file": "06_gradient_jacobian_hessian.json",
+      "title": "Gradient, Jacobian, Hessian",
+      "atom_count": 9
+    },
+    {
+      "id": 7,
+      "file": "07_matrix_&_matrix_operations.json",
+      "title": "Matrix & Matrix Operations",
+      "atom_count": 8
+    },
+    {
+      "id": 8,
+      "file": "08_scalars_vectors_tensors.json",
+      "title": "Scalars, Vectors, Tensors",
+      "atom_count": 7
+    },
+    {
+      "id": 9,
+      "file": "09_singular_value_decomposition.json",
+      "title": "Singular Value Decomposition",
+      "atom_count": 7
+    },
+    {
+      "id": 10,
+      "file": "10_determinants_inverse_of_matrix.json",
+      "title": "Determinants, inverse of Matrix",
+      "atom_count": 7
+    },
+    {
+      "id": 11,
+      "file": "11_eigenvalues_diagonalization.json",
+      "title": "Eigenvalues, Diagonalization",
+      "atom_count": 6
+    },
+    {
+      "id": 12,
+      "file": "12_discrete_mathematics.json",
+      "title": "Discrete Mathematics",
+      "atom_count": 8
+    },
+    {
+      "id": 13,
+      "file": "13_basic_concepts_statistics.json",
+      "title": "Basic concepts (Statistics)",
+      "atom_count": 7
+    },
+    {
+      "id": 14,
+      "file": "14_descriptive_statistics.json",
+      "title": "Descriptive Statistics",
+      "atom_count": 8
+    },
+    {
+      "id": 15,
+      "file": "15_graphs_and_charts.json",
+      "title": "Graphs & Charts",
+      "atom_count": 6
+    },
+    {
+      "id": 16,
+      "file": "16_inferential_statistics.json",
+      "title": "Inferential Statistics",
+      "atom_count": 9
+    },
+    {
+      "id": 17,
+      "file": "17_basics_of_probability.json",
+      "title": "Basics of Probability",
+      "atom_count": 8
+    },
+    {
+      "id": 18,
+      "file": "18_bayes_theorem.json",
+      "title": "Bayes Theorem",
+      "atom_count": 8
+    },
+    {
+      "id": 19,
+      "file": "19_random_variables_pdfs.json",
+      "title": "Random Variables, PDFs",
+      "atom_count": 9
+    },
+    {
+      "id": 20,
+      "file": "20_types_of_distribution.json",
+      "title": "Types of Distribution",
+      "atom_count": 10
+    },
+    {
+      "id": 21,
+      "file": "21_basic_syntax.json",
+      "title": "Basic Syntax",
+      "atom_count": 6
+    },
+    {
+      "id": 22,
+      "file": "22_variables_and_data_types.json",
+      "title": "Variables and Data Types",
+      "atom_count": 7
+    },
+    {
+      "id": 23,
+      "file": "23_data_structures.json",
+      "title": "Data Structures",
+      "atom_count": 6
+    },
+    {
+      "id": 24,
+      "file": "24_loops.json",
+      "title": "Loops",
+      "atom_count": 6
+    },
+    {
+      "id": 25,
+      "file": "25_conditionals.json",
+      "title": "Conditionals",
+      "atom_count": 6
+    },
+    {
+      "id": 26,
+      "file": "26_exceptions.json",
+      "title": "Exceptions",
+      "atom_count": 6
+    },
+    {
+      "id": 27,
+      "file": "27_functions_builtin_functions.json",
+      "title": "Functions, Builtin Functions",
+      "atom_count": 6
+    },
+    {
+      "id": 28,
+      "file": "28_object_oriented_programming.json",
+      "title": "Object Oriented Programming",
+      "atom_count": 7
+    },
+    {
+      "id": 29,
+      "file": "29_numpy.json",
+      "title": "Numpy",
+      "atom_count": 8
+    },
+    {
+      "id": 30,
+      "file": "30_pandas.json",
+      "title": "Pandas",
+      "atom_count": 9
+    },
+    {
+      "id": 31,
+      "file": "31_matplotlib.json",
+      "title": "Matplotlib",
+      "atom_count": 7
+    },
+    {
+      "id": 32,
+      "file": "32_seaborn.json",
+      "title": "Seaborn",
+      "atom_count": 6
+    },
+    {
+      "id": 33,
+      "file": "33_databases_(sql_no-sql).json",
+      "title": "Databases (SQL, No-SQL)",
+      "atom_count": 7
+    },
+    {
+      "id": 34,
+      "file": "34_apis_and_web_scraping.json",
+      "title": "APIs and Web Scraping",
+      "atom_count": 6
+    },
+    {
+      "id": 35,
+      "file": "35_data_formats_(json_xml_csv).json",
+      "title": "Data Formats (JSON, XML, CSV)",
+      "atom_count": 7
+    },
+    {
+      "id": 36,
+      "file": "36_missing_values_and_outliers.json",
+      "title": "Missing values and Outliers",
+      "atom_count": 6
+    },
+    {
+      "id": 37,
+      "file": "37_data_normalization_and_scaling.json",
+      "title": "Data normalization and Scaling",
+      "atom_count": 7
+    },
+    {
+      "id": 38,
+      "file": "38_encoding_categorical_variables.json",
+      "title": "Encoding Categorical variables",
+      "atom_count": 7
+    },
+    {
+      "id": 39,
+      "file": "39_feature_engineering.json",
+      "title": "Feature Engineering",
+      "atom_count": 6
+    },
+    {
+      "id": 40,
+      "file": "40_what_is_machine_learning.json",
+      "title": "What is Machine Learning?",
+      "atom_count": 4
+    },
+    {
+      "id": 41,
+      "file": "41_supervised_vs_unsupervised.json",
+      "title": "Supervised vs Unsupervised",
+      "atom_count": 6
+    },
+    {
+      "id": 42,
+      "file": "42_scikit-learn_(sklearn).json",
+      "title": "Scikit-Learn (Sklearn)",
+      "atom_count": 7
+    },
+    {
+      "id": 43,
+      "file": "43_train_test_split.json",
+      "title": "Train/Test Split",
+      "atom_count": 5
+    },
+    {
+      "id": 44,
+      "file": "44_cross_validation.json",
+      "title": "Cross Validation",
+      "atom_count": 5
+    },
+    {
+      "id": 45,
+      "file": "45_model_evaluation_metrics.json",
+      "title": "Model Evaluation Metrics",
+      "atom_count": 7
+    },
+    {
+      "id": 46,
+      "file": "46_overfitting_and_underfitting.json",
+      "title": "Overfitting and Underfitting",
+      "atom_count": 6
+    },
+    {
+      "id": 47,
+      "file": "47_bias-variance_tradeoff.json",
+      "title": "Bias-Variance Tradeoff",
+      "atom_count": 6
+    },
+    {
+      "id": 48,
+      "file": "48_linear_regression.json",
+      "title": "Linear Regression",
+      "atom_count": 6
+    },
+    {
+      "id": 49,
+      "file": "49_logistic_regression.json",
+      "title": "Logistic Regression",
+      "atom_count": 5
+    },
+    {
+      "id": 50,
+      "file": "50_decision_trees.json",
+      "title": "Decision Trees",
+      "atom_count": 6
+    },
+    {
+      "id": 51,
+      "file": "51_random_forest.json",
+      "title": "Random Forest",
+      "atom_count": 5
+    },
+    {
+      "id": 52,
+      "file": "52_support_vector_machines_(svm).json",
+      "title": "Support Vector Machines (SVM)",
+      "atom_count": 6
+    },
+    {
+      "id": 53,
+      "file": "53_k-nearest_neighbors_(knn).json",
+      "title": "K-Nearest Neighbors (KNN)",
+      "atom_count": 5
+    },
+    {
+      "id": 54,
+      "file": "54_naive_bayes.json",
+      "title": "Naive Bayes",
+      "atom_count": 6
+    },
+    {
+      "id": 55,
+      "file": "55_gradient_boosting_(xgboost).json",
+      "title": "Gradient Boosting (XGBoost)",
+      "atom_count": 6
+    },
+    {
+      "id": 56,
+      "file": "56_k-means_clustering.json",
+      "title": "K-Means Clustering",
+      "atom_count": 6
+    },
+    {
+      "id": 57,
+      "file": "57_hierarchical_clustering.json",
+      "title": "Hierarchical Clustering",
+      "atom_count": 5
+    },
+    {
+      "id": 58,
+      "file": "58_principal_component_analysis_(pca).json",
+      "title": "Principal Component Analysis (PCA)",
+      "atom_count": 6
+    },
+    {
+      "id": 59,
+      "file": "59_autoencoders.json",
+      "title": "Autoencoders",
+      "atom_count": 5
+    },
+    {
+      "id": 60,
+      "file": "60_isolation_forests_(anomaly_detection).json",
+      "title": "Isolation Forests (Anomaly Detection)",
+      "atom_count": 6
+    },
+    {
+      "id": 61,
+      "file": "61_what_is_deep_learning.json",
+      "title": "What is Deep Learning?",
+      "atom_count": 7
+    },
+    {
+      "id": 62,
+      "file": "62_perceptrons_multi-layer_perceptrons_(mlp).json",
+      "title": "Perceptrons, Multi-Layer Perceptrons (MLP)",
+      "atom_count": 6
+    },
+    {
+      "id": 63,
+      "file": "63_activation_functions.json",
+      "title": "Activation functions",
+      "atom_count": 5
+    },
+    {
+      "id": 64,
+      "file": "64_backpropagation_&_gradient_descent.json",
+      "title": "Backpropagation & Gradient Descent",
+      "atom_count": 6
+    },
+    {
+      "id": 65,
+      "file": "65_loss_functions.json",
+      "title": "Loss Functions",
+      "atom_count": 5
+    },
+    {
+      "id": 66,
+      "file": "66_convolutional_neural_networks_(cnns).json",
+      "title": "Convolutional Neural Networks (CNNs)",
+      "atom_count": 6
+    },
+    {
+      "id": 67,
+      "file": "67_recurrent_neural_networks_(rnns)_lstms.json",
+      "title": "Recurrent Neural Networks (RNNs), LSTMs",
+      "atom_count": 6
+    },
+    {
+      "id": 68,
+      "file": "68_transformers_and_attention.json",
+      "title": "Transformers and Attention",
+      "atom_count": 6
+    },
+    {
+      "id": 69,
+      "file": "69_natural_language_processing_(nlp).json",
+      "title": "Natural Language Processing (NLP)",
+      "atom_count": 7
+    },
+    {
+      "id": 70,
+      "file": "70_reinforcement_learning_basics.json",
+      "title": "Reinforcement Learning Basics",
+      "atom_count": 5
+    }
+  ]
+}

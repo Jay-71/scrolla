@@ -1,0 +1,68 @@
+{
+  "topic": "Model Evaluation Metrics",
+  "atoms": [
+    {
+      "concept": "Classification Metrics",
+      "atom_type": "explanation",
+      "content": "Accuracy measures overall correctness, but Precision measures quality (false positives) and Recall measures quantity (false negatives).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 1,
+      "topic": "Model Evaluation Metrics"
+    },
+    {
+      "concept": "Precision & Recall",
+      "atom_type": "mental_model",
+      "content": "Precision is 'Of all the emails I called spam, how many actually were?' Recall is 'Of all the real spam emails, how many did I catch?'",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Model Evaluation Metrics"
+    },
+    {
+      "concept": "F1-Score",
+      "atom_type": "explanation",
+      "content": "The F1-Score is the harmonic mean of Precision and Recall. It provides a single metric that perfectly balances the trade-off between the two.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Model Evaluation Metrics"
+    },
+    {
+      "concept": "Regression Metrics",
+      "atom_type": "explanation",
+      "content": "For predicting continuous numbers (regression), we use Mean Squared Error (MSE) or Mean Absolute Error (MAE) to measure how far off our predictions are.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 4,
+      "topic": "Model Evaluation Metrics"
+    },
+    {
+      "concept": "Confusion Matrix",
+      "atom_type": "explanation",
+      "content": "A confusion matrix is a grid that visually shows exactly what a classification model got right and what it confused (True Positives vs False Positives).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 5,
+      "topic": "Model Evaluation Metrics"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Don't rely solely on Accuracy.\n2. Precision = Quality.\n3. Recall = Quantity.\n4. F1 = Balance.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 10,
+      "order": 6,
+      "topic": "Model Evaluation Metrics"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If you build a cancer detection model, is it worse to have a False Positive (scare a healthy patient) or a False Negative (miss a sick patient)? (Answer: False Negative, meaning Recall is more important).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 7,
+      "topic": "Model Evaluation Metrics"
+    }
+  ]
+}

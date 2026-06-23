@@ -1,0 +1,54 @@
+{
+  "topic": "ML Engineer vs AI Engineer",
+  "generated_at": "2026-06-20T12:20:35.963434",
+  "concepts": [
+    {
+      "concept": "DVC",
+      "type": "Application"
+    },
+    {
+      "concept": "Data Versioning",
+      "type": "Hyperparameter"
+    },
+    {
+      "concept": "Cloud Storage Integration",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Codification of Datasets and Models",
+      "type": "Definition"
+    },
+    {
+      "concept": "Reproducibility",
+      "type": "Metric"
+    },
+    {
+      "concept": "Data Management",
+      "type": "Application"
+    },
+    {
+      "concept": "Pipelines",
+      "type": "Application"
+    },
+    {
+      "concept": "Experiment Tracking",
+      "type": "Application"
+    },
+    {
+      "concept": "Data Versioning",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Codification",
+      "type": "Algorithm"
+    },
+    {
+      "concept": "Pipelines",
+      "type": "Architecture"
+    },
+    {
+      "concept": "Artifact Registration",
+      "type": "Algorithm"
+    }
+  ]
+}

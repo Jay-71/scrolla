@@ -1,0 +1,50 @@
+{
+  "topic": "Chain rule of derivation",
+  "atoms": [
+    {
+      "topic": "Chain rule of derivation",
+      "concept": "Chain Rule",
+      "atom_type": "explanation",
+      "content": "The chain rule is a formula to compute the derivative of a composite function. In Machine Learning, it's the core mathematical engine behind backpropagation in neural networks.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 1
+    },
+    {
+      "topic": "Chain rule of derivation",
+      "concept": "Chain Rule",
+      "atom_type": "mental_model",
+      "content": "Imagine a gear system. Gear A turns Gear B, which turns Gear C. To find how fast C turns relative to A, you multiply their individual turning ratios together.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 2
+    },
+    {
+      "topic": "Chain rule of derivation",
+      "concept": "Chain Rule",
+      "atom_type": "example",
+      "content": "If y = f(g(x)), the chain rule states that dy/dx = f'(g(x)) * g'(x). You take the derivative of the outside function and multiply it by the derivative of the inside.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 15,
+      "order": 3
+    },
+    {
+      "topic": "Chain rule of derivation",
+      "concept": "Chain Rule",
+      "atom_type": "key_points",
+      "content": "1. Used for nested functions.\n2. Multiplies local gradients together.\n3. Allows neural networks to pass error backward through multiple layers.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 4
+    },
+    {
+      "topic": "Chain rule of derivation",
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What algorithm in deep learning relies entirely on the chain rule to update weights? (Answer: Backpropagation)",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 6,
+      "order": 5
+    }
+  ]
+}

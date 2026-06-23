@@ -1,0 +1,59 @@
+{
+  "topic": "APIs and Web Scraping",
+  "atoms": [
+    {
+      "concept": "APIs",
+      "atom_type": "explanation",
+      "content": "An API (Application Programming Interface) is a structured interface for code to request and receive clean data from a remote server.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "APIs and Web Scraping"
+    },
+    {
+      "concept": "Web Scraping",
+      "atom_type": "explanation",
+      "content": "Web scraping is the process of writing code to download raw HTML from a website and extract specific text when no API is available.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "APIs and Web Scraping"
+    },
+    {
+      "concept": "Extraction",
+      "atom_type": "mental_model",
+      "content": "An API is ordering food off a menu from a waiter. Web scraping is walking into the kitchen and taking the food out of the fridge yourself.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "APIs and Web Scraping"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. APIs return clean JSON.\n2. Scraping parses messy HTML (BeautifulSoup).\n3. Always check for API keys and rate limits.\n4. Python tool: the requests library.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 4,
+      "topic": "APIs and Web Scraping"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If a website changes its visual layout, which data extraction method is most likely to break? (Answer: Web Scraping).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 8,
+      "order": 5,
+      "topic": "APIs and Web Scraping"
+    },
+    {
+      "topic": "APIs and Web Scraping",
+      "concept": "HTTP/Requests",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 6,
+      "content": "HTTP GET requests retrieve data; POST sends data. Python's requests library makes API calls simple: response = requests.get(url) returns the data."
+    }
+  ]
+}

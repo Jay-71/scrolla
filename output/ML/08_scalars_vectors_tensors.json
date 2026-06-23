@@ -1,0 +1,68 @@
+{
+  "topic": "Scalars, Vectors, Tensors",
+  "atoms": [
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "concept": "Scalars",
+      "atom_type": "explanation",
+      "content": "A scalar is a single numerical value, representing only magnitude. In deep learning, loss (error) is almost always a scalar value.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 1
+    },
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "concept": "Vectors",
+      "atom_type": "explanation",
+      "content": "A vector is a 1D array or list of numbers, representing magnitude and direction. It is a tensor of rank 1. A single row of features for one user is a vector.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 2
+    },
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "concept": "Tensors",
+      "atom_type": "explanation",
+      "content": "A tensor is a generalized n-dimensional array. Scalar = 0D, vector = 1D, matrix = 2D. Higher dimensions are simply called tensors.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 15,
+      "order": 3
+    },
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "concept": "Tensors",
+      "atom_type": "mental_model",
+      "content": "Think of a scalar as a dot, a vector as a line of dots, a matrix as a square of dots, and a 3D tensor as a cube of dots (like an RGB image).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 4
+    },
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "If you are processing a batch of 32 color images, each 64x64 pixels, you need a 4D data structure. What is this structure called? (Answer: A 4D Tensor)",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 8,
+      "order": 5
+    },
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "concept": "Vector Norms",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 6,
+      "content": "The norm measures a vector's length. The L2 norm (Euclidean distance) is used everywhere in ML \u2014 from regularization to measuring prediction error."
+    },
+    {
+      "topic": "Scalars, Vectors, Tensors",
+      "concept": "Framework Tensors",
+      "atom_type": "explanation",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 7,
+      "content": "PyTorch uses torch.Tensor and TensorFlow uses tf.Tensor as their core data structure. All ML computations flow through tensors."
+    }
+  ]
+}

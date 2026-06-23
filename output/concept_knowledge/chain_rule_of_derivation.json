@@ -1,0 +1,96 @@
+{
+  "topic": "Chain rule of derivation",
+  "generated_at": "2026-06-20T12:34:48.675393",
+  "concepts": [
+    {
+      "concept": "Chain Rule",
+      "type": "Definition",
+      "knowledge": {
+        "summary": "The Chain Rule is a formula in calculus that allows the derivative of a composite function to be found by multiplying the derivatives of the individual functions involved.",
+        "key_points": [
+          "It connects the derivative of a composite function with the derivatives of its constituent functions.",
+          "The rule states: (f \u2218 g)' = f'(g(x)) * g'(x)",
+          "In Leibniz's notation, it can be written as d/dx[f(g(x))] = d/dy[f(y)] * d/dx[g(x)]"
+        ],
+        "common_confusion": "Forgetting to apply the rule when dealing with composite functions can lead to errors."
+      }
+    },
+    {
+      "concept": "Composition of Functions",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "The chain rule in calculus finds the derivative of a composite function, which is the result of applying one function to another. It's a formula that combines the derivatives of the constituent functions.",
+        "key_points": [
+          "If h(x) = z(y(x)), then h'(x) = z'(y(x)) * y'(x)",
+          "In Leibniz's notation: dz/dx = dz/dy * dy/dx",
+          "The chain rule allows us to differentiate complex functions by breaking them down into simpler ones"
+        ],
+        "common_confusion": "Confusing the order of function application or forgetting the multiplication in the chain rule can lead to incorrect results."
+      }
+    },
+    {
+      "concept": "Derivative of Composite Function",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "The chain rule calculates the derivative of a function h(x) that is composed of two differentiable functions z(y) and y(x). It relates the derivative of h(x) to the derivatives of z(y) and y(x).",
+        "key_points": [
+          "h(x) = z(y(x)) where z and y are differentiable functions.",
+          "The chain rule states that h'(x) = z'(y(x)) * y'(x)",
+          "Another form of the chain rule is d(z/dx) = (dz/dy)*(dy/dx)"
+        ],
+        "common_confusion": "It's important to remember the order of operations: apply the derivative with respect to y, then with respect to x."
+      }
+    },
+    {
+      "concept": "Instantaneous Rate of Change",
+      "type": "Application",
+      "knowledge": {
+        "summary": "The chain rule allows calculating the derivative of a composite function by multiplying the derivatives of each component function, evaluated at their respective points.",
+        "key_points": [
+          "Knowing the rate of change of an outer function with respect to its inner function and the rate of change of the inner function with respect to the independent variable allows calculating the overall rate of change.",
+          "The chain rule can be used for finding derivatives of complex functions by breaking them down into simpler functions."
+        ],
+        "common_confusion": "One common mistake is forgetting to evaluate the derivatives at the correct points or applying the rule incorrectly with non-composite functions."
+      }
+    },
+    {
+      "concept": "Composite Function",
+      "type": "Architecture",
+      "knowledge": {
+        "summary": "The chain rule is a method to compute the derivative of a composite function, which is a function made by combining two functions. It's particularly useful for finding the rate of change of complex functions.",
+        "key_points": [
+          "A composite function is formed by nesting one function inside another.",
+          "The chain rule states that the derivative of a composite function can be found by multiplying the derivatives of each function, evaluated at their respective points.",
+          "It's essential to apply this rule recursively when dealing with multiple nested functions."
+        ],
+        "common_confusion": "Forgetting to reverse the order of functions during application of the chain rule."
+      }
+    },
+    {
+      "concept": "Differentiable Function",
+      "type": "Hyperparameter",
+      "knowledge": {
+        "summary": "A differentiable function is a smooth function with a continuous derivative. It means that the function's slope can change but should not have any abrupt jumps or discontinuities.",
+        "key_points": [
+          "The chain rule is a formula to find the derivative of a composition of two differentiable functions.",
+          "It allows breaking down complex derivatives into simpler ones by using the product rule and power rule.",
+          "In calculus, the chain rule is crucial for solving problems involving composite functions."
+        ],
+        "common_confusion": "A common mistake is to forget that when applying the chain rule, the derivative of the outer function should be taken with respect to the inner function's value, and the derivative of the inner function with respect to the independent variable."
+      }
+    },
+    {
+      "concept": "Derivative",
+      "type": "Algorithm",
+      "knowledge": {
+        "summary": "The chain rule is a formula in calculus that helps find the derivative of a composition of two functions.",
+        "key_points": [
+          "Given functions z and y, if h(x) = z(y(x)), the chain rule states h'(x) = z'(y(x)) * y'(x).",
+          "In Leibniz's notation, d(z)/dx = (d(z)/dy) * (d(y)/dx).",
+          "The chain rule is used when a variable depends on another that in turn depends on the original variable."
+        ],
+        "common_confusion": "Mistake: Forgetting to use the chain rule when dealing with composite functions"
+      }
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+# Machine Learning Roadmap (with Estimated Atom Counts)
+
+*Note: An "Atom" is a bite-sized learning chunk in Scrolla (e.g., an explanation, an analogy/mental model, a code example, a common pitfall, or a quick check). Complex algorithms require more atoms to break down, while simple definitions require fewer.*
+
+## Pre-requisites
+- Python Roadmap `[Est: 20 Atoms total]`
+- Related Roadmaps (AI Engineer, MLOps, Data Scientist) `[Est: 8 Atoms total]`
+
+## Introduction
+- What is an ML Engineer? `[4 Atoms]`
+- ML Engineer vs AI Engineer `[3 Atoms]`
+- Skills and Responsibilities `[4 Atoms]`
+
+## Mathematical Foundations
+- Calculus
+  - Derivatives, Partial Derivatives `[6 Atoms]`
+  - Chain rule of derivation `[5 Atoms]`
+  - Gradient, Jacobian, Hessian `[7 Atoms]`
+- Linear Algebra
+  - Matrix & Matrix Operations `[6 Atoms]`
+  - Scalars, Vectors, Tensors `[5 Atoms]`
+  - Singular Value Decomposition `[7 Atoms]`
+  - Determinants, inverse of Matrix `[5 Atoms]`
+  - Eigenvalues, Diagonalization `[6 Atoms]`
+- Discrete Mathematics `[5 Atoms]`
+- Statistics
+  - Basic concepts `[4 Atoms]`
+  - Descriptive Statistics `[5 Atoms]`
+  - Graphs & Charts `[6 Atoms]`
+  - Inferential Statistics `[6 Atoms]`
+- Probability
+  - Basics of Probability `[5 Atoms]`
+  - Bayes Theorem `[6 Atoms]`
+  - Random Variances, PDFs `[6 Atoms]`
+  - Types of Distribution `[7 Atoms]`
+
+## Programming Fundamentals
+- Python
+  - Basic Syntax `[4 Atoms]`
+  - Variables and Data Types `[5 Atoms]`
+  - Data Structures `[6 Atoms]`
+  - Loops `[4 Atoms]`
+  - Conditionals `[4 Atoms]`
+  - Exceptions `[4 Atoms]`
+  - Functions, Builtin Functions `[5 Atoms]`
+- Object Oriented Programming `[7 Atoms]`
+- Essential libraries
+  - Numpy `[6 Atoms]`
+  - Pandas `[6 Atoms]`
+  - Matplotlib `[5 Atoms]`
+  - Seaborn `[4 Atoms]`
+
+## Data Collection & Sources
+- Data Sources
+  - Databases (SQL, No-SQL) `[6 Atoms]`
+  - Internet `[3 Atoms]`
+  - APIs `[5 Atoms]`
+  - Mobile Apps & IoT `[5 Atoms]`
+- Data Formats
+  - CSV, Excel, JSON, Parquet `[8 Atoms]`
+
+## Data Cleaning & Preprocessing
+- Preprocessing Techniques
+  - Data Cleaning `[6 Atoms]`
+  - Feature Engineering `[7 Atoms]`
+  - Feature Scaling & Normalization `[6 Atoms]`
+  - Dimensionality Reduction `[6 Atoms]`
+  - Feature Selection `[5 Atoms]`
+
+## Machine Learning Basics
+- What is Machine Learning? `[5 Atoms]`
+- Types of Machine Learning
+  - Supervised Learning `[5 Atoms]`
+  - Unsupervised Learning `[5 Atoms]`
+  - Semi-supervised Learning `[4 Atoms]`
+  - Self-supervised Learning `[4 Atoms]`
+  - Reinforcement Learning `[5 Atoms]`
+
+## Scikit-Learn
+- Data Loading `[3 Atoms]`
+- Train - Test Data `[5 Atoms]`
+- Data Preparation `[4 Atoms]`
+- Model Selection `[5 Atoms]`
+- Tuning `[5 Atoms]`
+- Prediction `[3 Atoms]`
+
+## Supervised Learning
+- What is Supervised Learning? `[4 Atoms]`
+- Classification
+  - K-Nearest Neighbors (KNN) `[6 Atoms]`
+  - Logistic Regression `[6 Atoms]`
+  - Support Vector Machines `[7 Atoms]`
+  - Decision Trees, Random Forest `[7 Atoms]`
+  - Gradient Boosting Machines `[6 Atoms]`
+- Regression
+  - Linear Regression `[6 Atoms]`
+  - Polynomial Regression `[5 Atoms]`
+  - Lasso `[4 Atoms]`
+  - Ridge `[4 Atoms]`
+  - ElasticNet Regularization `[4 Atoms]`
+
+## Unsupervised Learning
+- What is Unsupervised Learning? `[4 Atoms]`
+- Dimensionality Reduction
+  - Principal Component Analysis `[7 Atoms]`
+  - Autoencoders `[6 Atoms]`
+- Clustering
+  - Exclusive & Overlapping `[5 Atoms]`
+  - Hierarchical & Probabilistic `[6 Atoms]`
+
+## Reinforcement Learning
+- What is Reinforcement Learning? `[5 Atoms]`
+- Deep-Q Networks `[7 Atoms]`
+- Policy Gradient `[6 Atoms]`
+- Actor-Critic Methods `[7 Atoms]`
+- Q-Learning `[6 Atoms]`
+
+## Model Evaluation
+- What is Model Evaluation? `[4 Atoms]`
+- Why is it important? `[3 Atoms]`
+- Metrics to Evaluate
+  - Accuracy, Precision, Recall, F1-Score `[8 Atoms]`
+  - ROC-AUC, Log Loss, Confusion Matrix `[8 Atoms]`
+- Validation Techniques
+  - K-Fold Cross Validation `[5 Atoms]`
+  - LOOCV `[4 Atoms]`
+
+## Deep Learning
+- Neural Network (NN) Basics
+  - Perceptron, Multi-layer Perceptrons `[7 Atoms]`
+  - Forward propagation `[5 Atoms]`
+  - Back Propagation `[7 Atoms]`
+  - Activation Functions `[6 Atoms]`
+  - Loss Functions `[5 Atoms]`
+- Deep Learning Libraries
+  - TensorFlow, Keras, Scikit-learn, PyTorch `[8 Atoms]`
+- Deep Learning Architectures
+  - Convolutional Neural Network (CNN)
+    - Convolution, Pooling, Padding, Strides `[10 Atoms]`
+  - Applications of CNNs
+    - Image Recognition, Segmentation, RecSys `[8 Atoms]`
+  - Recurrent Neural Networks
+    - RNN, GRU, LSTM `[9 Atoms]`
+  - Attention Mechanisms
+    - Self-Attention, Transformers, Multi-head `[10 Atoms]`
+  - Autoencoders `[5 Atoms]`
+  - Generative Adversarial Networks (GANs) `[7 Atoms]`
+
+## Advanced Concepts in ML
+- Explainable AI `[6 Atoms]`
+- Natural Language Processing
+  - Tokenization, Stemming, Lemmatization `[7 Atoms]`
+  - Embeddings & Attention Models `[7 Atoms]`

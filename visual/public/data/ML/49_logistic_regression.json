@@ -1,0 +1,50 @@
+{
+  "topic": "Logistic Regression",
+  "atoms": [
+    {
+      "concept": "Logistic Regression",
+      "atom_type": "explanation",
+      "content": "Despite its name, Logistic Regression is a classification algorithm used to predict binary outcomes (Yes/No, True/False) by outputting a probability between 0 and 1.",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 12,
+      "order": 1,
+      "topic": "Logistic Regression"
+    },
+    {
+      "concept": "Logistic Regression",
+      "atom_type": "mental_model",
+      "content": "Instead of a straight line going to infinity, Logistic Regression uses an S-shaped curve that squashes all predictions into a strict percentage chance (0% to 100%).",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 12,
+      "order": 2,
+      "topic": "Logistic Regression"
+    },
+    {
+      "concept": "Sigmoid Function",
+      "atom_type": "explanation",
+      "content": "The math behind the S-curve is called the Sigmoid function. If the output probability is > 0.5, it classifies the result as 'Yes'.",
+      "difficulty": "hard",
+      "estimated_read_time_sec": 12,
+      "order": 3,
+      "topic": "Logistic Regression"
+    },
+    {
+      "concept": "Key Points",
+      "atom_type": "key_points",
+      "content": "1. Used for binary classification.\n2. Outputs probabilities.\n3. Uses the Sigmoid curve.",
+      "difficulty": "easy",
+      "estimated_read_time_sec": 8,
+      "order": 4,
+      "topic": "Logistic Regression"
+    },
+    {
+      "concept": "Check",
+      "atom_type": "quick_check",
+      "content": "What mathematical function does Logistic Regression use to keep its predictions strictly between 0 and 1? (Answer: The Sigmoid function).",
+      "difficulty": "medium",
+      "estimated_read_time_sec": 10,
+      "order": 5,
+      "topic": "Logistic Regression"
+    }
+  ]
+}
