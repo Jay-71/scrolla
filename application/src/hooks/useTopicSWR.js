@@ -53,8 +53,22 @@ export const useTopicSWR = (topicId) => {
 
         // 3. Fetch exact topic payload or batched payload (Background Revalidation)
         const fetchFile = topicMeta.batch_file || topicMeta.file;
-        const topicUrl = `https://scrolla-content.vercel.app/ML/${fetchFile}`;
-        const topicRes = await fetch(topicUrl);
+        let topicUrl = `https://scrolla-content.vercel.app/ML/${fetchFile}`;
+        let topicRes = await fetch(topicUrl);
+        
+        // --- STALE CACHE RECOVERY ---
+        if (topicRes.status === 404 && cachedIndexStr) {
+           indexData = await indexPromise;
+           if (indexData) {
+              const freshMeta = indexData.topics.find(t => t.id === Number(topicId));
+              if (freshMeta) {
+                 const freshFetchFile = freshMeta.batch_file || freshMeta.file;
+                 topicUrl = `https://scrolla-content.vercel.app/ML/${freshFetchFile}`;
+                 topicRes = await fetch(topicUrl);
+              }
+           }
+        }
+        
         if (!topicRes.ok) throw new Error(`HTTP ${topicRes.status} from CDN`);
         
         const responseData = await topicRes.json();

@@ -158,17 +158,36 @@ export default function RoadmapScreen({ navigation }) {
       if (!topicMeta) return;
 
       // 2. Fetch topic payload
-      const topicUrl = `https://scrolla-content.vercel.app/ML/${topicMeta.file}`;
+      const fetchFile = topicMeta.batch_file || topicMeta.file;
+      let topicUrl = `https://scrolla-content.vercel.app/ML/${fetchFile}`;
       const topicCacheKey = `cache_topic_${topicId}`;
       const cachedTopic = await AsyncStorage.getItem(topicCacheKey);
       
       let topicData = cachedTopic ? JSON.parse(cachedTopic) : null;
       
       if (!topicData) {
-        const res = await fetch(topicUrl);
+        let res = await fetch(topicUrl);
+        if (res.status === 404 && cachedIndex) {
+           const freshRes = await fetch(indexUrl);
+           const freshIndex = await freshRes.json();
+           const freshMeta = freshIndex.topics.find(t => t.id === Number(topicId));
+           if (freshMeta) {
+              const freshFetchFile = freshMeta.batch_file || freshMeta.file;
+              topicUrl = `https://scrolla-content.vercel.app/ML/${freshFetchFile}`;
+              res = await fetch(topicUrl);
+           }
+        }
+        if (!res.ok) return;
         const text = await res.text();
-        await AsyncStorage.setItem(topicCacheKey, text);
-        topicData = JSON.parse(text);
+        const parsed = JSON.parse(text);
+        
+        if (parsed.topics) {
+           topicData = parsed.topics.find(t => t.topic === topicMeta.title);
+           if (topicData) await AsyncStorage.setItem(topicCacheKey, JSON.stringify(topicData));
+        } else {
+           topicData = parsed;
+           await AsyncStorage.setItem(topicCacheKey, text);
+        }
       }
 
       // 3. Deep asset prefetching (Predicting ImageBackground URLs based on our pseudo-random seed logic)
