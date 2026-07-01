@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "713639865756",
+    "project_id": "scrolla-139b1",
+    "storage_bucket": "scrolla-139b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713639865756:android:a5f972706fe4893438ec59",
+        "android_client_info": {
+          "package_name": "com.jay.scrolla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713639865756-o426s3ma9qe2me67ial369fqcn58uj2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB52ve9lexao-RBLEnSKWlUIorNaO8KCts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713639865756-o426s3ma9qe2me67ial369fqcn58uj2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

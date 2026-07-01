@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, Animated } from 'react-native';
+import { StyleSheet, Animated, View } from 'react-native';
 import LottieView from 'lottie-react-native';
 
 /**
@@ -94,7 +94,7 @@ export default function LottieBackground() {
         }
       })
       .catch(err => {
-        if (!cancelled) console.log('Lottie load failed:', err.message);
+        if (!cancelled && __DEV__) console.log('Lottie load failed:', err.message);
       });
 
     return () => {
@@ -115,7 +115,10 @@ export default function LottieBackground() {
         loop
         style={StyleSheet.absoluteFillObject}
         resizeMode="cover"
+        renderMode="HARDWARE"
+        speed={0.3}
       />
+      <View style={[StyleSheet.absoluteFillObject, { backgroundColor: 'rgba(6, 6, 9, 0.85)' }]} />
     </Animated.View>
   );
 }

@@ -56,11 +56,11 @@ export function DefaultCard({ atom }) {
 
 const styles = StyleSheet.create({
   container: { marginTop: 16 },
-  text: { fontSize: 18, color: '#e2e0fc', lineHeight: 28, fontFamily: 'Quicksand_400Regular' },
+  text: { fontSize: 18, color: '#ffffff', lineHeight: 28, fontFamily: 'Quicksand_400Regular', textShadowColor: 'rgba(0,0,0,0.5)', textShadowOffset: { width: 0, height: 1 }, textShadowRadius: 3 },
   modelBox: { padding: 20, backgroundColor: 'rgba(255, 215, 64, 0.1)', borderRadius: 16, borderWidth: 1, borderColor: 'rgba(255, 215, 64, 0.3)' },
   modelTitle: { fontSize: 16, color: '#FFD740', fontFamily: 'Quicksand_700Bold', marginBottom: 12 },
-  modelText: { fontSize: 18, color: '#fff', fontStyle: 'italic', lineHeight: 28, fontFamily: 'Quicksand_400Regular' },
+  modelText: { fontSize: 18, color: '#fff', fontStyle: 'italic', lineHeight: 28, fontFamily: 'Quicksand_400Regular', textShadowColor: 'rgba(0,0,0,0.5)', textShadowOffset: { width: 0, height: 1 }, textShadowRadius: 3 },
   pointsBox: { gap: 12 },
-  pointText: { fontSize: 18, color: '#c6c4d8', lineHeight: 26, fontFamily: 'Quicksand_400Regular', backgroundColor: 'rgba(255,255,255,0.05)', padding: 16, borderRadius: 12, borderWidth: 1, borderColor: 'rgba(255,255,255,0.08)' },
+  pointText: { fontSize: 18, color: '#ffffff', lineHeight: 26, fontFamily: 'Quicksand_400Regular', backgroundColor: 'rgba(0,0,0,0.2)', padding: 16, borderRadius: 12, borderWidth: 1, borderColor: 'rgba(255,255,255,0.1)' },
   questionText: { fontSize: 22, color: '#00d1ff', fontFamily: 'Outfit_700Bold', lineHeight: 32, textAlign: 'center', marginVertical: 20 },
 });

@@ -16,10 +16,11 @@ __pycache__/
 *.so
 .pytest_cache/
 
-# Scrolla Data Caches (Intermediate logic layers)
+# Scrolla Data Caches (Intermediate logic layers & Sub-repos)
 /raw_knowledge/
 /semantic_knowledge/
-
+/scrolla-content/
+/output/
 # Dependencies (Node/Expo handled mostly in application/.gitignore)
 node_modules/
 .expo/
@@ -28,7 +29,7 @@ node_modules/
 .idea/
 .vscode/
 *.swp
-
+*.apk
 # OS Specific
 .DS_Store
 Thumbs.db

@@ -1,0 +1,147 @@
+# Frontend Roadmap (with Estimated Atom Counts)
+
+*Note: An "Atom" is a bite-sized learning chunk in Scrolla (e.g., an explanation, an analogy/mental model, a code example, a common pitfall, or a quick check). Complex algorithms require more atoms to break down, while simple definitions require fewer.*
+
+## Internet
+- How does the internet work? `[8 Atoms]`
+- What is HTTP? `[10 Atoms]`
+- What is Domain Name? `[5 Atoms]`
+- What is hosting? `[5 Atoms]`
+- DNS and how it works? `[8 Atoms]`
+- Browsers and how they work? `[12 Atoms]`
+
+## HTML
+- Learn the basics `[15 Atoms]`
+- Writing Semantic HTML `[10 Atoms]`
+- Forms and Validations `[12 Atoms]`
+- Accessibility `[15 Atoms]`
+- SEO Basics `[10 Atoms]`
+
+## CSS
+- Learn the basics `[20 Atoms]`
+- Making Layouts `[25 Atoms]`
+- Responsive Design `[15 Atoms]`
+
+## JavaScript
+- Learn the Basics `[30 Atoms]`
+- Learn DOM Manipulation `[15 Atoms]`
+- Fetch API / Ajax (XHR) `[10 Atoms]`
+
+## Version Control Systems
+- Git `[20 Atoms]`
+
+## VCS Hosting
+- GitHub `[10 Atoms]`
+- GitLab `[8 Atoms]`
+- Bitbucket `[5 Atoms]`
+
+## Package Managers
+- npm `[10 Atoms]`
+- pnpm `[5 Atoms]`
+- yarn `[5 Atoms]`
+
+## Pick a Framework
+- React `[40 Atoms]`
+- Vue.js `[30 Atoms]`
+- Angular `[40 Atoms]`
+- Svelte `[20 Atoms]`
+- Solid JS `[15 Atoms]`
+- Qwik `[12 Atoms]`
+
+## Writing CSS
+- Tailwind `[15 Atoms]`
+
+## CSS Architecture
+- BEM `[6 Atoms]`
+
+## CSS Preprocessors
+- Sass `[12 Atoms]`
+- PostCSS `[8 Atoms]`
+
+## Build Tools
+- Linters and Formatters
+  - Prettier `[5 Atoms]`
+  - ESLint `[10 Atoms]`
+- Module Bundlers
+  - Vite `[10 Atoms]`
+  - SWC `[5 Atoms]`
+  - esbuild `[5 Atoms]`
+  - Webpack `[20 Atoms]`
+  - Rollup `[8 Atoms]`
+  - Parcel `[8 Atoms]`
+
+## Testing
+- Vitest `[10 Atoms]`
+- Jest `[12 Atoms]`
+- Playwright `[15 Atoms]`
+- Cypress `[15 Atoms]`
+
+## Web Security Basics
+- CORS `[8 Atoms]`
+- HTTPS `[6 Atoms]`
+- Content Security Policy `[10 Atoms]`
+- OWASP Security Risks `[20 Atoms]`
+
+## Authentication Strategies
+- JWT, OAuth, SSO, Basic Auth, Session Auth `[25 Atoms]`
+
+## Web Components
+- HTML Templates `[5 Atoms]`
+- Custom Elements `[8 Atoms]`
+- Shadow DOM `[8 Atoms]`
+
+## Type Checkers
+- TypeScript `[30 Atoms]`
+
+## SSR
+- React `[10 Atoms]`
+- Angular `[8 Atoms]`
+- Vue.js `[8 Atoms]`
+- Svelte `[6 Atoms]`
+- Next.js `[25 Atoms]`
+- Astro `[15 Atoms]`
+- react-router `[10 Atoms]`
+- Nuxt.js `[15 Atoms]`
+- Svelte Kit `[15 Atoms]`
+
+## GraphQL
+- Apollo `[12 Atoms]`
+- Relay Modern `[10 Atoms]`
+
+## Static Site Generators
+- Next.js `[10 Atoms]`
+- Astro `[10 Atoms]`
+- Vuepress `[6 Atoms]`
+- Eleventy `[6 Atoms]`
+- Nuxt.js `[8 Atoms]`
+
+## PWAs
+- Performance Best Practices `[15 Atoms]`
+
+## Measure & Improve Perf.
+- PRPL Pattern `[5 Atoms]`
+- RAIL Model `[5 Atoms]`
+- Performance Metrics `[10 Atoms]`
+- Using Lighthouse `[8 Atoms]`
+- Using DevTools `[15 Atoms]`
+
+## Browser APIs
+- Storage `[8 Atoms]`
+- Web Sockets `[10 Atoms]`
+- Server Sent Events `[6 Atoms]`
+- Service Workers `[15 Atoms]`
+- Location `[5 Atoms]`
+- Notifications `[6 Atoms]`
+- Device Orientation `[4 Atoms]`
+- Payments `[6 Atoms]`
+- Credentials `[6 Atoms]`
+
+## Mobile Apps
+- React Native `[25 Atoms]`
+- Flutter `[25 Atoms]`
+- Ionic `[15 Atoms]`
+
+## Desktop Apps
+- Electron `[20 Atoms]`
+- Tauri `[15 Atoms]`
+- Flutter `[15 Atoms]`

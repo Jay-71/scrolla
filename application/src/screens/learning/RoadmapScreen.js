@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Dimensions, Animated, Easing, LayoutAnimation, UIManager, Platform } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Dimensions, Animated, Easing, LayoutAnimation, UIManager, Platform, Image } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
+
+import { useFocusEffect } from '@react-navigation/native';
 
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
@@ -10,184 +13,82 @@ if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental
 
 const { width } = Dimensions.get('window');
 
-const MODULES_DATA = [
-  {
-    id: 1,
-    title: 'Introduction',
-    desc: 'Understanding the ML Engineer role, core responsibilities, and how it compares to AI Engineering.',
-    tags: ['General', 'Roles'],
-    topics: [
-      { id: 1, title: 'What is an ML Engineer?' },
-      { id: 2, title: 'ML Engineer vs AI Engineer' },
-      { id: 3, title: 'Skills and Responsibilities' }
-    ]
-  },
-  {
-    id: 2,
-    title: 'Mathematical Foundations',
-    desc: 'Calculus, linear algebra, discrete math, statistics, and probability. The math behind learning algorithms.',
-    tags: ['Mathematics'],
-    topics: [
-      { id: 4, title: 'Derivatives, Partial Derivatives' },
-      { id: 5, title: 'Chain rule of derivation' },
-      { id: 6, title: 'Gradient, Jacobian, Hessian' },
-      { id: 7, title: 'Matrix & Matrix Operations' },
-      { id: 8, title: 'Scalars, Vectors, Tensors' },
-      { id: 9, title: 'Singular Value Decomposition' },
-      { id: 10, title: 'Determinants, inverse of Matrix' },
-      { id: 11, title: 'Eigenvalues, Diagonalization' },
-      { id: 12, title: 'Discrete Mathematics' },
-      { id: 13, title: 'Basic concepts (Statistics)' },
-      { id: 14, title: 'Descriptive Statistics' },
-      { id: 15, title: 'Graphs & Charts' },
-      { id: 16, title: 'Inferential Statistics' },
-      { id: 17, title: 'Basics of Probability' },
-      { id: 18, title: 'Bayes Theorem' },
-      { id: 19, title: 'Random Variables, PDFs' },
-      { id: 20, title: 'Types of Distribution' }
-    ]
-  },
-  {
-    id: 3,
-    title: 'Programming Fundamentals',
-    desc: 'Python syntax, OOP, data structures, and scientific computing libraries (Numpy, Pandas, Matplotlib, Seaborn).',
-    tags: ['Python', 'Libraries'],
-    topics: [
-      { id: 21, title: 'Basic Syntax' },
-      { id: 22, title: 'Variables and Data Types' },
-      { id: 23, title: 'Data Structures' },
-      { id: 24, title: 'Loops' },
-      { id: 25, title: 'Conditionals' },
-      { id: 26, title: 'Exceptions' },
-      { id: 27, title: 'Functions, Builtin Functions' },
-      { id: 28, title: 'Object Oriented Programming' },
-      { id: 29, title: 'Numpy' },
-      { id: 30, title: 'Pandas' },
-      { id: 31, title: 'Matplotlib' },
-      { id: 32, title: 'Seaborn' }
-    ]
-  },
-  {
-    id: 4,
-    title: 'Data Collection & Sources',
-    desc: 'Interacting with databases (SQL & NoSQL), scraping, calling web APIs, and handling structured formats.',
-    tags: ['Data Engineering'],
-    topics: [
-      { id: 33, title: 'Databases (SQL, No-SQL)' },
-      { id: 34, title: 'APIs and Web Scraping' },
-      { id: 35, title: 'Data Formats (JSON, XML, CSV)' }
-    ]
-  },
-  {
-    id: 5,
-    title: 'Data Cleaning & Preprocessing',
-    desc: 'Handling missing values, scaling, normalization, feature encoding, and feature engineering.',
-    tags: ['Preprocessing'],
-    topics: [
-      { id: 36, title: 'Missing values and Outliers' },
-      { id: 37, title: 'Data normalization and Scaling' },
-      { id: 38, title: 'Encoding Categorical variables' },
-      { id: 39, title: 'Feature Engineering' }
-    ]
-  },
-  {
-    id: 6,
-    title: 'Machine Learning Basics',
-    desc: 'Supervised vs unsupervised paradigms, Scikit-Learn fundamentals, data splitting, cross-validation, and metrics.',
-    tags: ['Machine Learning'],
-    topics: [
-      { id: 40, title: 'What is Machine Learning?' },
-      { id: 41, title: 'Supervised vs Unsupervised' },
-      { id: 42, title: 'Scikit-Learn (Sklearn)' },
-      { id: 43, title: 'Train/Test Split' },
-      { id: 44, title: 'Cross Validation' },
-      { id: 45, title: 'Model Evaluation Metrics' },
-      { id: 46, title: 'Overfitting and Underfitting' },
-      { id: 47, title: 'Bias-Variance Tradeoff' }
-    ]
-  },
-  {
-    id: 7,
-    title: 'Supervised Learning',
-    desc: 'Classification and Regression algorithms: KNN, Logistic and Linear Regression, SVMs, Decision Trees, and GBMs.',
-    tags: ['Supervised'],
-    topics: [
-      { id: 48, title: 'Linear Regression' },
-      { id: 49, title: 'Logistic Regression' },
-      { id: 50, title: 'Decision Trees' },
-      { id: 51, title: 'Random Forest' },
-      { id: 52, title: 'Support Vector Machines (SVM)' },
-      { id: 53, title: 'K-Nearest Neighbors (KNN)' },
-      { id: 54, title: 'Naive Bayes' },
-      { id: 55, title: 'Gradient Boosting (XGBoost)' }
-    ]
-  },
-  {
-    id: 8,
-    title: 'Unsupervised Learning',
-    desc: 'Dimensionality reduction (PCA, Autoencoders), clustering (K-Means, Hierarchical), and anomaly detection.',
-    tags: ['Unsupervised'],
-    topics: [
-      { id: 56, title: 'K-Means Clustering' },
-      { id: 57, title: 'Hierarchical Clustering' },
-      { id: 58, title: 'Principal Component Analysis (PCA)' },
-      { id: 59, title: 'Autoencoders' },
-      { id: 60, title: 'Isolation Forests (Anomaly Detection)' }
-    ]
-  },
-  {
-    id: 9,
-    title: 'Deep Learning',
-    desc: 'Neural Networks, backpropagation, CNNs, Recurrent Networks, Attention Mechanisms, and NLP.',
-    tags: ['Deep Learning', 'NLP'],
-    topics: [
-      { id: 61, title: 'What is Deep Learning?' },
-      { id: 62, title: 'Perceptrons, Multi-Layer Perceptrons (MLP)' },
-      { id: 63, title: 'Activation functions' },
-      { id: 64, title: 'Backpropagation & Gradient Descent' },
-      { id: 65, title: 'Loss Functions' },
-      { id: 66, title: 'Convolutional Neural Networks (CNNs)' },
-      { id: 67, title: 'Recurrent Neural Networks (RNNs), LSTMs' },
-      { id: 68, title: 'Transformers and Attention' },
-      { id: 69, title: 'Natural Language Processing (NLP)' }
-    ]
-  },
-  {
-    id: 10,
-    title: 'Reinforcement Learning',
-    desc: 'Q-Learning, Policy Gradients, Actor-Critic, and reinforcement loop fundamentals.',
-    tags: ['Reinforcement'],
-    topics: [
-      { id: 70, title: 'Reinforcement Learning Basics' }
-    ]
-  }
-];
-
-// Helper to determine status for our local MVP (only topics 1 & 2 are available)
-const getTopicStatus = (topicId) => {
-  if (topicId === 1) return 'completed';
-  if (topicId === 2) return 'in-progress';
-  return 'locked';
-};
-
 export default function RoadmapScreen({ navigation }) {
+  const [modulesData, setModulesData] = useState([]);
   const [expandedModuleId, setExpandedModuleId] = useState(null);
 
-  // Animation Values
   const floatAnim = useRef(new Animated.Value(0)).current;
   const liquidAnim = useRef(new Animated.Value(0)).current; 
-  const entranceAnims = useRef(MODULES_DATA.map(() => new Animated.Value(0))).current;
+  const [entranceAnims, setEntranceAnims] = useState([]);
 
-  // Calculate Progress
-  const totalTopics = 70;
-  let completedCount = 0;
-  MODULES_DATA.forEach(mod => {
-    mod.topics.forEach(t => {
-      if (getTopicStatus(t.id) === 'completed') completedCount++;
-    });
-  });
-  // Show at least 1% so the orb looks alive
-  const progressPercent = Math.max(1, Math.round((completedCount / totalTopics) * 100));
+  const scrollViewRef = useRef(null);
+  const moduleLayouts = useRef({});
+
+  const [completedTopics, setCompletedTopics] = useState([]);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      const loadCompleted = async () => {
+        try {
+          const stored = await AsyncStorage.getItem('completed_topics');
+          if (stored) {
+            setCompletedTopics(JSON.parse(stored));
+          }
+        } catch (e) {
+          if (__DEV__) console.log(e);
+        }
+      };
+      loadCompleted();
+    }, [])
+  );
+
+  const allTopics = modulesData.flatMap(m => m.topics);
+
+  const getTopicStatus = (topicId) => {
+    if (completedTopics.includes(topicId)) return 'completed';
+    // For now, keep everything unlocked (in-progress)
+    return 'in-progress';
+  };
+
+  // Calculate Progress dynamically
+  const totalTopics = allTopics.length || 1; // prevent div by zero
+  const completedCount = completedTopics.length;
+  const progressPercent = Math.min(100, Math.max(0, Math.round((completedCount / totalTopics) * 100)));
+
+  // Fetch Modules from CDN (SWR caching strategy)
+  useEffect(() => {
+    let isMounted = true;
+    const fetchModules = async () => {
+      try {
+        const cacheKey = 'cache_roadmap_modules';
+        const url = 'https://scrolla-content.vercel.app/ML/roadmap_modules.json';
+        
+        const cachedStr = await AsyncStorage.getItem(cacheKey);
+        if (cachedStr && isMounted) {
+          const parsed = JSON.parse(cachedStr);
+          setModulesData(parsed);
+          setEntranceAnims(parsed.map(() => new Animated.Value(0)));
+        }
+
+        const res = await fetch(url);
+        if (res.ok) {
+          const text = await res.text();
+          if (text !== cachedStr) {
+            await AsyncStorage.setItem(cacheKey, text);
+            if (isMounted) {
+              const parsed = JSON.parse(text);
+              setModulesData(parsed);
+              setEntranceAnims(parsed.map(() => new Animated.Value(0)));
+            }
+          }
+        }
+      } catch (err) {
+        if (__DEV__) console.error('Failed to load roadmap modules:', err);
+      }
+    };
+    fetchModules();
+    return () => { isMounted = false; };
+  }, []);
 
   useEffect(() => {
     // 1. Float Animation (Orb) - Continuous Loop
@@ -209,6 +110,10 @@ export default function RoadmapScreen({ navigation }) {
     );
     floatLoop.start();
 
+    return () => floatLoop.stop();
+  }, []);
+
+  useEffect(() => {
     // 2. Liquid Fill Animation
     const liquidFill = Animated.timing(liquidAnim, {
       toValue: progressPercent,
@@ -217,33 +122,90 @@ export default function RoadmapScreen({ navigation }) {
       useNativeDriver: false,
     });
     liquidFill.start();
+    return () => liquidFill.stop();
+  }, [progressPercent]);
 
+  useEffect(() => {
     // 3. Staggered Entrance Animation for Cards
-    const staggerAnimations = MODULES_DATA.map((_, index) => {
-      return Animated.timing(entranceAnims[index], {
-        toValue: 1,
-        duration: 600,
-        delay: 100 * index, 
-        easing: Easing.out(Easing.cubic),
-        useNativeDriver: true,
+    if (entranceAnims.length > 0 && modulesData.length > 0) {
+      const staggerAnimations = modulesData.map((_, index) => {
+        return Animated.timing(entranceAnims[index], {
+          toValue: 1,
+          duration: 600,
+          delay: 100 * index, 
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: true,
+        });
       });
-    });
+      Animated.stagger(100, staggerAnimations).start();
+    }
+  }, [entranceAnims, modulesData.length]);
 
-    const stagger = Animated.stagger(100, staggerAnimations);
-    stagger.start();
+  const prefetchTopicAssets = async (topicId) => {
+    try {
+      // 1. Fetch index to resolve filename
+      const indexUrl = 'https://scrolla-content.vercel.app/ML/index.json';
+      const cachedIndex = await AsyncStorage.getItem('cache_ml_index');
+      let indexData = cachedIndex ? JSON.parse(cachedIndex) : null;
+      
+      if (!indexData) {
+        const res = await fetch(indexUrl);
+        indexData = await res.json();
+        await AsyncStorage.setItem('cache_ml_index', JSON.stringify(indexData));
+      }
 
-    return () => {
-      floatLoop.stop();
-      liquidFill.stop();
-      stagger.stop();
-    };
+      const topicMeta = indexData.topics.find(t => t.id === Number(topicId));
+      if (!topicMeta) return;
 
-  }, []);
+      // 2. Fetch topic payload
+      const topicUrl = `https://scrolla-content.vercel.app/ML/${topicMeta.file}`;
+      const topicCacheKey = `cache_topic_${topicId}`;
+      const cachedTopic = await AsyncStorage.getItem(topicCacheKey);
+      
+      let topicData = cachedTopic ? JSON.parse(cachedTopic) : null;
+      
+      if (!topicData) {
+        const res = await fetch(topicUrl);
+        const text = await res.text();
+        await AsyncStorage.setItem(topicCacheKey, text);
+        topicData = JSON.parse(text);
+      }
+
+      // 3. Deep asset prefetching (Predicting ImageBackground URLs based on our pseudo-random seed logic)
+      if (topicData && topicData.atoms) {
+        topicData.atoms.forEach((atom, index) => {
+          const bgType = ['lottie', 'image', 'blob'][index % 3];
+          if (bgType === 'image' && atom.concept) {
+             const seed = atom.concept.length * 12345;
+             const imageUrl = `https://picsum.photos/seed/${seed}/800/1200`;
+             Image.prefetch(imageUrl).catch(() => {}); // silently preload into OS cache
+          }
+        });
+      }
+    } catch (err) {
+       if (__DEV__) console.log('Background prefetch silently failed:', err);
+    }
+  };
 
   const toggleModule = (id, isLocked) => {
     if (isLocked) return;
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-    setExpandedModuleId(prev => prev === id ? null : id);
+    setExpandedModuleId(prev => {
+      const nextId = prev === id ? null : id;
+      // Trigger deep prefetch for the first topic in the expanded module
+      if (nextId) {
+        if (scrollViewRef.current && moduleLayouts.current[nextId] !== undefined) {
+          setTimeout(() => {
+            scrollViewRef.current.scrollTo({ y: moduleLayouts.current[nextId], animated: true });
+          }, 100);
+        }
+        const mod = modulesData.find(m => m.id === nextId);
+        if (mod && mod.topics.length > 0) {
+          prefetchTopicAssets(mod.topics[0].id);
+        }
+      }
+      return nextId;
+    });
   };
 
   const orbTranslateY = floatAnim.interpolate({
@@ -267,17 +229,21 @@ export default function RoadmapScreen({ navigation }) {
 
       <SafeAreaView style={styles.safeArea}>
         {/* Top App Bar */}
-        <BlurView intensity={50} tint="light" style={styles.navBar}>
-          <TouchableOpacity style={styles.iconButton} onPress={() => navigation.goBack()}>
+        <View style={styles.navBar}>
+          <TouchableOpacity 
+            style={styles.iconButton} 
+            onPress={() => navigation.goBack()}
+            hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
+          >
             <Ionicons name="arrow-back" size={24} color="#181f21" />
           </TouchableOpacity>
           <Text style={styles.navTitle}>Scrolla</Text>
-          <TouchableOpacity style={styles.iconButton}>
+          <TouchableOpacity style={styles.iconButton} hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}>
             <Ionicons name="menu" size={24} color="#181f21" />
           </TouchableOpacity>
-        </BlurView>
+        </View>
 
-        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        <ScrollView ref={scrollViewRef} contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
           {/* Energy Orb Progress Section */}
           <View style={styles.orbSection}>
             <Animated.View style={[
@@ -322,7 +288,7 @@ export default function RoadmapScreen({ navigation }) {
 
           {/* Bento Grid / Modules */}
           <View style={styles.grid}>
-            {MODULES_DATA.map((module, index) => {
+            {modulesData.map((module, index) => {
               const isModuleCompleted = module.topics.every(t => getTopicStatus(t.id) === 'completed');
               const isModuleLocked = module.topics.every(t => getTopicStatus(t.id) === 'locked');
               const isModuleInProgress = !isModuleCompleted && !isModuleLocked;
@@ -344,6 +310,9 @@ export default function RoadmapScreen({ navigation }) {
               return (
                 <Animated.View
                   key={module.id}
+                  onLayout={(e) => {
+                    moduleLayouts.current[module.id] = e.nativeEvent.layout.y;
+                  }}
                   style={[
                     styles.cardWrapper, 
                     blobShape, 
@@ -354,14 +323,15 @@ export default function RoadmapScreen({ navigation }) {
                     }
                   ]}
                 >
-                  <TouchableOpacity
-                    activeOpacity={0.9}
-                    onPress={() => toggleModule(module.id, isModuleLocked)}
+                  <BlurView 
+                    intensity={isModuleLocked ? 20 : 60} 
+                    tint="light" 
+                    style={[styles.glassCard, blobShape, isExpanded && { minHeight: undefined, paddingBottom: 24 }]}
                   >
-                    <BlurView 
-                      intensity={isModuleLocked ? 20 : 60} 
-                      tint="light" 
-                      style={[styles.glassCard, blobShape, isExpanded && { minHeight: undefined, paddingBottom: 24 }]}
+                    <TouchableOpacity
+                      activeOpacity={0.9}
+                      onPress={() => toggleModule(module.id, isModuleLocked)}
+                      style={{ padding: 32, paddingBottom: isExpanded ? 16 : 32 }}
                     >
                       <View style={styles.statusIconContainer}>
                         {isModuleCompleted && (
@@ -401,10 +371,11 @@ export default function RoadmapScreen({ navigation }) {
                           <Ionicons name="arrow-down" size={16} color="#181f21" />
                         </View>
                       )}
+                    </TouchableOpacity>
 
                       {/* Expandable Sub-Topic Timeline */}
                       {isExpanded && (
-                        <View style={styles.timelineContainer}>
+                        <View style={[styles.timelineContainer, { paddingHorizontal: 32 }]}>
                           <Text style={styles.moduleDescExpanded}>{module.desc}</Text>
                           
                           {module.topics.map((t, tIndex) => {
@@ -451,8 +422,7 @@ export default function RoadmapScreen({ navigation }) {
                         </View>
                       )}
 
-                    </BlurView>
-                  </TouchableOpacity>
+                  </BlurView>
                 </Animated.View>
               );
             })}
@@ -476,9 +446,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    height: 64,
+    height: Platform.OS === 'android' ? 64 + 40 : 64, // 40px approximate safe area height for android
+    paddingTop: Platform.OS === 'android' ? 40 : 0,
     borderBottomWidth: 1,
     borderBottomColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    zIndex: 100,
   },
   iconButton: {
     width: 48,
@@ -605,7 +578,6 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 90,
   },
   glassCard: {
-    padding: 32,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.6)',
     backgroundColor: 'rgba(255,255,255,0.4)',

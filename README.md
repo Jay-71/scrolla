@@ -1,123 +1,48 @@
-# Scrolla: TikTok for Learning
+# Scrolla: The Mobile Learning Engine
 
-Scrolla is a dopamine-optimized learning feed that breaks down complex topics into small, digestible "Atoms". It mimics the engaging nature of short-form video feeds but focuses on delivering high-quality educational content.
+Scrolla is a dopamine-optimized, TikTok-style learning engine designed to break complex technical topics into bite-sized "Atoms". Engineered for extreme performance and deep focus, it seamlessly integrates fluid animations, generative aesthetic designs, and offline-first edge caching.
 
-## 🚀 Project Overview
+## 🚀 Project Architecture
 
-The core philosophy of Scrolla is to transform the way we learn by:
-1.  **Deconstructing** topics into atomic concepts.
-2.  **Structuring** these concepts into a logical dependency graph.
-3.  **Presenting** them in a scrollable, bite-sized format (Atoms).
-
-Each "Atom" is a self-contained unit of knowledge—an explanation, a mental model, an example, or a quick check—designed to be read in seconds. The project now features a complete system with an AI-driven backend for content generation and a React-based frontend for the TikTok-style vertical scrolling feed.
-
-## 🏗️ Architecture
-
-Scrolla operates on a pipeline that transforms raw information into curated learning atoms, and then serves them via a visually rich web application.
+The Scrolla ecosystem operates on a fully decoupled, serverless architecture split into three core layers:
 
 ```mermaid
 graph LR
-    Input[Input Sources] --> Fetch[Fetch & Clean]
-    Fetch --> Merge[Merged Context]
-    Merge --> Extract[Concept Extraction (LLM)]
-    Extract --> Resolve[Knowledge Resolution (LLM)]
-    Resolve --> Generate[Atom Generation (LLM)]
-    Generate --> Curate[Curation & Ordering]
-    Curate --> Output[Final Feed JSON]
-    Output --> Frontend[React/Vite Visual Feed]
+    Engine[Python AI Engine] --> |Generates| JSON[Atom JSON Payloads]
+    JSON --> |Deploys to| Vercel[Vercel Edge CDN]
+    Vercel --> |Stale-While-Revalidate| Mobile[React Native App]
+    Firebase[Firebase Auth] --> |Validates| Mobile
 ```
 
-### Core Components
+1. **The Python Engine (`engine/` & `containers/`)**
+   - An automated pipeline that prompts local or remote LLMs to ingest vast knowledge bases (like PDFs or git repos) and chunk them into highly structured, educational JSON arrays known as "Roadmaps".
+2. **The Serverless CDN (`scrolla-content/`)**
+   - The generated JSON files act as a static, flat-file database. Deployed to Vercel, this repository acts as a globally distributed CDN, ensuring 0ms network resolution and entirely removing the need for a traditional monolithic SQL backend.
+3. **The Mobile Application (`application/`)**
+   - A highly optimized React Native (Expo) mobile client that consumes the CDN payloads, heavily caches them using `AsyncStorage`, and renders them via native APIs (using Expo Image, Lottie, and BlurView). It employs Firebase Authentication to handle user sessions.
 
-1.  **Engine (`engine/`)**: The consolidated backend logic containing modules for fetching, extracting, generating, curating, and storing content.
-    *   **LLM Gateway**: A unified, concurrent pipeline to interact with Ollama.
-    *   **Extraction & Generation**: Uses LLMs to dynamically pull and expand central topics into structured knowledge and learning atoms.
-2.  **Containers (`containers/`)**: Domain-isolated configurations (e.g., DSA, ML, General) that define specific remote sources and concept types per topic area.
-3.  **Output (`output/`)**: Automatically stores the generated JSON atom feeds and intermediate caching files. The pipeline uses this folder as an implicit index to prevent redundant LLM calls for repeated topics.
-4.  **Visual Frontend (`visual/`)**: A React/Vite powered vertical-scroll UI that renders the generated JSON feeds with animations, Lottie graphics, and rich data cards.
-
-## 🛠️ Setup & Installation
-
-### Backend Prerequisites
-
-*   **Python 3.10+**
-*   **Ollama**: You must have [Ollama](https://ollama.com/) installed and running locally.
-*   **Mistral Model**: The project is configured to use the `mistral` model by default.
-
-```bash
-# Pull the model
-ollama pull mistral
-```
-
-### Frontend Prerequisites
-*   **Node.js 18+**
-*   **npm**
-
-### Installation
-
-1.  Clone the repository.
-2.  Install Python dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3.  Install Frontend dependencies:
-
-```bash
-cd visual
-npm install
-```
-
-## 🏃 Usage
-
-### 1. Generate the Content Feed (Backend)
-
-1.  **Start Ollama**: Ensure your local LLM server is running.
-    ```bash
-    ollama serve
-    ```
-
-2.  **Run Scrolla Python Pipeline**:
-    ```bash
-    python main.py
-    ```
-
-3.  **Enter a Topic & Domain**: When prompted, type a topic you want to learn about (e.g., "Binary Search Trees", "Quantum Entanglement") and select a matching domain (e.g., `dsa`, `ml`, or `general`). The pipeline checks the local cache first, then fetches sources and runs concurrent LLM extractions to generate atoms.
-
-4.  **View Output**: The final curated feed is saved in the `output/` directory as a JSON file (e.g., `output/<topic>_atoms.json`). The frontend automatically reads from the output to display the feeds.
-
-### 2. Run the Visual Feed (Frontend)
-
-1.  Navigate to the `visual/` directory and start the Vite dev server:
-    ```bash
-    cd visual
-    npm run dev
-    ```
-
-2.  Open your browser to the local URL provided by Vite (usually `http://localhost:5173`).
-3.  Scroll through your newly generated knowledge feed just like a TikTok/Reels feed!
-
-## 📂 Project Structure
+## 📂 Repository Structure
 
 ```text
 scrolla/
-├── containers/         # Domain-specific configurations (sources, concept types)
-├── engine/             # Core backend logic (fetch, extract, generate, curate, store)
-├── visual/             # React + Vite frontend for the vertical scroll feed
-├── output/             # Generated final atom JSON feeds and cache mappings
-├── main.py             # Entry point for the backend generation pipeline
-└── requirements.txt    # Python dependencies
+├── application/        # React Native (Expo) App Source Code (See application/README.md)
+├── containers/         # Configuration files guiding the AI Engine's knowledge extraction
+├── engine/             # The Python LLM pipeline and roadmap-generation logic
+├── scrolla-content/    # The JSON Database repository (pushed to Vercel)
+├── CHANGELOG.md        # Detailed history of development phases and architectural updates
+└── README.md           # This file
 ```
 
-## 🧩 The Atom Protocol
+## 🛠️ The Atom Protocol
 
-Scrolla uses a strict format for "Atoms" to ensure quality:
+Scrolla enforces a strict cognitive structure known as the **Atom Protocol**. To prevent cognitive overload, the LLM pipeline enforces the following constraints on every generated JSON object:
+*   **Explanation**: Core definition delivered in under 30 words.
+*   **Mental Model**: A vivid, intuitive analogy to instantly "rewire" understanding.
+*   **Code/Example**: Concrete, syntax-highlighted execution.
+*   **Pitfall**: A warning of the most common mistake made by beginners.
+*   **Quick Check**: A fast, interactive question to validate immediate retention.
 
-*   **Explanation**: Plain language, no jargon, under 30 words.
-*   **Mental Model**: A single powerful analogy.
-*   **Example**: Concrete real-world or code example.
-*   **Pitfall**: Common user mistakes.
-*   **Quick Check**: Interactive question to verify understanding.
+## 📖 Getting Started
 
-See `engine/generate.py` and `engine/curate.py` for specific implementation details and validation rules.
+To run the mobile application, navigate into the `application` folder and refer to the exhaustive developer guide:
+[👉 Read the Mobile App Developer Guide (application/README.md)](application/README.md)

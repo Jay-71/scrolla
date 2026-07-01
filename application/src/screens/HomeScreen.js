@@ -1,13 +1,29 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Dimensions } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, SafeAreaView, Dimensions, InteractionManager } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { auth } from '../firebase/firebaseConfig';
+import { getStreakData } from '../utils/streakTracker';
 
 const { width } = Dimensions.get('window');
 
 export default function HomeScreen({ navigation }) {
+  const [streakData, setStreakData] = useState(null);
+  const user = auth.currentUser;
+
+  useEffect(() => {
+    if (user?.uid) {
+      const task = InteractionManager.runAfterInteractions(() => {
+        getStreakData(user.uid).then((data) => {
+          setStreakData(data);
+        }).catch(err => console.error(err));
+      });
+      return () => task.cancel();
+    }
+  }, [user]);
+
   return (
     <SafeAreaView style={styles.safeArea}>
-      <ScrollView contentContainerStyle={styles.container}>
+      <ScrollView contentContainerStyle={styles.container} showsVerticalScrollIndicator={false}>
         
         {/* Header */}
         <View style={styles.header}>
@@ -15,22 +31,36 @@ export default function HomeScreen({ navigation }) {
             <View style={styles.logoIcon} />
             <Text style={styles.logoText}>SCROLLA</Text>
           </View>
-          <TouchableOpacity style={styles.profileBtn}>
-            <Ionicons name="person-outline" size={20} color="#121515" />
-          </TouchableOpacity>
+          
+          <View style={styles.headerRight}>
+            {streakData && streakData.currentStreak > 0 && (
+              <TouchableOpacity 
+                style={styles.streakBadge}
+                onPress={() => navigation.navigate('Profile')}
+              >
+                <Text style={styles.streakBadgeText}>{streakData.currentStreak} 🔥</Text>
+              </TouchableOpacity>
+            )}
+            <TouchableOpacity 
+              style={styles.profileBtn}
+              onPress={() => navigation.navigate('Profile')}
+            >
+              <Ionicons name="person-outline" size={20} color="#121515" />
+            </TouchableOpacity>
+          </View>
         </View>
 
         {/* Hero */}
         <View style={styles.hero}>
-          <Text style={styles.heroTitle}>Absolute Precision.</Text>
-          <Text style={styles.heroSubtitle}>Learn Machine Learning without the noise.</Text>
+          <Text style={styles.heroTitle}>Bite-Sized Knowledge.</Text>
+          <Text style={styles.heroSubtitle}>Swipe through short, dopamine-optimized 'Atoms' to master complex topics in minutes.</Text>
           
           <TouchableOpacity 
             style={styles.ctaButton} 
             activeOpacity={0.8}
-            onPress={() => navigation.navigate('Roadmap')}
+            onPress={() => navigation.navigate('PathSelection')}
           >
-            <Text style={styles.ctaText}>EXPLORE ROADMAP</Text>
+            <Text style={styles.ctaText}>START LEARNING</Text>
             <Ionicons name="arrow-forward" size={18} color="#ffffff" style={{marginLeft: 8}}/>
           </TouchableOpacity>
         </View>
@@ -39,10 +69,10 @@ export default function HomeScreen({ navigation }) {
         <View style={styles.bentoGrid}>
           {/* Card 1 */}
           <View style={[styles.bentoCard, styles.bentoFull]}>
-            <Ionicons name="terminal-outline" size={24} color="#121515" style={{marginBottom: 12}} />
-            <Text style={styles.cardTitle}>Semantic Engine</Text>
+            <Ionicons name="layers-outline" size={24} color="#121515" style={{marginBottom: 12}} />
+            <Text style={styles.cardTitle}>Atomic Learning</Text>
             <Text style={styles.cardDesc}>
-              The core processor breaks down vast information matrices into logical, atomic data structures. No fluff, just the critical path to understanding.
+              Big ideas, bite-sized delivery. Master complex concepts in seconds without the cognitive overload.
             </Text>
           </View>
           
@@ -50,19 +80,19 @@ export default function HomeScreen({ navigation }) {
           <View style={styles.bentoRow}>
             {/* Card 2 */}
             <View style={[styles.bentoCard, styles.bentoHalf]}>
-              <Ionicons name="shield-outline" size={24} color="#121515" style={{marginBottom: 12}} />
-              <Text style={styles.cardTitle}>Impenetrable</Text>
+              <Ionicons name="phone-portrait-outline" size={24} color="#121515" style={{marginBottom: 12}} />
+              <Text style={styles.cardTitle}>Vertical Feed</Text>
               <Text style={styles.cardDesc}>
-                Fortified logic structures ensure knowledge retention.
+                Scroll to learn. A fluid interface engineered for pure focus and zero fluff.
               </Text>
             </View>
             
             {/* Card 3 */}
             <View style={[styles.bentoCard, styles.bentoHalf]}>
-              <Ionicons name="git-network-outline" size={24} color="#121515" style={{marginBottom: 12}} />
-              <Text style={styles.cardTitle}>Neural Mesh</Text>
+              <Ionicons name="bulb-outline" size={24} color="#121515" style={{marginBottom: 12}} />
+              <Text style={styles.cardTitle}>Mental Models</Text>
               <Text style={styles.cardDesc}>
-                Concepts interlink dynamically, constructing a robust lattice.
+                Rewire your intuition. Vivid analogies that make abstract logic instantly click.
               </Text>
             </View>
           </View>
@@ -101,9 +131,27 @@ const styles = StyleSheet.create({
   },
   logoText: {
     fontSize: 16,
-    fontWeight: '700',
+    fontFamily: 'Outfit_700Bold',
     color: '#121515',
     letterSpacing: 2,
+  },
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  streakBadge: {
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    backgroundColor: 'rgba(0,0,0,0.05)',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: 'rgba(0,0,0,0.1)',
+  },
+  streakBadgeText: {
+    fontSize: 14,
+    fontFamily: 'Outfit_700Bold',
+    color: '#121515',
   },
   profileBtn: {
     padding: 8,
@@ -116,7 +164,7 @@ const styles = StyleSheet.create({
   },
   heroTitle: {
     fontSize: 48,
-    fontWeight: '700',
+    fontFamily: 'Outfit_700Bold',
     color: '#121515',
     lineHeight: 52,
     marginBottom: 16,
@@ -124,10 +172,11 @@ const styles = StyleSheet.create({
   },
   heroSubtitle: {
     fontSize: 18,
+    fontFamily: 'Quicksand_600SemiBold',
     color: '#575c56',
     lineHeight: 26,
     marginBottom: 32,
-    maxWidth: '80%',
+    maxWidth: '85%',
   },
   ctaButton: {
     flexDirection: 'row',
@@ -147,7 +196,7 @@ const styles = StyleSheet.create({
   ctaText: {
     color: '#ffffff',
     fontSize: 14,
-    fontWeight: '700',
+    fontFamily: 'Quicksand_700Bold',
     letterSpacing: 1.5,
   },
   bentoGrid: {
@@ -158,9 +207,10 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   bentoCard: {
-    backgroundColor: '#fcf8f8',
+    backgroundColor: 'rgba(255,255,255,0.6)', 
     borderWidth: 1,
-    borderColor: '#121515',
+    borderColor: 'rgba(0,0,0,0.08)',     // Light grey border to gently define the edges
+    borderRadius: 16,                         
     padding: 24,
     justifyContent: 'space-between',
   },
@@ -172,13 +222,14 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 20,
-    fontWeight: '600',
+    fontFamily: 'Outfit_700Bold',
     color: '#121515',
     marginBottom: 12,
   },
   cardDesc: {
-    fontSize: 14,
-    color: '#575c56',
-    lineHeight: 20,
+    fontSize: 15,
+    fontFamily: 'Outfit_400Regular',
+    color: '#2a2f2c',
+    lineHeight: 24,
   },
 });

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scrolla - Progress</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(var(--grid-color, #c4c7c7) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#000000",
+                    "secondary-fixed-dim": "#c3c8c0",
+                    "on-tertiary-fixed": "#1f1b18",
+                    "surface-variant": "#e5e2e1",
+                    "primary-fixed": "#e1e3e2",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f1edec",
+                    "secondary-fixed": "#dfe4dc",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "on-surface": "#1c1b1b",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000000",
+                    "outline-variant": "#c4c7c7",
+                    "on-surface-variant": "#434847",
+                    "on-primary-fixed-variant": "#444747",
+                    "surface": "#fcf8f8",
+                    "on-primary-fixed": "#191c1c",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f6f3f2",
+                    "tertiary-container": "#1f1b18",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-container": "#828484",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "background": "#fcf8f8",
+                    "on-secondary-fixed": "#181d18",
+                    "on-tertiary-container": "#8a827e",
+                    "on-background": "#1c1b1b",
+                    "primary-container": "#191c1c",
+                    "on-secondary-container": "#616660",
+                    "on-tertiary-fixed-variant": "#4b4642",
+                    "tertiary-fixed-dim": "#cec5c0",
+                    "tertiary-fixed": "#eae1db",
+                    "primary-fixed-dim": "#c5c7c6",
+                    "on-secondary-fixed-variant": "#434842",
+                    "surface-container-high": "#ebe7e7",
+                    "surface-tint": "#5c5f5f",
+                    "surface-container-highest": "#e5e2e1",
+                    "secondary-container": "#dfe4dc",
+                    "inverse-primary": "#c5c7c6",
+                    "error-container": "#ffdad6",
+                    "outline": "#747878",
+                    "surface-bright": "#fcf8f8",
+                    "secondary": "#5b605a",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "max-width": "1280px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "xl": "48px",
+                    "sm": "8px",
+                    "margin-mobile": "20px",
+                    "xxl": "80px",
+                    "margin-desktop": "40px",
+                    "unit": "4px",
+                    "gutter": "20px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": [
+                            "Outfit"
+                    ],
+                    "label-sm": [
+                            "Outfit"
+                    ],
+                    "headline-md": [
+                            "Outfit"
+                    ],
+                    "display-lg": [
+                            "Outfit"
+                    ],
+                    "label-md": [
+                            "Outfit"
+                    ],
+                    "body-md": [
+                            "Outfit"
+                    ],
+                    "body-lg": [
+                            "Outfit"
+                    ],
+                    "headline-lg": [
+                            "Outfit"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0.08em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface bg-grid-pattern min-h-screen flex flex-col font-sans antialiased overflow-x-hidden">
+<!-- TopAppBar (From JSON) -->
+<header class="w-full top-0 sticky flex justify-between items-center px-lg py-md border-b border-tertiary bg-surface bg-grid-pattern z-50">
+<div class="flex items-center gap-md">
+<button class="text-primary hover:bg-secondary-fixed transition-colors p-sm border border-transparent rounded-none flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold tracking-widest text-primary uppercase">SCROLLA</h1>
+</div>
+<div class="flex items-center gap-md hidden md:flex">
+<nav class="flex gap-md">
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase hover:bg-secondary-fixed transition-colors py-sm px-md border border-transparent" href="#">Roadmaps</a>
+<a class="text-primary font-label-sm text-label-sm uppercase bg-tertiary text-on-tertiary border border-tertiary py-sm px-md flex flex-col items-center justify-center translate-x-[1px] translate-y-[1px] transition-transform" href="#">Progress</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase hover:bg-secondary-fixed transition-colors py-sm px-md border border-transparent" href="#">Saved</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase hover:bg-secondary-fixed transition-colors py-sm px-md border border-transparent" href="#">Profile</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<button class="text-primary hover:bg-secondary-fixed transition-colors p-sm border border-transparent rounded-none flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-md md:py-lg pb-24 md:pb-md flex flex-col gap-md"><!-- Compact Header: Streak + Weekly -->
+<section class="w-full border-2 border-tertiary bg-gradient-to-r from-[#FFF4E6] to-[#FFE8CC] flex items-center justify-between gap-md py-sm px-md">
+<div class="flex items-center gap-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-[8px] text-tertiary uppercase tracking-widest font-bold opacity-50">Streak</span>
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-md text-headline-md text-black leading-none">14</span>
+<span class="font-label-sm text-[10px] text-tertiary uppercase font-bold">Days</span>
+</div>
+</div>
+<div class="h-8 w-[1px] bg-tertiary/20"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[8px] text-tertiary uppercase tracking-widest font-bold opacity-50">Longest</span>
+<span class="font-label-md text-label-md text-black font-bold leading-none">42D</span>
+</div>
+</div>
+<div class="h-8 w-[1px] bg-tertiary/20"></div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-[8px] text-tertiary uppercase tracking-widest font-bold opacity-50 mb-xs">Recent Activity</span>
+<div class="flex gap-[2px]">
+<div class="w-4 h-4 border border-tertiary bg-black rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary bg-black rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary/30 bg-white/30 rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary bg-black rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary bg-black rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary/30 bg-white/30 rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary/30 bg-white/30 rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary bg-black rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary/30 bg-white/30 rounded-[1px]"></div>
+<div class="w-4 h-4 border border-tertiary/30 bg-white/30 opacity-50 rounded-[1px]"></div>
+</div>
+</div>
+</section>
+<!-- Compact Achievement Row -->
+<!-- High Density Activity Matrix -->
+</main>
+<!-- BottomNavBar (From JSON) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center bg-surface px-md pb-md pt-xs border-t border-tertiary md:hidden z-50">
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-sm px-md border border-transparent hover:border-tertiary transition-colors w-full" href="#">
+<span class="material-symbols-outlined mb-xs" data-icon="map">map</span>
+<span class="font-label-sm text-label-sm uppercase">Roadmaps</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-tertiary text-on-tertiary border border-tertiary py-sm px-md scale-95 transition-transform duration-75 w-full" href="#">
+<span class="material-symbols-outlined mb-xs" data-icon="analytics">analytics</span>
+<span class="font-label-sm text-label-sm uppercase">Progress</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-sm px-md border border-transparent hover:border-tertiary transition-colors w-full" href="#">
+<span class="material-symbols-outlined mb-xs" data-icon="bookmark">bookmark</span>
+<span class="font-label-sm text-label-sm uppercase">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-sm px-md border border-transparent hover:border-tertiary transition-colors w-full" href="#">
+<span class="material-symbols-outlined mb-xs" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,150 @@
+# Backend Roadmap (with Estimated Atom Counts)
+
+*Note: An "Atom" is a bite-sized learning chunk in Scrolla (e.g., an explanation, an analogy/mental model, a code example, a common pitfall, or a quick check). Complex algorithms require more atoms to break down, while simple definitions require fewer.*
+
+## Internet
+- How does the internet work? `[10 Atoms]`
+- What is HTTP? `[15 Atoms]`
+- What is Domain Name? `[5 Atoms]`
+- What is hosting? `[5 Atoms]`
+- DNS and how it works? `[10 Atoms]`
+- Browsers and how they work? `[12 Atoms]`
+
+## Pick a Language
+- JavaScript `[25 Atoms]`
+- Python `[25 Atoms]`
+- Java `[25 Atoms]`
+- PHP `[25 Atoms]`
+- Go `[25 Atoms]`
+- Ruby `[25 Atoms]`
+- C# `[25 Atoms]`
+- Rust `[30 Atoms]`
+
+## Version Control Systems
+- Git `[25 Atoms]`
+
+## Repo Hosting Services
+- GitHub `[10 Atoms]`
+- GitLab `[8 Atoms]`
+- Bitbucket `[5 Atoms]`
+
+## Relational Databases
+- PostgreSQL `[20 Atoms]`
+- MySQL `[20 Atoms]`
+- MariaDB `[10 Atoms]`
+- MS SQL `[15 Atoms]`
+- Oracle `[15 Atoms]`
+- SQLite `[10 Atoms]`
+
+## More about Databases
+- ORMs `[15 Atoms]`
+- ACID `[8 Atoms]`
+- Transactions `[12 Atoms]`
+- N+1 Problem `[8 Atoms]`
+- Normalization `[15 Atoms]`
+- Failure Modes `[10 Atoms]`
+- Profiling Performance `[12 Atoms]`
+- Migrations `[10 Atoms]`
+
+## Scaling Databases
+- Database Indexes `[15 Atoms]`
+- Data Replication `[12 Atoms]`
+- Sharding Strategies `[15 Atoms]`
+- CAP Theorem `[8 Atoms]`
+
+## Learn about APIs
+- REST `[20 Atoms]`
+- JSON APIs `[10 Atoms]`
+- SOAP `[8 Atoms]`
+- gRPC `[15 Atoms]`
+- GraphQL `[20 Atoms]`
+- HATEOAS `[8 Atoms]`
+- Open API Specs `[10 Atoms]`
+
+## Authentication
+- JWT `[15 Atoms]`
+- OAuth `[20 Atoms]`
+- Basic Authentication `[5 Atoms]`
+- Token Authentication `[10 Atoms]`
+- Cookie Based Auth `[10 Atoms]`
+- OpenID `[10 Atoms]`
+- SAML `[10 Atoms]`
+
+## Caching
+- Redis `[20 Atoms]`
+- Memcached `[12 Atoms]`
+- Server Side Caching `[10 Atoms]`
+- CDN `[12 Atoms]`
+- Client Side Caching `[10 Atoms]`
+
+## Web Security
+- Hashing Algorithms `[15 Atoms]`
+- HTTPS `[12 Atoms]`
+- CORS `[10 Atoms]`
+- CSP `[12 Atoms]`
+- OWASP Risks `[25 Atoms]`
+- SSL/TLS `[15 Atoms]`
+- Server Security `[15 Atoms]`
+- API Security Best Practices `[20 Atoms]`
+
+## Testing
+- Integration Testing `[12 Atoms]`
+- Unit Testing `[15 Atoms]`
+- Functional Testing `[10 Atoms]`
+
+## CI / CD
+- CI / CD `[20 Atoms]`
+
+## Software Design & Architecture
+- Architectural Patterns `[25 Atoms]`
+- Design and Development Principles `[20 Atoms]`
+- Monolithic Apps `[10 Atoms]`
+- Microservices `[20 Atoms]`
+- SOA `[12 Atoms]`
+- Serverless `[15 Atoms]`
+- Service Mesh `[12 Atoms]`
+- Twelve Factor Apps `[15 Atoms]`
+- GOF Design Patterns `[25 Atoms]`
+- Domain Driven Design `[20 Atoms]`
+- Test Driven Development `[15 Atoms]`
+- CQRS `[12 Atoms]`
+- Event Sourcing `[12 Atoms]`
+
+## Containerization vs Virtualization
+- Docker `[25 Atoms]`
+- LXC `[8 Atoms]`
+- Kubernetes `[35 Atoms]`
+
+## Web Servers
+- Nginx `[20 Atoms]`
+- Apache `[15 Atoms]`
+- Caddy `[12 Atoms]`
+- MS IIS `[10 Atoms]`
+
+## Search Engines
+- Elasticsearch `[20 Atoms]`
+- Solr `[12 Atoms]`
+
+## Message Brokers
+- RabbitMQ `[20 Atoms]`
+- Kafka `[25 Atoms]`
+
+## Real-Time Data
+- Server Sent Events `[10 Atoms]`
+- WebSockets `[15 Atoms]`
+- Long Polling `[8 Atoms]`
+- Short Polling `[8 Atoms]`
+
+## NoSQL Databases
+- Document DBs (MongoDB, CouchDB) `[20 Atoms]`
+- Key-Value (Redis, DynamoDB) `[15 Atoms]`
+- Realtime (Firebase, RethinkDB) `[15 Atoms]`
+- Time Series (Influx DB, TimeScale) `[12 Atoms]`
+- Column DBs (Cassandra, Base) `[15 Atoms]`
+- Graph DBs (Neo4j, AWS Neptune) `[15 Atoms]`
+
+## Building For Scale
+- Mitigation Strategies `[25 Atoms]`
+- Migration Strategies `[15 Atoms]`
+- Types of Scaling `[10 Atoms]`
+- Observability `[20 Atoms]`

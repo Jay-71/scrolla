@@ -10,6 +10,19 @@ import { ExplanationCard, MentalModelCard, KeyPointsCard, QuickCheckCard, Defaul
 
 const { width, height } = Dimensions.get('window');
 
+// Algorithmic generator for infinite distinct dark theme gradients
+const generateDarkGradient = (index) => {
+  // Use golden ratio conjugate (137.5) to spread hues wildly so adjacent cards have totally different colors
+  const hue = (index * 137.508) % 360;
+  
+  // High saturation for vibrancy, low lightness to keep it a "dark theme"
+  const topColor = `hsl(${hue}, 80%, 15%)`;
+  const midColor = `hsl(${(hue + 45) % 360}, 90%, 25%)`; // Shift hue slightly for the gradient body
+  const bottomColor = `hsl(${(hue - 25 + 360) % 360}, 70%, 10%)`;
+  
+  return [topColor, midColor, bottomColor];
+};
+
 const typeComponents = {
   explanation: ExplanationCard,
   mental_model: MentalModelCard,
@@ -24,7 +37,7 @@ const typeLabels = {
   quick_check: '✦ Quick Check',
 };
 
-export default function AtomCard({ atom, index, total, isVisible }) {
+const AtomCard = React.memo(function AtomCard({ atom, index, total, isVisible }) {
   const TypeCard = typeComponents[atom.atom_type] || DefaultCard;
 
   // Consistent background per card (deterministic based on index, not random)
@@ -32,6 +45,8 @@ export default function AtomCard({ atom, index, total, isVisible }) {
     const types = ['lottie', 'image', 'blob'];
     return types[index % 3];
   }, [index]);
+
+  const baseGradient = useMemo(() => generateDarkGradient(index), [index]);
 
   // Animations
   const cardAnim = useRef(new Animated.Value(0)).current;
@@ -54,7 +69,7 @@ export default function AtomCard({ atom, index, total, isVisible }) {
   return (
     <View style={styles.container}>
       {/* Layer 1: Base Gradient */}
-      <LinearGradient colors={['#0B0B1A', '#1A1A2E', '#060609']} style={StyleSheet.absoluteFillObject} />
+      <LinearGradient colors={baseGradient} style={StyleSheet.absoluteFillObject} />
 
       {/* Layer 2: Dynamic Background — only render when visible */}
       {isVisible && (
@@ -74,7 +89,7 @@ export default function AtomCard({ atom, index, total, isVisible }) {
 
       {/* Layer 4: Glassmorphism Content Card */}
       <Animated.View style={[styles.cardGlass, { opacity: cardAnim, transform: [{ translateY }, { scale }] }]}>
-        <BlurView intensity={40} tint="dark" style={styles.blurContainer}>
+        <BlurView intensity={30} tint="default" style={styles.blurContainer}>
           
           <View style={styles.header}>
             <View style={styles.counter}>
@@ -99,7 +114,9 @@ export default function AtomCard({ atom, index, total, isVisible }) {
 
     </View>
   );
-}
+});
+
+export default AtomCard;
 
 const styles = StyleSheet.create({
   container: {
@@ -107,6 +124,7 @@ const styles = StyleSheet.create({
     height,
     justifyContent: 'center',
     alignItems: 'center',
+    paddingTop: 80, // Offset for the absolute header in TopicViewScreen
   },
   artOverlay: {
     ...StyleSheet.absoluteFillObject,
@@ -121,9 +139,9 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.15)',
+    borderColor: 'rgba(255,255,255,0.2)',
     zIndex: 10,
-    backgroundColor: 'rgba(20,20,35,0.4)',
+    backgroundColor: 'rgba(255,255,255,0.05)',
   },
   blurContainer: {
     padding: 24,
@@ -172,6 +190,9 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontFamily: 'Outfit_700Bold',
     marginBottom: 16,
+    textShadowColor: 'rgba(0,0,0,0.6)',
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 4,
   },
   contentScroll: {
     maxHeight: height * 0.42,
